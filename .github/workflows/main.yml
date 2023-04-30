@@ -1,0 +1,54 @@
+name: Release Workflow
+
+env:
+  itch_project: akibaokapi/after-passion
+  build_name: AfterPassion
+  version: "1.0"
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    name: Build Automation
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Cache renpy
+        id: cache-renpy
+        uses: actions/cache@v3
+        env:
+          cache-name: cache-renpy
+        with:
+          path: cache
+          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('renconstruct.toml') }}
+      - name: Download all workflow run artifacts
+        id: get_artifacts
+        uses: actions/download-artifact@v3
+        with:
+          path: artifacts
+      - name: Build After Passion
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y curl wget libgl1 openjdk-8-jdk-headless
+          wget -qO- https://github.com/kobaltcore/renkit/releases/download/v3.2.0/renkit-linux-amd64.tar.gz | sudo tar xz -C /usr/local/bin
+          export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/bin/
+          renconstruct build -i . -o artifacts/ -c renconstruct.toml
+      - name: Set up butler
+        uses: jdno/setup-butler@v1
+      - name: Publish Windows build to itch.io
+        run: |
+          butler push artifacts/${{ env.build_name }}-${{ env.version }}-win.zip ${{ env.itch_project }}:windows --userversion ${{ env.version }}
+        env:
+          BUTLER_API_KEY: ${{ secrets.ITCHIO_API_KEY }}
+      - name: Publish Linux build to itch.io
+        run: |
+          butler push artifacts/${{ env.build_name }}-${{ env.version }}-linux.tar.bz2 ${{ env.itch_project }}:windows --userversion ${{ env.version }}
+        env:
+          BUTLER_API_KEY: ${{ secrets.ITCHIO_API_KEY }}
+      - name: Publish Mac build to itch.io
+        run: |
+          butler push artifacts/${{ env.build_name }}-${{ env.version }}-mac.zip ${{ env.itch_project }}:windows --userversion ${{ env.version }}
+        env:
+          BUTLER_API_KEY: ${{ secrets.ITCHIO_API_KEY }}

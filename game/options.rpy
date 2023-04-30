@@ -186,10 +186,16 @@ init python:
 
     build.classify('**~', None)
     build.classify('**.bak', None)
+    build.classify('**.toml', None)
+    build.classify('**.yml', None)
     build.classify('**/.**', None)
     build.classify('**/#**', None)
     build.classify('**/thumbs.db', None)
+    build.classify('cache/**', None)
     build.classify('game/**.rpy', None)
+    build.classify('game/images/**.png', None)
+    build.classify('game/**.jpg', None)
+    build.classify('game/**.wav', None)
 
     ## To archive files, classify them as 'archive'.
 
@@ -199,13 +205,12 @@ init python:
 
     build.classify('game/**.rpyc', 'scripts')
 
-    build.classify('game/**.png', 'images')
-    build.classify('game/**.jpg', 'images')
+    build.classify('game/gui/**.png', 'images')
+    build.classify('game/**.avif', 'images')
     build.classify('game/**.webp', 'images')
 
     build.classify('game/**.ogg', 'audio')
     build.classify('game/**.mp3', 'audio')
-    build.classify('game/**.wav', 'audio')
 
     ## Files matching documentation patterns are duplicated in a mac app build,
     ## so they appear in both the app and the zip file.

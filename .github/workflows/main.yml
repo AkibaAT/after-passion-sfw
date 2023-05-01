@@ -21,9 +21,6 @@ jobs:
         with:
           distribution: 'adopt'
           java-version: '8'
-      - uses: nttld/setup-ndk@v1
-        with:
-          ndk-version: r21e
       - name: Cache renpy
         id: cache-renpy
         uses: actions/cache@v3
@@ -36,12 +33,9 @@ jobs:
           key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('renconstruct.toml') }}
       - name: Build After Passion
         run: |
-          ls -l /usr/local/lib/android/sdk/ndk/
-          export ANDROID_NDK_HOME=/usr/local/lib/android/sdk/ndk/21.3.6528147
-          sudo apt-get update
-          sudo apt-get install -y curl wget libgl1
+          unset ANDROID_NDK_HOME
           wget -qO- https://github.com/kobaltcore/renkit/releases/download/v3.2.0/renkit-linux-amd64.tar.gz | sudo tar xz -C /usr/local/bin
-          renutil install -v ${{ env.renpy_version }}
+          [ ! -d ~/.renutil ] && renutil install -v ${{ env.renpy_version }}
           mkdir -p ~/.renutil/${{ env.renpy_version }}/rapt/project/app/
           echo -n '${{ secrets.ANDROID_KEYSTORE }}' | base64 --decode > ~/.renutil/${{ env.renpy_version }}/rapt/project/app/android.keystore
           renconstruct build -i . -o .artifacts/ -c renconstruct.toml

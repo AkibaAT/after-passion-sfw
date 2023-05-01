@@ -39,10 +39,8 @@ jobs:
         uses: jdno/setup-butler@v1
       - name: Publish builds to itch.io
         run: |
-          butler push artifacts/${{ env.build_name }}-${{ env.version }}-win.zip ${{ env.itch_project }}:windows --userversion ${{ env.version }}
+          butler push artifacts/${{ env.build_name }}-${{ env.version }}-pc.zip ${{ env.itch_project }}:win-linux --userversion ${{ env.version }}
           sleep 30
-          butler push artifacts/${{ env.build_name }}-${{ env.version }}-linux.tar.bz2 ${{ env.itch_project }}:linux --userversion ${{ env.version }}
-          sleep 30
-          butler push artifacts/${{ env.build_name }}-${{ env.version }}-mac.zip ${{ env.itch_project }}:osx --userversion ${{ env.version }}
+          butler push artifacts/${{ env.build_name }}-${{ env.version }}-mac.zip ${{ env.itch_project }}:mac --userversion ${{ env.version }}
         env:
           BUTLER_API_KEY: ${{ secrets.ITCHIO_API_KEY }}

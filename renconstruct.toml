@@ -38,9 +38,9 @@
   on_builds = ["pc", "win", "linux", "mac", "web", "steam", "market", "android_apk", "android_aab"] # builds this task should run for, defaults to all available builds
 
 [build] # required, at least one item must be 'true'
-  pc = false  # Windows + Linux
-  win = true # Windows
-  linux = true # Linux
+  pc = true  # Windows + Linux
+  win = false # Windows
+  linux = false # Linux
   mac = true # macOS
   web = false # Web
   steam = false # Steam

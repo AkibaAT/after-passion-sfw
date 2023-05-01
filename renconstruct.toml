@@ -45,7 +45,7 @@
   web = false # Web
   steam = false # Steam
   market = false # Multiple Markets (i.e. Itch.io)
-  android_apk = false # Android Universal APK
+  android_apk = true # Android Universal APK
   android_aab = false # Android Play Store Bundle
 
 [options]
@@ -53,4 +53,3 @@
 
 [renutil]
   version = "8.1.0" # the Ren'Py version to use (required)
-  registry = "cache" # the directory to store installation files in

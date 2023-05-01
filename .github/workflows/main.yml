@@ -1,9 +1,11 @@
 name: Release Workflow
 
 env:
-  itch_project: akibaokapi/after-passion
+  renpy_version: "8.1.0"
+  game_version: "1.0"
+  itch_project_name: akibaokapi/after-passion
   build_name: AfterPassion
-  version: "1.0"
+  android_build_name: games.akiba.afterpassion
 
 on:
   push:
@@ -15,32 +17,44 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - uses: actions/setup-java@v3
+        with:
+          distribution: 'adopt'
+          java-version: '8'
+      - uses: nttld/setup-ndk@v1
+        with:
+          ndk-version: r21e
       - name: Cache renpy
         id: cache-renpy
         uses: actions/cache@v3
         env:
           cache-name: cache-renpy
         with:
-          path: cache
+          path: |
+            ~/.renutil
+            !~/.renutil/**/*.keystore
           key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('renconstruct.toml') }}
-      - name: Download all workflow run artifacts
-        id: get_artifacts
-        uses: actions/download-artifact@v3
-        with:
-          path: artifacts
       - name: Build After Passion
         run: |
+          ls -l /usr/local/lib/android/sdk/ndk/
+          export ANDROID_NDK_HOME=/usr/local/lib/android/sdk/ndk/21.3.6528147
           sudo apt-get update
-          sudo apt-get install -y curl wget libgl1 openjdk-8-jdk-headless
+          sudo apt-get install -y curl wget libgl1
           wget -qO- https://github.com/kobaltcore/renkit/releases/download/v3.2.0/renkit-linux-amd64.tar.gz | sudo tar xz -C /usr/local/bin
-          export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/bin/
-          renconstruct build -i . -o artifacts/ -c renconstruct.toml
+          renutil install -v ${{ env.renpy_version }}
+          mkdir -p ~/.renutil/${{ env.renpy_version }}/rapt/project/app/
+          echo -n '${{ secrets.ANDROID_KEYSTORE }}' | base64 --decode > ~/.renutil/${{ env.renpy_version }}/rapt/project/app/android.keystore
+          renconstruct build -i . -o .artifacts/ -c renconstruct.toml
+          rm ~/.renutil/${{ env.renpy_version }}/rapt/project/app/android.keystore
       - name: Set up butler
         uses: jdno/setup-butler@v1
       - name: Publish builds to itch.io
         run: |
-          butler push artifacts/${{ env.build_name }}-${{ env.version }}-pc.zip ${{ env.itch_project }}:win-linux --userversion ${{ env.version }}
+          ls -l .artifacts
+          butler push .artifacts/${{ env.build_name }}-${{ env.game_version }}-pc.zip ${{ env.itch_project_name }}:win-linux --userversion ${{ env.game_version }}
           sleep 30
-          butler push artifacts/${{ env.build_name }}-${{ env.version }}-mac.zip ${{ env.itch_project }}:mac --userversion ${{ env.version }}
+          butler push .artifacts/${{ env.build_name }}-${{ env.game_version }}-mac.zip ${{ env.itch_project_name }}:mac --userversion ${{ env.game_version }}
+          sleep 30
+          butler push .artifacts/${{ env.android_build_name }}-release.apk ${{ env.itch_project_name }}:android --userversion ${{ env.game_version }}
         env:
           BUTLER_API_KEY: ${{ secrets.ITCHIO_API_KEY }}

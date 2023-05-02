@@ -6,7 +6,7 @@ layeredimage nate:
     always:
         "nate_body_chill"
 
-    group accessories auto prefix "accessories"
     group face auto prefix "face"
-    group shirt auto prefix "shirt"
+    group accessories auto prefix "accessories"
     group pants auto prefix "pants"
+    group shirt auto prefix "shirt"

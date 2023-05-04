@@ -1,6 +1,6 @@
-﻿define na = Character(None, image="nathan", kind=bubble)
-define ni = Character(None, image="nic", kind=bubble)
-define w = Character(None, image="wolfrick", kind=bubble)
+﻿define na = Character(None, image="Nathan", kind=bubble, callback=speaker("Nathan"))
+define ni = Character(None, image="Nic", kind=bubble, callback=speaker("Nic"))
+define w = Character(None, image="Wolfrick", kind=bubble, callback=speaker("Wolfrick"))
 
 label start:
 
@@ -10,11 +10,14 @@ label start:
     show nic at reverse
     show nate pants_chill shirt_chill at x0_8
     show nate at y1
-    show wolfrick shirt_formal pants_formal body_crossed at center
+    show wolfrick shirt_formal pants_formal body_crossed face_sad at center
 
     ni "Go on... tell him."
     show wolfrick at flip
 
+    w "Nathan... I... am really sorry that I stepped on your hat."
+    w "Nathan... I... am really sorry that I stepped on your hat."
+    w "Nathan... I... am really sorry that I stepped on your hat."
     w "Nathan... I... am really sorry that I stepped on your hat."
 
     show wolfrick face_neutral body_chill at reverse

@@ -32,6 +32,8 @@ label prologue:
 
     scene bg city_day
 
+    play sound "effects/city_crowd.opus" volume 0.1 loop
+
     "Anthros. Anthros everywhere."
 
     "I don't know how I know what they are, but by golly I do."
@@ -117,4 +119,4 @@ label prologue:
     "I watch as he turns a corner, and then disappears."
 
     scene bg black
-
+    stop sound

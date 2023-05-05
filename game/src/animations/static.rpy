@@ -52,7 +52,7 @@ transform flip_back(speed=0.5):
     linear speed xzoom 1.0
 
 transform static_walk(repeatCount=3, speed=1.2):
-    ease speed/(repeatCount * 2) yoffset -10
+    ease speed/(repeatCount * 2) yoffset -20
     ease speed/(repeatCount * 2) yoffset 0
     repeat repeatCount
 

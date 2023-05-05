@@ -24,6 +24,15 @@
             135
         ]
     },
+    "start_6fbce124": {
+        "area": [
+            1040,
+            135,
+            400,
+            135
+        ],
+        "properties": "bottom_right"
+    },
     "start_7c1e2bd3": {
         "area": [
             1040,
@@ -32,6 +41,31 @@
             180
         ],
         "properties": "bottom_right"
+    },
+    "start_82e3df75": {
+        "area": [
+            1120,
+            90,
+            400,
+            135
+        ]
+    },
+    "start_83e51443": {
+        "area": [
+            1040,
+            180,
+            400,
+            135
+        ],
+        "properties": "bottom_right"
+    },
+    "start_8ac4f76d": {
+        "area": [
+            640,
+            0,
+            560,
+            90
+        ]
     },
     "start_8b8dcf63": {
         "area": [

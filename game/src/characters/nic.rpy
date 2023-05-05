@@ -1,3 +1,5 @@
+define ni = Character(None, image="Nic", kind=bubble, callback=speaker("Nic"))
+
 layeredimage nic:
     xanchor 0.5
     yanchor 1.0

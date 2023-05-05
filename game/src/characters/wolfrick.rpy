@@ -1,3 +1,5 @@
+define w = Character(None, image="Wolfrick", kind=bubble, callback=speaker("Wolfrick"))
+
 layeredimage wolfrick:
     xanchor 0.5
     yanchor 1.0

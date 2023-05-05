@@ -1,78 +1,18 @@
 {
-    "start_04cc1a4e": {
+    "prologue_19ef2a0b": {
         "area": [
             1120,
-            90,
-            320,
-            135
-        ]
-    },
-    "start_1099cbcd": {
-        "area": [
-            960,
-            0,
-            560,
-            270
-        ],
-        "properties": "bottom_right"
-    },
-    "start_216bd76e": {
-        "area": [
-            1120,
-            90,
-            560,
-            135
-        ]
-    },
-    "start_6fbce124": {
-        "area": [
-            1040,
             135,
-            400,
-            135
-        ],
-        "properties": "bottom_right"
+            640,
+            90
+        ]
     },
-    "start_7c1e2bd3": {
-        "area": [
-            1040,
-            90,
-            400,
-            180
-        ],
-        "properties": "bottom_right"
-    },
-    "start_82e3df75": {
+    "prologue_a243321a": {
         "area": [
             1120,
             90,
-            400,
-            135
-        ]
-    },
-    "start_83e51443": {
-        "area": [
-            1040,
-            180,
-            400,
-            135
-        ],
-        "properties": "bottom_right"
-    },
-    "start_8ac4f76d": {
-        "area": [
-            640,
-            0,
             560,
-            90
-        ]
-    },
-    "start_8b8dcf63": {
-        "area": [
-            640,
-            0,
-            400,
-            90
+            135
         ]
     }
 }

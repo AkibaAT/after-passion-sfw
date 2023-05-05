@@ -1,3 +1,7 @@
+init -1 python:
+    def combineDisplay(layer_1, layer_2):
+        return Composite((0, 0), (0, 0), layer_1, (0, 0), layer_2)
+
 transform pick_up:
     easein .04 yoffset -20
     easeout .05 yoffset 0

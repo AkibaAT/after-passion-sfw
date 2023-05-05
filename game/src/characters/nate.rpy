@@ -1,3 +1,5 @@
+define na = Character(None, image="Nate", kind=bubble, callback=speaker("Nate"))
+
 layeredimage nate:
     xanchor 0.5
     yanchor 1.0

@@ -210,6 +210,7 @@ init python:
 
     build.archive('scripts', 'all')
     build.archive('images', 'all')
+    build.archive('videos', 'all')
     build.archive('audio', 'all')
 
     build.classify('game/**.rpyc', 'scripts')
@@ -217,6 +218,8 @@ init python:
     build.classify('game/gui/**.png', 'images')
     build.classify('game/**.avif', 'images')
     build.classify('game/**.webp', 'images')
+
+    build.classify('videos/**.webm', 'videos')
 
     build.classify('game/**.opus', 'audio')
 

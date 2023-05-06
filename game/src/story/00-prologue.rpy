@@ -6,7 +6,7 @@ label prologue:
 
     "...and why do I feel like I hit my head?"
 
-    scene bg city_night
+    scene bg dark_alley
 
     "I wake up in a shallow puddle, the ground around me covered in trash bags."
 
@@ -118,5 +118,10 @@ label prologue:
 
     "I watch as he turns a corner, and then disappears."
 
-    scene bg black
+    scene black with dissolve
     stop sound
+
+    show bg title
+    $ renpy.movie_cutscene("videos/title.webm")
+
+    hide bg title with dissolve

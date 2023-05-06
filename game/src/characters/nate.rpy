@@ -5,6 +5,8 @@ layeredimage nate:
     yanchor 1.0
     yoffset 340
 
+    attribute reverse null
+
     always:
         "nate_body_chill"
 
@@ -20,10 +22,13 @@ layeredimage nate:
         attribute sad:
             speakAnim("Nate", combineDisplay("nate_face_sad", "nate_speak_reverse"), "nate_face_sad")
     group eyes auto prefix "eyes"
-    group accessories auto prefix "accessories"
-    group hat auto prefix "hat"
+    group accessories auto prefix "accessories" multiple
     group pants auto prefix "pants"
-    group shirt auto prefix "shirt"
+    group shirt auto prefix "shirt":
+        attribute overall if_all "reverse":
+            "nate_reverse_shirt_overall"
+        attribute overall if_not "reverse":
+            "nate_shirt_overall"
 
 image nate_face_neutral_blinking = combineDisplay("nate_face_neutral", "nate_blink")
 image nate_face_angry_blinking = combineDisplay("nate_face_angry", "nate_blink")

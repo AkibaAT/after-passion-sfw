@@ -76,7 +76,7 @@ label prologue:
 
     "My memory is gone, yet I instinctively know this is a situation I want to work out in my favor."
 
-    show wolfrick shirt_formal pants_formal accessories_glasses body_chill at y1, walk_in_right
+    show wolfrick shirt_formal pants_formal accessories_glasses accessories_watch body_chill at y1, walk_in_right
 
     "I know what I must do."
 

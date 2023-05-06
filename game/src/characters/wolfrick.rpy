@@ -5,6 +5,8 @@ layeredimage wolfrick:
     yanchor 1.0
     yoffset 340
 
+    attribute reverse null
+
     group body auto prefix "body":
         attribute chill default
     group face auto prefix "face":
@@ -20,9 +22,17 @@ layeredimage wolfrick:
             speakAnim("Wolfrick", combineDisplay("wolfrick_face_sad_blinking", "wolfrick_speak"), "wolfrick_face_sad_blinking")
         attribute shocked:
             "wolfrick_face_shocked_blinking"
-    group accessories auto prefix "accessories"
+    group accessories auto prefix "accessories" multiple:
+        attribute watch if_all "reverse":
+            "wolfrick_reverse_accessories_watch"
+        attribute watch if_not "reverse":
+            "wolfrick_accessories_watch"
     group pants auto prefix "pants"
-    group shirt if_any ["body_chill"] auto prefix "shirt" variant "chill"
+    group shirt if_any ["body_chill"] auto prefix "shirt" variant "chill":
+        attribute formal if_all "reverse":
+            "wolfrick_reverse_shirt_chill_formal"
+        attribute formal if_not "reverse":
+            "wolfrick_shirt_chill_formal"
     group shirt if_any ["body_crossed"] auto prefix "shirt" variant "crossed"
 
 image wolfrick_face_neutral_blinking = combineDisplay("wolfrick_face_neutral", "wolfrick_blink")

@@ -381,10 +381,10 @@ style main_menu_text is gui_text
 style main_menu_title is main_menu_text
 style main_menu_version is main_menu_text
 
-image test = Composite(
+image bg main_menu_composite = Composite(
     (0, 0),
     (0, 0), "bg main_menu",
-    (400, -330), Transform("wolfrick shirt_formal face_happy pants_formal accessories_glasses body_chill", xzoom=-1),
+    (400, -330), Transform("wolfrick shirt_formal face_happy pants_formal accessories_glasses accessories_watch body_chill reverse", xzoom=-1),
     (0, 0), "gui/overlay/main_menu.png"
 )
 
@@ -392,7 +392,7 @@ style main_menu_frame:
     xsize 420
     yfill True
 
-    background "test"
+    background "bg main_menu_composite"
 
 style main_menu_vbox:
     xalign 1.0

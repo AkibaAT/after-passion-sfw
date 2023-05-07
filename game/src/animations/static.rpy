@@ -47,13 +47,25 @@ transform hug_right(hold=1.0, speed=0.5, distance=25):
     pause hold
     easeout speed/2 xoffset 0
 
-transform flip(speed=0.5):
+transform flip(add=[], remove=[], speed=0.5, child=None):
     xzoom 1.0
-    linear speed xzoom -1.0
+    parallel:
+        linear speed xzoom -1.0
+    parallel:
+        pause speed/2
+        function add_attributes("reverse", child)
+        function remove_attributes(remove, child)
+        function add_attributes(add, child)
 
-transform flip_back(speed=0.5):
+transform flip_back(add=[], remove=[], speed=0.5, child=None):
     xzoom -1.0
-    linear speed xzoom 1.0
+    parallel:
+        linear speed xzoom 1.0
+    parallel:
+        pause speed/2
+        function remove_attributes("reverse", child)
+        function remove_attributes(remove, child)
+        function add_attributes(add, child)
 
 transform static_walk(repeatCount=3, speed=1.2):
     ease speed/(repeatCount * 2) yoffset -20

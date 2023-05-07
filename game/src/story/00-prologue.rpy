@@ -20,7 +20,7 @@ label prologue:
 
     "A normal human guy with normal human attributes."
 
-    "It doesn’t take long for my exhaustion to wear off."
+    "It doesn't take long for my exhaustion to wear off."
 
     "My head doesn't hurt for long, either."
 

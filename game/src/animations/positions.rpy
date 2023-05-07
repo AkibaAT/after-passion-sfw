@@ -61,6 +61,9 @@ transform x0_95:
 transform x1:
     xpos 1.0
 
+transform x1_3:
+    xpos 1.3
+
 transform walk_to(x=5, speed=1.5, steps=3):
     parallel:
         easein speed xpos x/10

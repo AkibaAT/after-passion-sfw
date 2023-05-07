@@ -1,4 +1,258 @@
 {
+    "ch1_problems_044b12c4": {
+        "area": [
+            1040,
+            45,
+            560,
+            135
+        ]
+    },
+    "ch1_problems_1935e765": {
+        "area": [
+            1040,
+            225,
+            320,
+            90
+        ]
+    },
+    "ch1_problems_1c8239f4": {
+        "area": [
+            560,
+            90,
+            720,
+            270
+        ]
+    },
+    "ch1_problems_1fc5f5ff": {
+        "area": [
+            960,
+            495,
+            480,
+            180
+        ],
+        "properties": "top_right"
+    },
+    "ch1_problems_32d0a279": {
+        "area": [
+            1040,
+            90,
+            400,
+            90
+        ]
+    },
+    "ch1_problems_35a75202": {
+        "area": [
+            1200,
+            180,
+            240,
+            90
+        ]
+    },
+    "ch1_problems_35ae72cf": {
+        "area": [
+            1120,
+            225,
+            240,
+            90
+        ],
+        "properties": "bottom_right"
+    },
+    "ch1_problems_360cc551": {
+        "area": [
+            1040,
+            180,
+            320,
+            135
+        ]
+    },
+    "ch1_problems_3aaa0039": {
+        "area": [
+            480,
+            90,
+            640,
+            180
+        ]
+    },
+    "ch1_problems_3e08bdf1": {
+        "area": [
+            1040,
+            180,
+            320,
+            135
+        ]
+    },
+    "ch1_problems_56d44580": {
+        "area": [
+            1040,
+            90,
+            320,
+            135
+        ]
+    },
+    "ch1_problems_5b2ba198": {
+        "area": [
+            640,
+            0,
+            720,
+            180
+        ]
+    },
+    "ch1_problems_5ea82c14": {
+        "area": [
+            1040,
+            45,
+            480,
+            135
+        ]
+    },
+    "ch1_problems_6c314873": {
+        "area": [
+            1120,
+            180,
+            240,
+            90
+        ]
+    },
+    "ch1_problems_70b4608b": {
+        "area": [
+            1040,
+            180,
+            400,
+            90
+        ],
+        "properties": "bottom_right"
+    },
+    "ch1_problems_78e13bf5": {
+        "area": [
+            1040,
+            90,
+            320,
+            90
+        ]
+    },
+    "ch1_problems_79fe4738": {
+        "area": [
+            560,
+            45,
+            720,
+            315
+        ]
+    },
+    "ch1_problems_7b588fde": {
+        "area": [
+            800,
+            225,
+            480,
+            135
+        ]
+    },
+    "ch1_problems_80a392c9": {
+        "area": [
+            480,
+            180,
+            480,
+            90
+        ]
+    },
+    "ch1_problems_811360a4": {
+        "area": [
+            960,
+            90,
+            400,
+            90
+        ]
+    },
+    "ch1_problems_8375fe84": {
+        "area": [
+            1040,
+            0,
+            800,
+            180
+        ]
+    },
+    "ch1_problems_83c72087": {
+        "area": [
+            960,
+            270,
+            320,
+            90
+        ],
+        "properties": "bottom_right"
+    },
+    "ch1_problems_8aceb629": {
+        "area": [
+            1040,
+            45,
+            560,
+            135
+        ]
+    },
+    "ch1_problems_8d4341c6": {
+        "area": [
+            640,
+            225,
+            640,
+            135
+        ]
+    },
+    "ch1_problems_95dbfb1f": {
+        "area": [
+            1040,
+            180,
+            160,
+            90
+        ]
+    },
+    "ch1_problems_9add7a19": {
+        "area": [
+            1040,
+            0,
+            560,
+            180
+        ]
+    },
+    "ch1_problems_b51cf06e": {
+        "area": [
+            480,
+            180,
+            400,
+            90
+        ]
+    },
+    "ch1_problems_cdb84f9c": {
+        "area": [
+            1520,
+            135,
+            400,
+            135
+        ],
+        "properties": "bottom_left"
+    },
+    "ch1_problems_e0237b08": {
+        "area": [
+            800,
+            0,
+            640,
+            135
+        ],
+        "properties": "bottom_right"
+    },
+    "ch1_problems_f5286637": {
+        "area": [
+            480,
+            135,
+            560,
+            135
+        ]
+    },
+    "ch1_problems_f871e723": {
+        "area": [
+            1040,
+            90,
+            320,
+            90
+        ]
+    },
     "prologue_19ef2a0b": {
         "area": [
             1120,

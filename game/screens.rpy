@@ -299,6 +299,8 @@ screen navigation():
 
             textbutton _("Start") action Start()
 
+            textbutton _("Chapter Select") action ShowMenu("chapter_select", chapter_list)
+
         else:
 
             textbutton _("History") action ShowMenu("history")
@@ -538,6 +540,52 @@ style return_button:
     yalign 1.0
     yoffset -45
 
+## Chapter select screen ################################################################
+##
+
+screen chapter_select(list=chapter_list, chapter_name=None, back_action=Return()):
+    tag menu
+
+    style_prefix 'chapter'
+
+    use game_menu(_("Chapter Select")):
+
+        if chapter_name:
+            label _(chapter_name):
+                xpos -250
+                ypos -120
+                text_size gui.subtitle_text_size
+
+        vbox:
+            for chapter in list:
+                if chapter['id'] <= persistent.chapter_progress:
+                    if chapter.has_key('action'):
+                        textbutton chapter['title'] action chapter['action']
+
+                else:
+                    textbutton _('???')
+
+            if chapter_name:
+                textbutton _("Return") action back_action
+
+style chapter_vbox is vbox
+style chapter_button is button
+style chapter_button_text is button_text
+
+style chapter_label is game_menu_label
+style chapter_label_text is game_menu_label_text
+
+style chapter_vbox:
+    ypos 100
+    yanchor 0.0
+
+    spacing 26
+
+style chapter_button is default:
+    properties gui.button_properties("chapter_button")
+
+style chapter_button_text is default:
+    properties gui.button_text_properties("chapter_button")
 
 ## About screen ################################################################
 ##

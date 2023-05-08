@@ -1,4 +1,8 @@
-label ch1_problems:
+label ch1_tension:
+
+    $ set_chapter_progress(1)
+
+    stop music
 
     scene bg city_day
     show wolfrick accessories_watch accessories_glasses face_concerned pants_formal shirt_formal at y1, x1_3:

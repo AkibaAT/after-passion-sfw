@@ -1,4 +1,12 @@
 ﻿init -1 python:
+    def label_callback(name, abnormal):
+        valid_labels = ["ch0_awakening", "ch1_tension", "ch2_romance", "ch3_comfort", "ch4_passion", "ch5_after_passion"]
+        if name in valid_labels:
+            store.current_label = name
+
+    store.current_label = None
+    config.label_callback = label_callback
+
     def set_chapter_progress(value, force=False):
         if (persistent.chapter_progress < value) or force:
             persistent.chapter_progress = value

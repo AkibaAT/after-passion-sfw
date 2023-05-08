@@ -807,51 +807,69 @@ screen preferences():
 
             null height (4 * gui.pref_spacing)
 
-            hbox:
+            grid 2 6:
                 style_prefix "slider"
-                box_wrap True
 
                 vbox:
-
                     label _("Text Speed")
-
-                    bar value Preference("text speed")
-
-                    label _("Auto-Forward Time")
-
-                    bar value Preference("auto-forward time")
+                    hbox:
+                        bar value Preference("text speed")
 
                 vbox:
+                    label _("Auto-Forward Time")
+                    hbox:
+                        bar value Preference("auto-forward time")
 
-                    if config.has_music:
-                        label _("Music Volume")
+                vbox:
+                    label _("Music Volume")
+                    hbox:
+                        bar value Preference("music volume")
 
+                vbox:
+                    label _("Sound Volume")
+                    hbox:
+                        bar value Preference("sound volume")
+                        if config.sample_sound:
+                            textbutton _("Test") action Play("sound", config.sample_sound)
+
+                vbox:
+                    label _("Voice Volume All Characters")
+                    hbox:
+                        bar value Preference("voice volume")
+
+                if current_label == "ch0_awakening":
+                    vbox:
+                        label _("Voice Volume Human")
                         hbox:
-                            bar value Preference("music volume")
+                            bar value SetCharacterVolume("human")
+                            textbutton _("Test") action PlayCharacterVoice("human", config.sample_voice["human"])
 
-                    if config.has_sound:
+                vbox:
+                    label _("Voice Volume Nate")
+                    hbox:
+                        bar value SetCharacterVolume("nate")
+                        textbutton _("Test") action PlayCharacterVoice("nate", config.sample_voice["nate"])
 
-                        label _("Sound Volume")
+                vbox:
+                    label _("Voice Volume Nic")
+                    hbox:
+                        bar value SetCharacterVolume("nic")
+                        textbutton _("Test") action PlayCharacterVoice("nic", config.sample_voice["nic"])
 
+                vbox:
+                        label _("Voice Volume Wolfrick")
                         hbox:
-                            bar value Preference("sound volume")
+                            bar value SetCharacterVolume("wolfrick")
+                            textbutton _("Test") action PlayCharacterVoice("wolfrick", config.sample_voice["wolfrick"])
 
-                            if config.sample_sound:
-                                textbutton _("Test") action Play("sound", config.sample_sound)
-
-
-                    if config.has_voice:
-                        label _("Voice Volume")
-
+                vbox:
+                        label _("Voice Volume Zephyr")
                         hbox:
-                            bar value Preference("voice volume")
+                            bar value SetCharacterVolume("zephyr")
+                            textbutton _("Test") action PlayCharacterVoice("zephyr", config.sample_voice["zephyr"])
 
-                            if config.sample_voice:
-                                textbutton _("Test") action Play("voice", config.sample_voice)
-
-                    if config.has_music or config.has_sound or config.has_voice:
-                        null height gui.pref_spacing
-
+                if config.has_music or config.has_sound or config.has_voice:
+                    vbox:
                         textbutton _("Mute All"):
                             action Preference("all mute", "toggle")
                             style "mute_all_button"

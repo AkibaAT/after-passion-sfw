@@ -1,4 +1,4 @@
-define w = Character(None, image="Wolfrick", kind=bubble, callback=speaker("Wolfrick"))
+define w = Character(None, image="Wolfrick", kind=bubble, callback=speaker("Wolfrick"), voice_tag="wolfrick")
 
 layeredimage wolfrick:
     xanchor 0.5

@@ -1,4 +1,4 @@
-define ni = Character(None, image="Nic", kind=bubble, callback=speaker("Nic"))
+define ni = Character(None, image="Nic", kind=bubble, callback=speaker("Nic"), voice_tag="nic")
 
 layeredimage nic:
     xanchor 0.5

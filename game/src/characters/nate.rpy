@@ -1,4 +1,4 @@
-define na = Character(None, image="Nate", kind=bubble, callback=speaker("Nate"))
+define na = Character(None, image="Nate", kind=bubble, callback=speaker("Nate"), voice_tag="nate")
 
 layeredimage nate:
     xanchor 0.5

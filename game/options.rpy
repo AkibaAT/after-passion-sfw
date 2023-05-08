@@ -58,8 +58,12 @@ define config.default_voice_volume = 0.7
 ## uncomment a line below and use it to set a sample sound to play.
 
 define config.sample_sound = "effects/city_crowd_sample.opus"
-define config.sample_voice = "voice/prologue_ca25aa26.opus"
-
+define config.sample_voice = {
+    "human": "voice/0-awakening/009.opus",
+    "nate": "voice/0-awakening/009.opus",
+    "wolfrick": "voice/0-awakening/038.opus",
+    "zephyr": "voice/0-awakening/009.opus"
+}
 
 ## Uncomment the following line to set an audio file that will be played while
 ## the player is at the main menu. This file will continue playing into the

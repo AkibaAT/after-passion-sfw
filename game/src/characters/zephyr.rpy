@@ -1,4 +1,4 @@
-define z = Character(None, image="Zephyr", kind=bubble, callback=speaker("Zephyr"))
+define z = Character(None, image="Zephyr", kind=bubble, callback=speaker("Zephyr"), voice_tag="zephyr")
 
 layeredimage zephyr:
     xanchor 0.5

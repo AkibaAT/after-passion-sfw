@@ -1,7 +1,5 @@
 label ch1_tension:
 
-    $ set_chapter_progress(1)
-
     stop music
 
     scene bg city_day
@@ -343,3 +341,5 @@ label ch1_tension:
     "I laugh and see him winking at me through the window next to it as the sign flips over to {i}Open{/i}."
 
     "He's gonna get it {i}good{/i} later."
+
+    $ set_chapter_progress(2)

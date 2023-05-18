@@ -154,6 +154,11 @@ label ch0_awakening:
     voice "voice/0-awakening/042.opus"
     "He begins to walk away."
 
+    hide wolfrick
+    
+    voice "voice/0-awakening/Freak.opus"
+    w "Freak"
+
     voice "voice/0-awakening/043.opus"
     "\"W-wait! Aren't you {i}my{/i} wolf? You're supposed to take me in and shelter me, let me smell your musk, fall in love with me!\""
 
@@ -161,7 +166,7 @@ label ch0_awakening:
     "The wolf looks back at me with increasing fear and starts to pick up his pace."
 
     voice "voice/0-awakening/045.opus"
-    "\"Come back! You're my wolf! Mine!\""
+    "\"Come back! You're my wolf! {i}{size=23}Mii{/size}{size=19}iii{/size}{size=15}iiiin{/size}{size=11}eeeee!{/size}{/i}\"" 
 
     voice "voice/0-awakening/046.opus"
     "I watch as he turns a corner, and then disappears."

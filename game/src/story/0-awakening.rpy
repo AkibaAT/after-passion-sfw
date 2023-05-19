@@ -22,8 +22,20 @@ label ch0_awakening:
     voice "voice/0-awakening/006.opus"
     "...How did I end up in an alleyway sleeping on trash?"
 
-    voice "voice/0-awakening/007.opus"
-    "I can't remember. I can’t remember {i}anything{/i}."
+    #voice "voice/0-awakening/007.opus" #Replacing this soon with the new audio
+    "Aside from my name, I can't remember {i}anything{i}."
+
+    
+    #voice "voice/0-awakening/007.opus" #add voice for here
+    $ player_name = renpy.input("My name is...")
+
+    $ player_name = player_name.strip()
+
+    if player_name != "Sonic":
+        $ player_name = "Human From The Alley"
+
+    #voice "voice/0-awakening/[override]008.opus"
+    "%(player_name)s. That sounds right." #add voice for here
 
     voice "voice/0-awakening/008.opus"
     "I examine my hands and body. Everything seems fine. I see no injuries."

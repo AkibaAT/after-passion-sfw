@@ -73,6 +73,9 @@ transform walk_to(x=5, speed=1.5, steps=3):
 transform move_to(x=5, speed=1.0):
     easein speed xpos x/10
 
+transform move_to_y(y=0, speed=1.0):
+    easein speed ypos y/10
+
 transform y0_9:
     ypos 0.9
 

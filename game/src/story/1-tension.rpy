@@ -72,36 +72,63 @@ label ch1_tension:
 
     "I get a full hour for lunch, which thankfully doesn't start until I punch my time card out for it, but… still."
 
-    scene black with dissolve
+    scene black with fade
 
     "I should have left sooner."
 
     scene bg flower_shop_outside
-    show wolfrick accessories_watch accessories_glasses pants_formal shirt_formal face_shocked at y1, walk_in_right()
+    show wolfrick accessories_watch accessories_glasses pants_formal shirt_formal face_shocked at y1, walk_in_right:
+        block:
+            nod()
+            repeat
 
     "Panting, I finally reach the arched wooden door with stained glass panes embedded in the upper half-circle."
 
+    show wolfrick at x0_8, nod(speed=1)
+
     "The rest of the storefront is pretty run-of-the-mill, but this door immediately caught my eye."
+
+    show wolfrick face_happy
 
     "When I pointed it out to Nate, he fell in love with this place. Now, five years later, here we are."
 
+    show wolfrick face_neutral
+
     "The sign on the door says {i}'Open'{/i} so he might be with a customer."
+
+    show wolfrick eyes_closed
 
     "Not wanting to embarrass Nate, I close my eyes and listen for anyone in the store."
 
+    show wolfrick -eyes_closed
+
     "I don't hear anyone on the inside of the storeroom moving around or talking."
+
 
     "I know I'm in the clear – my wolf senses are pretty good for that."
 
+    show wolfrick face_happy
+
     "I steady myself, tidy my fur and clothes, and put on a smile."
 
-    "It's go time."
+    show wolfrick:
+        parallel:
+            walk_z_back
+        parallel:
+            walk_to(6)
+        parallel:
+            move_to_y(8.5)
+        parallel:
+            pause 0.5
+            fade_out()
 
     play sound "effects/door_open.opus"
 
+    "It's go time."
+
     scene bg flower_shop_inside
-    show wolfrick face_blushing accessories_glasses accessories_watch pants_formal shirt_formal at y1
-    show wolfrick at walk_in_right
+    show wolfrick face_blushing accessories_glasses accessories_watch pants_formal shirt_formal at y1, walk_in_right
+    with dissolve
 
     w "Happy anniversary, my love!"
 
@@ -134,6 +161,7 @@ label ch1_tension:
     "Looking around, I try to find any sign of where he might be."
 
     show wolfrick reverse at x0_5:
+        reverse
         pause 0.5
         walk_to(8)
         pause 0.5
@@ -150,12 +178,15 @@ label ch1_tension:
 
     "I turn toward his back office and make my way there."
 
+    hide wolfrick
+
     "Within, I hear what sounds like a droning voice that is either very small and quiet or, somehow, very distant."
 
+    play sound "effects/door_open.opus" volume 0.6
     scene bg flower_shop_backoffice
-    play sound "effects/door_open.opus"
     show nate reverse accessories_hat accessories_glasses shirt_chill shirt_overall at y1, x0_75, reverse
     show wolfrick reverse accessories_watch accessories_glasses pants_formal shirt_formal at y1, x0_2, reverse
+    with dissolve
 
     "I open the door quietly and enter, seeing my adorable manatee husband standing, turned away from the door with his arms crossed."
 
@@ -172,7 +203,7 @@ label ch1_tension:
 
     "He turns his head toward me with a smile and I motion up toward the television."
 
-    show nate -reverse
+    show nate -reverse at no_reverse
 
     na "Hey, sweetheart."
 
@@ -182,15 +213,23 @@ label ch1_tension:
 
     "He sighs and shakes his head."
 
+    show nate at no_offset
+
     na "The new initiatives that were to be proposed by the citizens' representatives have apparently been vetoed by the council, and there seems to be no support from the High Emperor King President Lycanus."
+
+    show wolfrick face_shocked
 
     w "New… initiatives?"
 
     na "Yes, I mentioned them before – remember?"
 
+    show wolfrick face_embarrassed at shake
+
     "I don't. I shrug and he sighs again. I probably should listen to him better."
 
     na "Those initiatives the citizens' representatives were trying to propose, most of which were in effort of making the lower-end of the housing economy more affordable and allowing for easier citizenship to the people who have begun to join us in this world recently."
+
+    show wolfrick face_neutral
 
     "Oh, right. I {i}do{/i} remember now."
 
@@ -198,9 +237,11 @@ label ch1_tension:
 
     "I mouth an 'oh' as best as a wolf muzzle can and nod."
 
-    show wolfrick face_concerned
+    show wolfrick face_concerned at no_offset
 
     w "Shit, maybe I should have heard that beggar out more. He might have been an {i}isekai'd individual{/i}."
+
+    show wolfrick face_neutral
 
     w "Oh well, I'll just report him to the Isekai Bureau of Science."
 
@@ -212,14 +253,14 @@ label ch1_tension:
 
     na "You met an {i}I-I{/i} and want to put him through dealing with the {i}IBS{/i}?"
 
-    show wolfrick face_happy
+    show wolfrick face_happy at quick_nod
 
     "I chuckle."
 
     w "That's never {i}not{/i} funny."
 
     show nate face_happy
-    show wolfrick face_blushing
+    show wolfrick face_neutral at no_offset
 
     "He grins in spite of himself."
 
@@ -228,13 +269,16 @@ label ch1_tension:
 
     "I move over to hug him."
 
-    show wolfrick at x0_5, hug_right
+    show wolfrick face_happy:
+        reset_pos(5)
+        pause 0.1
+        hug_right()
     show nate face_shocked at hug_left
 
     "He is hugged in spite of himself."
 
-    show nate face_sad
-    show wolfrick face_shocked
+    show nate face_sad at no_offset
+    show wolfrick face_shocked at no_offset
 
     na "You know that's an important cause to me, Wolfrick!"
 
@@ -246,7 +290,11 @@ label ch1_tension:
 
     "The way the council has been treating them is horrendous – they all end up living together in buildings that are even more cramped than hostels."
 
+    show wolfrick face_neutral
+
     "Still, Nate doesn't seem to notice the things I have."
+
+    show wolfrick face_concerned
 
     w "All of the ones I've come across seem to have the same… {i}thirst{/i} in their eyes."
 
@@ -256,17 +304,25 @@ label ch1_tension:
 
     w "I don't know, Nate. They all seem to want something. How'd you like to see them all stealing your man, huh? I know {i}I{/i} wouldn't want them stealing {i}mine{/i}!"
 
-    show nate face_concerned
+    show nate face_concerned at quick_shake
 
     "Nate scoffs."
 
-    show nate face_angry
+    show nate face_angry at no_offset
+    show wolfrick face_concerned
 
     na "You're not serious, Wolfrick? I'm worried about where they're {i}living{/i}, not who they're {i}riding{/i}."
 
+    show nate face_neutral
+
     na "Anyway…"
 
+    show wolfrick face_sad
+
     "I look around. Nate was supposed to have lunch here already, but there's nothing."
+
+    show wolfrick face_neutral
+    show nate face_concerned
 
     "Looking back to Nate, he's sheepishly scratching his neck, looking away."
 
@@ -278,31 +334,64 @@ label ch1_tension:
 
     "..."
 
+    show wolfrick face_concerned
+
     w "...Where's lunch? I'm hungry and we only have about forty-five minutes before I have to head back."
+
+    show nate face_shocked at slow_nod
 
     "Nate sighs and looks me in the eye."
 
+    show nate face_neutral at no_offset
+
     na "Well… you see, I sort of… forgot."
+
+    show wolfrick face_sad
 
     w "...Oh."
 
+    show nate face_concerned
+
     na "I tried to call you to give you a heads-up but you didn't answer, so I left a message. My bad."
+
+    show wolfrick face_blushing
 
     w "Oh? Huh. I'll listen to it when I get back, what a pleasant surprise!"
 
+    show nate face_shocked
+
     "Nate gives me a puzzled look."
+
+    show nate face_neutral
 
     na "What? A surprise?"
 
+    show wolfrick face_happy at nod
+
     w "Yes, I get to hear your voice at work as much as I want!"
+
+    show nate at quick_nod(3)
+    show wolfrick at no_offset:
+        pause 0.1
+        quick_nod(3)
 
     "Nate rolls his eyes, laughing. I chuckle too."
 
+    show nate at no_offset
+    show wolfrick at no_offset
+
     na "You're cheesey. Sorry for forgetting."
+
+    show wolfrick face_neutral
 
     w "That's alright, love. We'll make up for it {i}later on tonight{/i}, if you catch my drift~"
 
+    show nate face_happy
+
     "He is blushing now."
+
+    show wolfrick face_happy
+    show nate face_neutral
 
     na "Dick, right?"
 
@@ -310,7 +399,15 @@ label ch1_tension:
 
     "He definitely catches the drift."
 
+    show wolfrick:
+        nod(2)
+        pause 0.2
+        function add_attributes(["face_blushing"])
+        hug_right()
+
     "I laugh and move in to kiss him."
+
+    show wolfrick face_blushing at no_offset
 
     w "Yes, you did."
 
@@ -318,27 +415,51 @@ label ch1_tension:
 
     w "I might have~"
 
+    show nate at nod(2)
+    show wolfrick face_embarrassed
+
     "Nate laughs and I tickle his mustache with a finger, looking down into his eyes."
+
+    show nate at no_offset
 
     "He didn't want to grow the mustache out, because he said it made him look like his father."
 
     "He only did it because I loved it so much."
 
+    show wolfrick face_neutral
+
     na "Well, you should probably go grab lunch and get back to the office. I'll grab something quick in a bit, we can have a nice dinner tonight."
+
+    show wolfrick face_happy at nod
 
     "I nod."
 
+    show wolfrick face_neutral at no_offset
+
     w "Right-O."
+
+    show wolfrick face_blushing at hug_right
 
     "I lean in and smooch him some more."
 
+    show wolfrick at no_offset
+
     na "Mmmmfgh-luvya-mfgfhhh."
+
+    show wolfrick face_neutral
 
     w "Mffghg-luvyamore-mffffgh."
 
+    show wolfrick face_happy
+    show nate face_happy at quick_nod(3)
+
     "We part with a chuckle from him and a wink from me."
 
+    show wolfrick at no_offset
+
     "I pop the finger guns."
+
+    show wolfrick face_neutral
 
     w "Hasta la vista, baby."
 
@@ -354,14 +475,16 @@ label ch1_tension:
 
     scene bg flower_shop_inside
     show nate reverse accessories_hat accessories_glasses shirt_chill shirt_overall:
+        reverse
         xpos -0.5
         y1
         walk_to(9, 2.0, 4)
     show wolfrick reverse accessories_watch accessories_glasses pants_formal shirt_formal:
+        reverse
         xpos 0
         y1
         walk_to(12, 2.1)
-    with fade
+    with dissolve
 
     play sound ["<silence 1.5>", "effects/slap.opus"] volume 0.4
 
@@ -385,6 +508,6 @@ label ch1_tension:
 
     "He's gonna get it {i}good{/i} later."
 
-    scene black with dissolve
+    scene black with fade
 
     $ set_chapter_progress(2)

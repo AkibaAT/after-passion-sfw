@@ -22,6 +22,7 @@ layeredimage wolfrick:
             speakAnim("Wolfrick", combineDisplay("wolfrick_face_sad_blinking", "wolfrick_speak"), "wolfrick_face_sad_blinking")
         attribute shocked:
             "wolfrick_face_shocked_blinking"
+    group eyes auto prefix "eyes"
     group accessories auto prefix "accessories" multiple:
         attribute watch if_all "reverse":
             "wolfrick_reverse_accessories_watch"

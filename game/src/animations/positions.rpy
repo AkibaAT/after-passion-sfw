@@ -114,3 +114,19 @@ transform no_reverse:
 
 transform set_solid(a=1.0):
     alpha a
+
+transform align_x(x):
+    offset [0, 0]
+    xpos x/10
+
+transform align_y(y):
+    offset [0, 0]
+    ypos 1.0 + y/10
+
+transform reset_pos(x, y=0, solid=1.0):
+    align_y(y)
+    align_x(x)
+    alpha solid
+
+transform no_offset:
+    offset [0, 0]

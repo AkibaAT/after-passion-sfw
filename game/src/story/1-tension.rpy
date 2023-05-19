@@ -2,70 +2,77 @@ label ch1_tension:
 
     stop music
 
-    scene bg city_day
+    scene bg city_day_4
     show wolfrick accessories_watch accessories_glasses face_concerned pants_formal shirt_formal at y1, x1_3:
         pause 0.1
-        walk_to(9)
+        walk_to(5)
+    with dissolve
 
     "I'm late."
 
-    show wolfrick at x0_9:
-        pause 0.1
-        walk_to(8, 1, 1)
+    show wolfrick:
+        reset_pos(5)
+        walk_out_left
 
     "Nate is waiting for me."
 
-    show wolfrick at x0_8:
+    scene bg city_day_3
+    show wolfrick accessories_watch accessories_glasses face_concerned pants_formal shirt_formal at y1, x1_3:
         pause 0.1
-        walk_to(7, 1, 1)
+        walk_to(5)
+    with dissolve
 
     "I promised I'd get there in time to spend my lunch hour with him, but I'm behind by ten minutes."
 
-    show wolfrick at x0_7:
-        pause 0.1
-        walk_to(6, 1, 1)
+    show wolfrick:
+        reset_pos(5)
+        walk_out_left
 
     "Shit. What kind of husband am I?"
 
-    show wolfrick at x0_6:
+    scene bg city_day_2
+    show wolfrick accessories_watch accessories_glasses face_concerned pants_formal shirt_formal at y1, x1_3:
         pause 0.1
-        walk_to(5, 1, 1)
+        walk_to(5)
+    with dissolve
 
     "What a way to kick off our anniversary."
 
-    show wolfrick at x0_5:
-        pause 0.1
-        walk_to(4, 1, 1)
+    show wolfrick:
+        reset_pos(5)
+        walk_out_left
 
     "I should have finished the call with my last client earlier than I did."
 
-    show wolfrick at x0_4:
+    scene bg city_day_1
+    show wolfrick accessories_watch accessories_glasses face_concerned pants_formal shirt_formal at y1, x1_3:
         pause 0.1
-        walk_to(3, 1, 1)
+        walk_to(5)
+    with dissolve
 
     "We just got carried away talking about current events, like usual."
 
-    show wolfrick at x0_3:
-        pause 0.1
-        walk_to(2, 1, 1)
+    show wolfrick:
+        reset_pos(5)
+        walk_out_left
 
     "I only noticed the time after they had mentioned they would have to take a lunch break soon."
 
-    show wolfrick at x0_2:
+    scene bg city_day_3
+    show wolfrick accessories_watch accessories_glasses face_concerned pants_formal shirt_formal at y1, x1_3:
         pause 0.1
-        walk_to(1, 1, 1)
+        walk_to(5)
+    with dissolve
 
     "So now here I am, trying to manage as fast a pace as a hulking, muscular, six-foot-four wolf can without causing some commotion."
 
-    show wolfrick at x0_1:
-        pause 0.1
-        walk_to(0, 1, 1)
+    show wolfrick:
+        reset_pos(5)
+        walk_out_left
 
     "I get a full hour for lunch, which thankfully doesn't start until I punch my time card out for it, but… still."
 
-    show wolfrick at x0:
-        pause 0.1
-        walk_out_left(1.5)
+    scene black with dissolve
 
     "I should have left sooner."
 
@@ -122,11 +129,11 @@ label ch1_tension:
 
     "I've told him before that he's uncannily silent when he works, and he just tells me it's how he focuses."
 
-    show wolfrick reverse at flip
+    show wolfrick at flip
 
     "Looking around, I try to find any sign of where he might be."
 
-    show wolfrick at x0_5:
+    show wolfrick reverse at x0_5:
         pause 0.5
         walk_to(8)
         pause 0.5
@@ -134,7 +141,10 @@ label ch1_tension:
 
     "I decide to lock the door and flip the sign over to {i}'Closed'{/i} just in case."
 
-    show wolfrick -reverse at x0_8, flip:
+    show wolfrick:
+        reset_pos(8)
+        pause 0.1
+        flip_back()
         pause 0.5
         walk_to(-2.5, 2.5)
 
@@ -213,12 +223,12 @@ label ch1_tension:
 
     "He grins in spite of himself."
 
-    show wolfrick at walk_to behind nate
+    show wolfrick at walk_to
     show nate face_neutral
 
     "I move over to hug him."
 
-    show wolfrick at hug_right
+    show wolfrick at x0_5, hug_right
     show nate face_shocked at hug_left
 
     "He is hugged in spite of himself."
@@ -332,14 +342,49 @@ label ch1_tension:
 
     w "Hasta la vista, baby."
 
+    show wolfrick:
+        flip_back
+        pause 0.1
+        walk_out_left(1.7)
+    show nate:
+        pause 0.7
+        walk_out_left(1.9)
+
     "Nate rolls his eyes, and follows me out of the office."
+
+    scene bg flower_shop_inside
+    show nate reverse accessories_hat accessories_glasses shirt_chill shirt_overall:
+        xpos -0.5
+        y1
+        walk_to(9, 2.0, 4)
+    show wolfrick reverse accessories_watch accessories_glasses pants_formal shirt_formal:
+        xpos 0
+        y1
+        walk_to(12, 2.1)
+    with fade
+
+    play sound ["<silence 1.5>", "effects/slap.opus"] volume 0.4
 
     "He walks me to the door and I feel a slap on my ass as I'm heading out the door."
 
+    hide wolfrick
+    show nate at x0_9:
+        hug_right(0.7)
+
+    play sound ["<silence 0.4>", "effects/door_close.opus"]
+
     "I turn to retaliate but he shuts the arched door behind me."
+
+    show nate:
+        walk_z_front
+        hug_right(0.3)
+        pause 0.5
+        walk_z_center
 
     "I laugh and see him winking at me through the window next to it as the sign flips over to {i}Open{/i}."
 
     "He's gonna get it {i}good{/i} later."
+
+    scene black with dissolve
 
     $ set_chapter_progress(2)

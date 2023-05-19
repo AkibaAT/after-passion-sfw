@@ -1,11 +1,240 @@
 {
-    "ch0_awakening_7b76d7d1": {
+    "ch0_awakening_361eaf57": {
         "area": [
+            1120,
+            135,
+            640,
+            135
+        ]
+    },
+    "ch0_awakening_545929c7": {
+        "area": [
+            1120,
+            45,
+            640,
+            225
+        ]
+    },
+    "ch1_tension_1c8239f4": {
+        "area": [
+            560,
+            45,
+            720,
+            315
+        ]
+    },
+    "ch1_tension_1fc5f5ff": {
+        "area": [
+            1040,
             0,
-            360,
+            560,
+            225
+        ]
+    },
+    "ch1_tension_32d0a279": {
+        "area": [
+            1040,
+            90,
+            480,
+            90
+        ]
+    },
+    "ch1_tension_35a75202": {
+        "area": [
+            1040,
+            135,
+            320,
+            135
+        ]
+    },
+    "ch1_tension_35ae72cf": {
+        "area": [
+            1040,
+            180,
+            320,
+            135
+        ]
+    },
+    "ch1_tension_3aaa0039": {
+        "area": [
+            480,
+            90,
+            720,
+            180
+        ]
+    },
+    "ch1_tension_56d44580": {
+        "area": [
+            1040,
+            90,
+            320,
+            180
+        ]
+    },
+    "ch1_tension_5b2ba198": {
+        "area": [
+            1360,
+            0,
+            560,
+            270
+        ],
+        "properties": "bottom_left"
+    },
+    "ch1_tension_5ea82c14": {
+        "area": [
+            1040,
+            0,
+            480,
+            180
+        ]
+    },
+    "ch1_tension_6c314873": {
+        "area": [
+            1040,
+            180,
+            240,
+            135
+        ],
+        "properties": "bottom_right"
+    },
+    "ch1_tension_70b4608b": {
+        "area": [
+            880,
+            135,
+            480,
+            135
+        ],
+        "properties": "bottom_right"
+    },
+    "ch1_tension_72cf64b2": {
+        "area": [
+            480,
+            135,
+            400,
+            135
+        ]
+    },
+    "ch1_tension_78e13bf5": {
+        "area": [
+            1040,
+            90,
+            320,
+            90
+        ]
+    },
+    "ch1_tension_79fe4738": {
+        "area": [
+            560,
+            0,
+            720,
+            360
+        ]
+    },
+    "ch1_tension_7b588fde": {
+        "area": [
+            720,
+            180,
+            560,
+            180
+        ]
+    },
+    "ch1_tension_80a392c9": {
+        "area": [
+            480,
+            135,
+            480,
+            135
+        ]
+    },
+    "ch1_tension_811360a4": {
+        "area": [
+            1040,
+            180,
             320,
             135
         ],
+        "properties": "bottom_right"
+    },
+    "ch1_tension_8375fe84": {
+        "area": [
+            1040,
+            0,
+            800,
+            180
+        ]
+    },
+    "ch1_tension_83c72087": {
+        "area": [
+            880,
+            225,
+            400,
+            135
+        ],
+        "properties": "bottom_right"
+    },
+    "ch1_tension_8aceb629": {
+        "area": [
+            1040,
+            0,
+            560,
+            180
+        ]
+    },
+    "ch1_tension_8d4341c6": {
+        "area": [
+            720,
+            180,
+            560,
+            180
+        ]
+    },
+    "ch1_tension_95dbfb1f": {
+        "area": [
+            1040,
+            90,
+            240,
+            90
+        ]
+    },
+    "ch1_tension_9add7a19": {
+        "area": [
+            1040,
+            0,
+            720,
+            180
+        ]
+    },
+    "ch1_tension_b51cf06e": {
+        "area": [
+            480,
+            90,
+            480,
+            180
+        ]
+    },
+    "ch1_tension_e0237b08": {
+        "area": [
+            1520,
+            0,
+            400,
+            270
+        ],
         "properties": "bottom_left"
+    },
+    "ch1_tension_f5286637": {
+        "area": [
+            480,
+            135,
+            640,
+            135
+        ]
+    },
+    "ch1_tension_f871e723": {
+        "area": [
+            1040,
+            90,
+            320,
+            90
+        ]
     }
 }

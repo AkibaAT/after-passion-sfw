@@ -52,13 +52,14 @@ label ch0_awakening:
     voice "voice/0-awakening/012.opus"
     "After a few moments, I stand up and make my way toward the opening of the alleyway."
 
+    scene bg dark_alley_exit at fade_in
     voice "voice/0-awakening/013.opus"
     "Just as I get there, I stumble and grab the wall to stabilize myself."
 
     voice "voice/0-awakening/014.opus"
     "I look around to see a sight beyond my imagination."
 
-    scene bg city_day
+    scene bg city_day_4
 
     play sound "effects/city_crowd.opus" volume 0.1 loop
 

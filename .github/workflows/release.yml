@@ -2,20 +2,25 @@ name: Release Workflow
 
 env:
   renpy_version: "8.1.0"
-  game_version: "1.0"
   itch_project_name: akibaokapi/after-passion
   build_name: AfterPassion
   android_build_name: games.akiba.afterpassion
 
 on:
   push:
-    branches: [ main ]
+    tags:
+      - v*
 
 jobs:
   build:
     name: Build Automation
     runs-on: ubuntu-latest
     steps:
+      - name: Get release version
+        id: get-release-version
+        run: |
+          version=$(echo ${{github.ref_name}} | cut -c 1-)
+          echo "version=$version" >> "$GITHUB_OUTPUT"
       - uses: actions/checkout@v2
       - uses: actions/setup-java@v3
         with:
@@ -38,6 +43,7 @@ jobs:
           [ ! -d ~/.renutil ] && renutil install -v ${{ env.renpy_version }}
           mkdir -p ~/.renutil/${{ env.renpy_version }}/rapt/project/app/
           echo -n '${{ secrets.ANDROID_KEYSTORE }}' | base64 --decode > ~/.renutil/${{ env.renpy_version }}/rapt/project/app/android.keystore
+          echo "\ndefine config.version = \"${{ steps.get-release-version.outputs.version }}\"" >> game/options.rpy
           renconstruct build -i . -o .artifacts/ -c renconstruct.toml
           rm ~/.renutil/${{ env.renpy_version }}/rapt/project/app/android.keystore
       - name: Set up butler
@@ -45,10 +51,10 @@ jobs:
       - name: Publish builds to itch.io
         run: |
           ls -l .artifacts
-          butler push .artifacts/${{ env.build_name }}-${{ env.game_version }}-pc.zip ${{ env.itch_project_name }}:win-linux --userversion ${{ env.game_version }}
+          butler push .artifacts/${{ env.build_name }}-${{ steps.get-release-version.outputs.version }}-pc.zip ${{ env.itch_project_name }}:win-linux --userversion ${{ steps.get-release-version.outputs.version }}
           sleep 30
-          butler push .artifacts/${{ env.build_name }}-${{ env.game_version }}-mac.zip ${{ env.itch_project_name }}:mac --userversion ${{ env.game_version }}
+          butler push .artifacts/${{ env.build_name }}-${{ steps.get-release-version.outputs.version }}-mac.zip ${{ env.itch_project_name }}:mac --userversion ${{ steps.get-release-version.outputs.version }}
           sleep 30
-          butler push .artifacts/${{ env.android_build_name }}-release.apk ${{ env.itch_project_name }}:android --userversion ${{ env.game_version }}
+          butler push .artifacts/${{ env.android_build_name }}-release.apk ${{ env.itch_project_name }}:android --userversion ${{ steps.get-release-version.outputs.version }}
         env:
           BUTLER_API_KEY: ${{ secrets.ITCHIO_API_KEY }}

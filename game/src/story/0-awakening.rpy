@@ -179,7 +179,7 @@ label ch0_awakening:
     "The wolf looks back at me with increasing fear and starts to pick up his pace."
 
     voice "voice/0-awakening/045.opus"
-    "\"Come back! You're my wolf! {i}{size=23}Mii{/size}{size=19}iii{/size}{size=15}iiiin{/size}{size=11}eeeee!{/size}{/i}\"" 
+    "\"Come back! You're my wolf! {i}{size=-4}Mii{size=-4}iii{size=-4}iiiin{size=-4}eeeee!{/size}{/size}{/size}{/size}{/i}\""
 
     voice "voice/0-awakening/046.opus"
     "I watch as he turns a corner, and then disappears."

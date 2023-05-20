@@ -1,6 +1,10 @@
 label ch2_romance:
 
     stop music
+    scene bg apartment_kitchen
+    show wolfrick accessories_glasses accessories_watch pants_joggers shirt_joggers at x0_4, y1:
+        zoom 0.8
+    with fade
 
     "..."
 
@@ -18,15 +22,38 @@ label ch2_romance:
 
     "There’s only so much time left to finish everything, and I need to make sure to get it all right."
 
+    show wolfrick at flip
+
     "I look out the window after hearing a bus pull off outside."
+
+    show wolfrick reverse at reverse
 
     "Nate is walking across the street toward the building. I only have about three minutes."
 
+    show wolfrick at flip_back
+
     "I get home about two hours before Nate does every day, so there wasn't much time to waste anyway, but now…."
+
+    show wolfrick -reverse at no_reverse
 
     "I finish the tilapias off and plate them, then use a bit of sherry to deglaze the pan and make a flavorful, light sauce to pour over the finished dish."
 
     "A minute passes."
+
+    show wolfrick:
+        parallel:
+            walk_z_front(speed=2.0, steps=3)
+        parallel:
+            pause 0.5
+            fade(0, 1.3)
+    scene bg apartment_dining with dissolve
+    show wolfrick reverse accessories_glasses accessories_watch pants_joggers shirt_joggers at reverse, y1, x0_3:
+        alpha 0
+        zoom 1.15
+        parallel:
+            fade(1)
+        parallel:
+            walk_z_center
 
     "I still manage to finish the dishes off with a garnish and get ready to light the candles."
 

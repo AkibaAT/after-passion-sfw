@@ -115,6 +115,10 @@ transform reverse:
 transform no_reverse:
     xzoom 1.0
 
+transform fade(a=1.0, time=0.5):
+    function flatten_child
+    linear time alpha a
+
 transform set_solid(a=1.0):
     alpha a
 

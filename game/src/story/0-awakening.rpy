@@ -52,7 +52,7 @@ label ch0_awakening:
     voice "voice/0-awakening/012.opus"
     "After a few moments, I stand up and make my way toward the opening of the alleyway."
 
-    scene bg dark_alley_exit at fade_in
+    scene bg dark_alley_exit with dissolve
     voice "voice/0-awakening/013.opus"
     "Just as I get there, I stumble and grab the wall to stabilize myself."
 

@@ -72,7 +72,7 @@ label ch1_tension:
 
     "I get a full hour for lunch, which thankfully doesn't start until I punch my time card out for it, but… still."
 
-    scene black with fade
+    scene black with dissolve
 
     "I should have left sooner."
 
@@ -88,7 +88,7 @@ label ch1_tension:
 
     "The rest of the storefront is pretty run-of-the-mill, but this door immediately caught my eye."
 
-    show wolfrick face_happy
+    show wolfrick face_happy at no_offset
 
     "When I pointed it out to Nate, he fell in love with this place. Now, five years later, here we are."
 

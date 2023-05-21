@@ -47,6 +47,14 @@
             180
         ]
     },
+    "ch1_tension_202baee0": {
+        "area": [
+            1200,
+            180,
+            240,
+            90
+        ]
+    },
     "ch1_tension_21837ba2": {
         "area": [
             1040,
@@ -357,6 +365,15 @@
             320,
             180
         ]
+    },
+    "ch1_tension_e9640eed": {
+        "area": [
+            960,
+            135,
+            480,
+            135
+        ],
+        "properties": "bottom_right"
     },
     "ch1_tension_f3f5a4c1": {
         "area": [

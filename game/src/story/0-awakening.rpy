@@ -70,7 +70,7 @@ label ch0_awakening:
     "I don't know how I know what they are, but by golly I do."
 
     voice "voice/0-awakening/017.opus"
-    "I see them all – lion people, tiger people, bear people! Oh my!"
+    "I see them all - lion people, tiger people, bear people! Oh my!"
 
     voice "voice/0-awakening/018.opus"
     "I stumble out of the alleyway and move my way around the street nearby."

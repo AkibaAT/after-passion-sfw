@@ -105,7 +105,7 @@ label ch1_tension:
     "I don't hear anyone on the inside of the storeroom moving around or talking."
 
 
-    "I know I'm in the clear – my wolf senses are pretty good for that."
+    "I know I'm in the clear - my wolf senses are pretty good for that."
 
     show wolfrick face_happy
 
@@ -231,7 +231,7 @@ label ch1_tension:
     w "New… initiatives?"
 
     voice "voice/1-tension/008.opus"
-    na "Yes, I mentioned them before – remember?"
+    na "Yes, I mentioned them before - remember?"
 
     show wolfrick face_embarrassed at shake
 
@@ -310,7 +310,7 @@ label ch1_tension:
 
     "Generally, I agree that all of the men who have been appearing in our world recently need proper assistance."
 
-    "The way the council has been treating them is horrendous – they all end up living together in buildings that are even more cramped than hostels."
+    "The way the council has been treating them is horrendous - they all end up living together in buildings that are even more cramped than hostels."
 
     show wolfrick face_neutral
 

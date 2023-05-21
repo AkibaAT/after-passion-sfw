@@ -5,6 +5,8 @@ layeredimage nic:
     yanchor 1.0
     yoffset 340
 
+    attribute reverse null
+
     always:
         "nic_body_chill"
 

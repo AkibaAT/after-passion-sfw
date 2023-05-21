@@ -4,7 +4,7 @@ label ch2_romance:
     scene bg apartment_kitchen
     show wolfrick accessories_glasses accessories_watch pants_joggers shirt_joggers at x0_4, y1:
         zoom 0.8
-    with fade
+    with dissolve
 
     "..."
 

@@ -130,6 +130,7 @@ label ch1_tension:
     show wolfrick face_blushing accessories_glasses accessories_watch pants_formal shirt_formal at y1, walk_in_right
     with dissolve
 
+    voice "voice/1-tension/001.opus"
     w "Happy anniversary, my love!"
 
     show wolfrick face_happy
@@ -142,6 +143,7 @@ label ch1_tension:
 
     show wolfrick
 
+    voice "voice/1-tension/002.opus"
     w "...Nate?"
 
     show wolfrick face_concerned
@@ -194,6 +196,7 @@ label ch1_tension:
 
     show wolfrick face_sad
 
+    voice "voice/1-tension/003.opus"
     w "Hey, love. What's going on with this?"
 
     show nate face_happy at flip_back()
@@ -205,6 +208,7 @@ label ch1_tension:
 
     show nate -reverse at no_reverse
 
+    voice "voice/1-tension/004.opus"
     na "Hey, sweetheart."
 
     show nate face_concerned at slow_nod:
@@ -215,21 +219,34 @@ label ch1_tension:
 
     show nate at no_offset
 
-    na "The new initiatives that were to be proposed by the citizens' representatives have apparently been vetoed by the council, and there seems to be no support from the High Emperor King President Lycanus."
+    voice "voice/1-tension/005.opus"
+    na "The council vetoed the new initiatives from the peoples' representatives."
+
+    voice "voice/1-tension/006.opus"
+    na "There seems to be no support from the High Emperor King President Lycanus, either."
 
     show wolfrick face_shocked
 
+    voice "voice/1-tension/007.opus"
     w "New… initiatives?"
 
+    voice "voice/1-tension/008.opus"
     na "Yes, I mentioned them before – remember?"
 
     show wolfrick face_embarrassed at shake
 
     "I don't. I shrug and he sighs again. I probably should listen to him better."
 
-    na "Those initiatives the citizens' representatives were trying to propose, most of which were in effort of making the lower-end of the housing economy more affordable and allowing for easier citizenship to the people who have begun to join us in this world recently."
+    voice "voice/1-tension/009.opus"
+    na "Those initiatives the citizens' representatives were trying to propose?"
+
+    voice "voice/1-tension/010.opus"
+    na "The ones which were in effort of making the lower-end of the housing economy more affordable…?"
 
     show wolfrick face_neutral
+
+    voice "voice/1-tension/011.opus"
+    na "They would also allow for easier citizenship to the people who have begun to join us in this world recently."
 
     "Oh, right. I {i}do{/i} remember now."
 
@@ -239,10 +256,12 @@ label ch1_tension:
 
     show wolfrick face_concerned at no_offset
 
+    voice "voice/1-tension/012.opus"
     w "Shit, maybe I should have heard that beggar out more. He might have been an {i}isekai'd individual{/i}."
 
     show wolfrick face_neutral
 
+    voice "voice/1-tension/013.opus"
     w "Oh well, I'll just report him to the Isekai Bureau of Science."
 
     show nate face_shocked
@@ -251,12 +270,14 @@ label ch1_tension:
 
     show nate face_sad
 
+    voice "voice/1-tension/014.opus"
     na "You met an {i}I-I{/i} and want to put him through dealing with the {i}IBS{/i}?"
 
     show wolfrick face_happy at quick_nod
 
     "I chuckle."
 
+    voice "voice/1-tension/015.opus"
     w "That's never {i}not{/i} funny."
 
     show nate face_happy
@@ -280,6 +301,7 @@ label ch1_tension:
     show nate face_sad at no_offset
     show wolfrick face_shocked at no_offset
 
+    voice "voice/1-tension/016.opus"
     na "You know that's an important cause to me, Wolfrick!"
 
     show wolfrick face_sad
@@ -296,12 +318,15 @@ label ch1_tension:
 
     show wolfrick face_concerned
 
-    w "All of the ones I've come across seem to have the same… {i}thirst{/i} in their eyes."
+    voice "voice/1-tension/017.opus"
+    w "All of the {i}I-I{/i} that I've come across seem to have the same… {i}thirst{/i} in their eyes."
 
+    voice "voice/1-tension/018.opus"
     w "I thought that guy I met earlier was homeless, but he turned out to be one of them."
 
     show wolfrick face_angry
 
+    voice "voice/1-tension/019.opus"
     w "I don't know, Nate. They all seem to want something. How'd you like to see them all stealing your man, huh? I know {i}I{/i} wouldn't want them stealing {i}mine{/i}!"
 
     show nate face_concerned at quick_shake
@@ -311,10 +336,12 @@ label ch1_tension:
     show nate face_angry at no_offset
     show wolfrick face_concerned
 
+    voice "voice/1-tension/020.opus"
     na "You're not serious, Wolfrick? I'm worried about where they're {i}living{/i}, not who they're {i}riding{/i}."
 
     show nate face_neutral
 
+    voice "voice/1-tension/021.opus"
     na "Anyway…"
 
     show wolfrick face_sad
@@ -326,10 +353,12 @@ label ch1_tension:
 
     "Looking back to Nate, he's sheepishly scratching his neck, looking away."
 
+    voice "voice/1-tension/022.opus"
     w "Hey, Nate?"
 
     "..."
 
+    voice "voice/1-tension/023.opus"
     na "...Yes, Wolfrick?"
 
     "..."
@@ -508,6 +537,6 @@ label ch1_tension:
 
     "He's gonna get it {i}good{/i} later."
 
-    scene black with fade
+    scene black with dissolve
 
     $ set_chapter_progress(2)

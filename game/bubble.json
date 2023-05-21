@@ -389,5 +389,23 @@
             240,
             90
         ]
+    },
+    "ch2_romance_53546eaa": {
+        "area": [
+            1440,
+            180,
+            480,
+            90
+        ],
+        "properties": "bottom_right"
+    },
+    "ch2_romance_e0e439af": {
+        "area": [
+            1440,
+            180,
+            480,
+            90
+        ],
+        "properties": "bottom_right"
     }
 }

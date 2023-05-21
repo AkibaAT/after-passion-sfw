@@ -83,15 +83,15 @@ label ch2_romance:
 
     "I hear a bit of muffled talking in the hall, and a couple sets of footsteps approaching."
 
-    na "{size=15}...and I know things have been rough, so I don’t mind at all.{/size}"
+    na "{size=-12}...and I know things have been rough, so I don’t mind at all.{/size}"
 
-    ni "{size=16}I just don’t want to be a burden to you both, but if you’re sure…{/size}"
+    ni "{size=-11}I just don’t want to be a burden to you both, but if you’re sure…{/size}"
 
-    na "{size=17}Nonsense. Just let me talk to him, he’ll understand.{/size}"
+    na "{size=-10}Nonsense. Just let me talk to him, he’ll understand.{/size}"
 
-    ni "{size=18}Thank you. Should I… wait out here?{/size}"
+    ni "{size=-9}Thank you. Should I… wait out here?{/size}"
 
-    na "{size=19}Mmmmm… maybe not. It’s not like you two haven’t met before."
+    na "{size=-8}Mmmmm… maybe not. It’s not like you two haven’t met before."
 
     "Nate is speaking to a person with a familiar voice."
 

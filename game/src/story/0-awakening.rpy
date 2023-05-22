@@ -22,11 +22,11 @@ label ch0_awakening:
     voice "voice/0-awakening/006.opus"
     "...How did I end up in an alleyway sleeping on trash?"
 
-    #voice "voice/0-awakening/007.opus" #Replacing this soon with the new audio
+    voice "voice/0-awakening/007.opus" 
     "Aside from my name, I can't remember {i}anything{i}."
 
     
-    #voice "voice/0-awakening/007.opus" #add voice for here
+    voice "voice/0-awakening/MyNameIs.opus" 
     $ player_name = renpy.input("My name is...")
 
     $ player_name = player_name.strip()
@@ -34,8 +34,8 @@ label ch0_awakening:
     if player_name != "Sonic":
         $ player_name = "Human From The Alley"
 
-    #voice "voice/0-awakening/[override]008.opus"
-    "%(player_name)s. That sounds right." #add voice for here
+    voice "voice/0-awakening/ThatSoundsRight.opus"
+    "%(player_name)s. That sounds right." 
 
     voice "voice/0-awakening/008.opus"
     "I examine my hands and body. Everything seems fine. I see no injuries."
@@ -101,7 +101,7 @@ label ch0_awakening:
     "..."
 
     voice "voice/0-awakening/026.opus"
-    "The otter sees me looking his way and turns to cross over to the opposite corner."
+    "The otter sees me looking his way and turns, crossing over to the opposite corner.."
 
     voice "voice/0-awakening/027.opus"
     "Not him either, it seems."

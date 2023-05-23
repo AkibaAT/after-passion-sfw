@@ -201,7 +201,7 @@ label ch2_romance:
     "He slaps my arm again."
 
     show nate at no_offset
-    show wolfrick face_concerned at no_offset
+    show wolfrick reverse face_concerned at no_offset, reverse
 
     w "Ow! Quit it!"
 
@@ -270,6 +270,9 @@ label ch2_romance:
 
     "I motion for Nate to move out of the way and step in front of Nic."
 
+    show wolfrick reverse:
+        reset_pos(6)
+        reverse
     show nic face_concerned
 
     "He sheepishly smiles, lifting his brows into a concerned expression."
@@ -278,7 +281,7 @@ label ch2_romance:
 
     "I put my hand on his shoulder and look him in the eyes."
 
-    show wolfrick face_concerned
+    show wolfrick face_concerned at no_offset
 
     w "Look, I'm sorry Nic. I know you're hurting and that you have a lot of emotions to work through, and we'd be more than happy to have you here while you get back on your feet."
 
@@ -296,7 +299,12 @@ label ch2_romance:
 
     "Nic is holding a bag, and Nate has another one. I am carrying the other three."
 
+    show wolfrick at walk_out_right
+    show nic at walk_out_right
+
     "We move everything into the apartment and I lead Nic to the room."
+
+    scene bg apartment_corner with dissolve
 
     w "Here we are."
 
@@ -304,7 +312,56 @@ label ch2_romance:
 
     na "It's only got a few boxes in the corner but there's a twin bed and more than enough room."
 
+    show nic face_sad pants_chill shirt_chill:
+        y1
+        x1_3
+        pause 2
+        walk_in_right(1, 2)
+        pause 0.1
+        slow_nod()
+        pause 0.1
+        flip()
+        pause 0.1
+        walk_to(2)
+        pause 0.1
+    show nate accessories_glasses accessories_hat shirt_chill pants_chill shirt_hoodie:
+        y1
+        x1_3
+        pause 1
+        walk_in_right(1, 2)
+        pause 0.1
+        slow_nod()
+        pause 0.1
+        flip()
+        pause 0.1
+        walk_to(6, 1.2)
+        pause 0.2
+        flip_back()
+    show wolfrick accessories_glasses accessories_watch pants_joggers shirt_joggers:
+        y1
+        x0_8
+        walk_in_right(1, 2)
+        pause 0.1
+        slow_nod()
+        pause 0.1
+        flip()
+        pause 0.1
+        walk_to(9, steps=4)
+        pause 0.5
+        flip_back()
+
     "I open the door, and lead the others inside. We leave Nic's luggage on the far side of the room and I move back to the doorway."
+
+    show nic reverse:
+        no_offset
+        x0_2
+        reverse
+    show nate:
+        no_offset
+        x0_6
+    show wolfrick:
+        no_offset
+        x0_9
 
     w "We have spare blankets and pillows inside one of those boxes, we can wash them if they're too dusty."
 
@@ -316,7 +373,33 @@ label ch2_romance:
 
     na "Nonsense, you're more than welcome! Just try to relax and process your feelings for now."
 
+    show nic at nod
+    show nate:
+        pause 0.5
+        flip()
+        walk_to(6.5, 1, 1)
+    show wolfrick:
+        flip()
+        walk_to(9.5, 1, 1)
+
     "Nic nods and Nate nears the doorway."
+
+    show nate:
+        x0_65
+        reverse
+        pause 0.65
+        function add_attributes(['face_happy'])
+        pause 0.7
+        function remove_attributes(['face_happy'])
+    show wolfrick:
+        x0_95
+        reverse
+        flip_back()
+        pause 0.1
+        function add_attributes(['face_happy'])
+        pause 0.7
+        function remove_attributes(['face_happy'])
+        flip()
 
     "He turns to smile at me and I smile back, as we head out into the living room."
 

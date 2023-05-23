@@ -220,6 +220,7 @@ init python:
     build.classify('game/**.rpyc', 'scripts')
 
     build.classify('game/gui/**.png', 'images')
+    build.classify('game/gui/fonts/*', 'images')
     build.classify('game/**.avif', 'images')
     build.classify('game/**.webp', 'images')
 

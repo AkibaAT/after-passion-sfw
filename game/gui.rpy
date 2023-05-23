@@ -56,17 +56,34 @@ define gui.interface_text_color = '#ffffff'
 
 ## Fonts and Font Sizes ########################################################
 
+define gui_default_font = "gui/fonts/ModernDOS9x16.ttf"
+define gui_dyslexic_font = "gui/fonts/OpenDyslexic3-Regular.ttf"
+define gui_menu_font = "gui/fonts/ModernDOS9x14.ttf"
+
 ## The font used for in-game text.
-define gui.text_font = "DejaVuSans.ttf"
+define gui.text_font = gui.preference("text_font", gui_default_font)
 
 ## The font used for character names.
-define gui.name_text_font = "DejaVuSans.ttf"
+define gui.name_text_font = gui.preference("menu_font", gui_menu_font)
 
 ## The font used for out-of-game text.
-define gui.interface_text_font = "DejaVuSans.ttf"
+define gui.interface_text_font = gui.preference("menu_font", gui_menu_font)
 
 ## The size of normal dialogue text.
-define gui.text_size = 33
+define gui_default_text_size = 36
+define gui_dyslexic_text_size = 30
+define gui_dyslexic_text_size_bubble = 28
+
+## The size of normal dialogue text.
+define gui.text_size = gui.preference("text_size", gui_default_text_size)
+
+## The leading space of text.
+define gui_default_line_leading = 0
+define gui_dyslexic_line_leading = -8
+
+define gui.text_line_leading = gui.preference("text_leading", gui_default_line_leading)
+define gui.name_text_line_leading = 0
+define gui.interface_text_line_leading = 0
 
 ## The size of character names.
 define gui.name_text_size = 45
@@ -415,6 +432,11 @@ define gui.language = "unicode"
 ################################################################################
 
 init python:
+    style.bubble_what = Style(style.default)
+    style.bubble_what.align = (0.5, 0.5)
+    style.bubble_what.text_align = 0.5
+    style.bubble_what.layout = "subtitle"
+    style.bubble_what.color = "#000"
 
     ## This increases the size of the quick buttons to make them easier to touch
     ## on tablets and phones.
@@ -475,3 +497,27 @@ init python:
 
         gui.nvl_button_width = 1860
         gui.nvl_button_xpos = 30
+
+        gui_default_text_size = 45
+        gui_dyslexic_text_size = 40
+
+        gui_default_line_leading = 4
+        gui_dyslexic_line_leading = -12
+
+    ################################################################################
+    ## Style config
+    ################################################################################
+
+    renpy.register_style_preference("text", "default", style.say_label, "font", gui_default_font)
+    renpy.register_style_preference("text", "default", style.bubble_what, "font", gui_default_font)
+    renpy.register_style_preference("text", "default", style.bubble_what, "size", gui_default_text_size)
+    renpy.register_style_preference("text", "default", style.say_dialogue, "font", gui_default_font)
+    renpy.register_style_preference("text", "default", style.say_dialogue, "size", gui_default_text_size)
+    renpy.register_style_preference("text", "default", style.say_dialogue, "line_leading", gui_default_line_leading)
+
+    renpy.register_style_preference("text", "dyslexic", style.say_label, "font", gui_dyslexic_font)
+    renpy.register_style_preference("text", "dyslexic", style.bubble_what, "font", gui_dyslexic_font)
+    renpy.register_style_preference("text", "dyslexic", style.bubble_what, "size", gui_dyslexic_text_size_bubble)
+    renpy.register_style_preference("text", "dyslexic", style.say_dialogue, "font", gui_dyslexic_font)
+    renpy.register_style_preference("text", "dyslexic", style.say_dialogue, "size", gui_dyslexic_text_size)
+    renpy.register_style_preference("text", "dyslexic", style.say_dialogue, "line_leading", gui_dyslexic_line_leading)

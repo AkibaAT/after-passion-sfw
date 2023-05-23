@@ -122,7 +122,7 @@ label ch3_comfort:
 
     w "Neither of us are nearly as plastered as Nic, if there's ever a time it's going to be now."
 
-    w "You had me thinking you enjoyed the stereotypical ‘wolf boyfriend' things, and I'm just now finding out on our {i}third{/i} anniversary that you don't?"
+    w "You had me thinking you enjoyed the stereotypical 'wolf boyfriend' things, and I'm just now finding out on our {i}third{/i} anniversary that you don't?"
 
     na "Well, it's not that I don't enjoy them…"
 
@@ -183,5 +183,65 @@ label ch3_comfort:
     na "Oh… I guess that was all pretty hurtful, yeah."
 
     na "I'm sorry…"
+
+    na "I guess I feel like sometimes you make all the decisions for us, like while we were part of the resistance against the former High King Emperor Rexford."
+
+    na "I was hailed as some \"chosen one\" but it always felt like you did everything, up until the last second."
+
+    na "I guess after we succeeded in overthrowing him and helped assign Lycanus to the throne, I felt like I needed something of my own to focus on."
+
+    na "The flower shop helped, but there was something {i}missing{/i}."
+
+    na "I love flowers, don't get me wrong-"
+
+    "Nate's eyes are aglow."
+
+    "His brow is furrowed and he's intent."
+
+    "I missed this look, he had it all the time back then."
+
+    na "But there just isn't any {i}passion{/i} in that for me."
+
+    na "Fighting for these causes - they're something I can do to make change, and {i}I'm{/i} in control of  leading the charge!"
+
+    "I smile, seeing him full of life." 
+
+    "I suppose I {i}have{/i} been the one to take charge a lot."
+
+    "I should let him take the reins every now and again, I know that."
+
+    "Not allowing him to be able to handle a situation is unfair to him."
+
+    w "Nate… you're right."
+
+    w "I shouldn't take control from you like that, I'm sorry."
+
+    w "I promise, I'll work on that."
+
+    w "I love who you are so much, I guess I just need to take a step back sometimes and let you be that man."
+
+    "Nate smiles, and moves closer. He takes my hand in his."
+
+    na "We'll get there, Wolfrick. We'll get there."
+
+    na "For the record, I don't {i}always{/i} want you to give me the reins. We need to handle things together, too."
+
+    na "...and I will do my best to listen to you more. I didn't realize I had started to ignore you."
+
+    na "I'm sorry, Wolfrick."
+
+    "We share a hug, and then a kiss."
+
+    "After we head back inside, Nic is nowhere to be found."
+
+    "At first, Nate has a look of worry, but that fades quickly."
+
+    "We hear him in the bathroom through the walls."
+
+    ni "HHUUUUUURGGHHHHHLLLLLLBLHHHHHHHH–"
+
+    "I turn to Nate and chuckle."
+
+    "He smirks at me and shrugs."
 
     $ set_chapter_progress(4)

@@ -23,11 +23,19 @@
             90
         ]
     },
+    "ch1_tension_044b12c4": {
+        "area": [
+            1040,
+            0,
+            640,
+            180
+        ]
+    },
     "ch1_tension_1935e765": {
         "area": [
-            1120,
+            1040,
             225,
-            240,
+            320,
             90
         ]
     },
@@ -42,9 +50,9 @@
     "ch1_tension_1fc5f5ff": {
         "area": [
             960,
-            45,
+            0,
             480,
-            180
+            225
         ]
     },
     "ch1_tension_202baee0": {
@@ -59,16 +67,24 @@
         "area": [
             1040,
             0,
+            880,
+            225
+        ]
+    },
+    "ch1_tension_241a5d0f": {
+        "area": [
             800,
-            180
+            135,
+            480,
+            225
         ]
     },
     "ch1_tension_32d0a279": {
         "area": [
             1040,
-            90,
+            45,
             480,
-            90
+            135
         ]
     },
     "ch1_tension_35a75202": {
@@ -90,9 +106,9 @@
     "ch1_tension_360cc551": {
         "area": [
             1040,
-            180,
+            135,
             320,
-            135
+            180
         ]
     },
     "ch1_tension_3aaa0039": {
@@ -106,9 +122,9 @@
     "ch1_tension_3e08bdf1": {
         "area": [
             1040,
-            180,
+            135,
             320,
-            135
+            180
         ]
     },
     "ch1_tension_5176a745": {
@@ -123,25 +139,41 @@
     "ch1_tension_56d44580": {
         "area": [
             1040,
-            135,
+            90,
             320,
+            180
+        ]
+    },
+    "ch1_tension_5a227ff1": {
+        "area": [
+            1040,
+            180,
+            240,
             135
         ]
     },
     "ch1_tension_5b2ba198": {
         "area": [
-            800,
+            720,
             0,
-            640,
+            720,
             225
         ],
         "properties": "bottom_right"
+    },
+    "ch1_tension_5e17d33b": {
+        "area": [
+            1040,
+            0,
+            480,
+            180
+        ]
     },
     "ch1_tension_5ea82c14": {
         "area": [
             1040,
             0,
-            480,
+            560,
             180
         ]
     },
@@ -169,6 +201,14 @@
             225,
             240,
             90
+        ]
+    },
+    "ch1_tension_724fa195": {
+        "area": [
+            800,
+            180,
+            480,
+            180
         ]
     },
     "ch1_tension_72cf64b2": {
@@ -248,16 +288,16 @@
     "ch1_tension_86053bd2": {
         "area": [
             1040,
-            45,
-            560,
-            135
+            0,
+            640,
+            180
         ]
     },
     "ch1_tension_86f459da": {
         "area": [
-            640,
+            560,
             180,
-            640,
+            720,
             180
         ]
     },
@@ -304,8 +344,16 @@
     "ch1_tension_9add7a19": {
         "area": [
             1040,
-            45,
+            0,
             720,
+            180
+        ]
+    },
+    "ch1_tension_a34d6711": {
+        "area": [
+            800,
+            225,
+            480,
             135
         ]
     },
@@ -333,12 +381,28 @@
             135
         ]
     },
+    "ch1_tension_b8d3c985": {
+        "area": [
+            1040,
+            90,
+            480,
+            90
+        ]
+    },
     "ch1_tension_cdb84f9c": {
         "area": [
             1040,
             0,
             320,
             225
+        ]
+    },
+    "ch1_tension_cdcf3bec": {
+        "area": [
+            480,
+            180,
+            800,
+            180
         ]
     },
     "ch1_tension_d8608353": {
@@ -368,9 +432,9 @@
     },
     "ch1_tension_e6df26b9": {
         "area": [
-            1040,
+            960,
             45,
-            320,
+            400,
             180
         ]
     },
@@ -385,9 +449,9 @@
     },
     "ch1_tension_f3f5a4c1": {
         "area": [
-            960,
+            880,
             0,
-            480,
+            560,
             225
         ]
     },
@@ -411,18 +475,27 @@
         "area": [
             1040,
             90,
-            240,
+            320,
             90
         ]
     },
     "ch2_romance_2d10eba3": {
         "area": [
             1440,
-            180,
+            90,
             480,
-            180
+            270
         ],
         "properties": "bottom_left"
+    },
+    "ch2_romance_2fcb1d93": {
+        "area": [
+            880,
+            0,
+            720,
+            180
+        ],
+        "properties": "bottom_right"
     },
     "ch2_romance_460447c5": {
         "area": [
@@ -437,8 +510,16 @@
         "area": [
             880,
             90,
-            480,
+            560,
             180
+        ]
+    },
+    "ch2_romance_52dd24ea": {
+        "area": [
+            560,
+            0,
+            480,
+            225
         ]
     },
     "ch2_romance_53546eaa": {
@@ -450,37 +531,78 @@
         ],
         "properties": "bottom_right"
     },
+    "ch2_romance_6ef06340": {
+        "area": [
+            560,
+            90,
+            480,
+            180
+        ]
+    },
     "ch2_romance_7206eb85": {
         "area": [
             1440,
             0,
             480,
+            135
+        ]
+    },
+    "ch2_romance_797de638": {
+        "area": [
+            1200,
+            180,
+            400,
             90
         ]
     },
     "ch2_romance_808472b3": {
         "area": [
-            1600,
+            1520,
             0,
-            320,
+            400,
+            135
+        ]
+    },
+    "ch2_romance_8414ac11": {
+        "area": [
+            1440,
+            45,
+            480,
             90
         ]
     },
     "ch2_romance_8dcf138d": {
         "area": [
             880,
-            180,
+            135,
             400,
-            180
+            225
+        ],
+        "properties": "bottom_right"
+    },
+    "ch2_romance_a876ae6a": {
+        "area": [
+            1040,
+            0,
+            560,
+            270
         ],
         "properties": "bottom_right"
     },
     "ch2_romance_b9402366": {
         "area": [
             880,
-            135,
+            90,
             400,
-            225
+            270
+        ]
+    },
+    "ch2_romance_bd4183a9": {
+        "area": [
+            1520,
+            0,
+            400,
+            135
         ]
     },
     "ch2_romance_beb4e15a": {
@@ -494,18 +616,52 @@
     },
     "ch2_romance_c6d0217a": {
         "area": [
-            1360,
+            1120,
             0,
-            560,
+            800,
             135
+        ]
+    },
+    "ch2_romance_cd536e52": {
+        "area": [
+            1600,
+            180,
+            320,
+            90
+        ],
+        "properties": "bottom_right"
+    },
+    "ch2_romance_d3a32609": {
+        "area": [
+            1360,
+            180,
+            560,
+            90
+        ],
+        "properties": "bottom_right"
+    },
+    "ch2_romance_d5e49495": {
+        "area": [
+            1200,
+            90,
+            400,
+            180
+        ]
+    },
+    "ch2_romance_d92de0ee": {
+        "area": [
+            560,
+            45,
+            480,
+            270
         ]
     },
     "ch2_romance_dcf2347a": {
         "area": [
             1200,
-            180,
+            135,
             320,
-            90
+            135
         ],
         "properties": "bottom_right"
     },
@@ -515,6 +671,15 @@
             180,
             480,
             90
+        ],
+        "properties": "bottom_right"
+    },
+    "ch2_romance_e850cc0d": {
+        "area": [
+            560,
+            0,
+            480,
+            315
         ],
         "properties": "bottom_right"
     },
@@ -529,10 +694,27 @@
     "ch2_romance_edbfa412": {
         "area": [
             880,
-            225,
+            180,
             400,
-            135
+            180
         ]
+    },
+    "ch2_romance_f379cef8": {
+        "area": [
+            1360,
+            45,
+            560,
+            225
+        ]
+    },
+    "ch2_romance_f59596ff": {
+        "area": [
+            240,
+            0,
+            800,
+            270
+        ],
+        "properties": "bottom_right"
     },
     "ch2_romance_f6df35b7": {
         "area": [

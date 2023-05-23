@@ -802,10 +802,18 @@ screen preferences():
                     textbutton _("After Choices") action Preference("after choices", "toggle")
                     textbutton _("Transitions") action InvertSelected(Preference("transitions", "toggle"))
 
+                null height (2 * gui.pref_spacing)
+
+                vbox:
+                    style_prefix "radio"
+                    label _("Font")
+                    textbutton _("Default"):
+                        action StylePreference("text", "default")
+                    textbutton _("OpenDyslexic"):
+                        action StylePreference("text", "dyslexic")
+
                 ## Additional vboxes of type "radio_pref" or "check_pref" can be
                 ## added here, to add additional creator-defined preferences.
-
-            null height (4 * gui.pref_spacing)
 
             grid 2 6:
                 style_prefix "slider"
@@ -1523,12 +1531,6 @@ style bubble_namebox:
 style bubble_who:
     xalign 0.5
     textalign 0.5
-    color "#000"
-
-style bubble_what:
-    align (0.5, 0.5)
-    text_align 0.5
-    layout "subtitle"
     color "#000"
 
 define bubble.frame = Frame("gui/bubble.png", 55, 55, 55, 95)

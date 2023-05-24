@@ -391,6 +391,7 @@ label ch2_romance:
         function add_attributes(['face_happy'])
         pause 0.7
         function remove_attributes(['face_happy'])
+        walk_out_right(2.3)
     show wolfrick:
         x0_95
         reverse
@@ -400,10 +401,25 @@ label ch2_romance:
         pause 0.7
         function remove_attributes(['face_happy'])
         flip()
+        walk_out_right()
 
     "He turns to smile at me and I smile back, as we head out into the living room."
 
+    scene bg apartment_couch with dissolve
+    show nate accessories_glasses accessories_hat shirt_chill pants_chill shirt_hoodie:
+        y1
+        x1_3
+        pause 1
+        walk_in_right(5)
+    show wolfrick accessories_glasses accessories_watch pants_joggers shirt_joggers:
+        y1
+        walk_in_right(2)
+        flip()
+
     "Nate closes Nic's door and we move to the opposite end of the room."
+
+    show nate at x0_5, no_offset
+    show wolfrick reverse at x0_2, no_offset, reverse
 
     w "So, want to explain what happened? How did this all come to fruition?"
 
@@ -423,17 +439,23 @@ label ch2_romance:
 
     na "Can you believe that?"
 
+    show wolfrick at quick_nod
+
     "I scoff."
 
     w "What a scrub. I bet Nic's ‘portion' makes up a hundred percent of the money in that account."
 
     "Zephyr has never been well-received by anyone in Nic's immediate family, and honestly for good reason."
 
+    show nate at slow_nod
+
     "Suddenly, Nate's sniffing the air."
 
     na "Do you smell fish?"
 
     "Oh, yeah. I forgot all about the dinner."
+
+    show wolfrick at push_right
 
     "I point over toward the romantic display sitting just fifteen feet away."
 
@@ -448,6 +470,8 @@ label ch2_romance:
     w "I'll ditch the candles and re-portion it to three plates and offer some to him."
 
     na "I'm sorry again, and thank you, Wolfrick."
+
+    show nate at hug_left
 
     "Nate leans in and kisses me on the cheek."
 

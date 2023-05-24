@@ -1,6 +1,18 @@
 label ch3_comfort:
 
     stop music
+    scene bg apartment_dining
+    show nic pants_chill shirt_chill face_sad:
+        y1
+        x0_8
+    show nate accessories_glasses accessories_hat shirt_chill pants_chill shirt_hoodie:
+        y1
+        x0_5
+    show wolfrick reverse accessories_glasses accessories_watch pants_joggers shirt_joggers:
+        y1
+        x0_2
+        reverse
+    with dissolve
 
     "It's been a few hours since Nic arrived, and we're all just sitting at the table in the dining room drinking."
 

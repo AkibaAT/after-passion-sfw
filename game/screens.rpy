@@ -546,8 +546,6 @@ style return_button:
 screen chapter_select(list=chapter_list, chapter_name=None, back_action=Return()):
     tag menu
 
-    style_prefix 'chapter'
-
     use game_menu(_("Chapter Select")):
 
         if chapter_name:
@@ -567,25 +565,6 @@ screen chapter_select(list=chapter_list, chapter_name=None, back_action=Return()
 
             if chapter_name:
                 textbutton _("Return") action back_action
-
-style chapter_vbox is vbox
-style chapter_button is button
-style chapter_button_text is button_text
-
-style chapter_label is game_menu_label
-style chapter_label_text is game_menu_label_text
-
-style chapter_vbox:
-    ypos 100
-    yanchor 0.0
-
-    spacing 26
-
-style chapter_button is default:
-    properties gui.button_properties("chapter_button")
-
-style chapter_button_text is default:
-    properties gui.button_text_properties("chapter_button")
 
 ## About screen ################################################################
 ##

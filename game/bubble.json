@@ -479,6 +479,22 @@
             90
         ]
     },
+    "ch2_romance_1dba1368": {
+        "area": [
+            480,
+            180,
+            240,
+            90
+        ]
+    },
+    "ch2_romance_20aa07ad": {
+        "area": [
+            1120,
+            225,
+            480,
+            135
+        ]
+    },
     "ch2_romance_2d10eba3": {
         "area": [
             1440,
@@ -497,6 +513,22 @@
         ],
         "properties": "bottom_right"
     },
+    "ch2_romance_32072089": {
+        "area": [
+            480,
+            180,
+            160,
+            90
+        ]
+    },
+    "ch2_romance_41db0529": {
+        "area": [
+            1120,
+            135,
+            400,
+            225
+        ]
+    },
     "ch2_romance_460447c5": {
         "area": [
             1520,
@@ -512,6 +544,14 @@
             90,
             560,
             180
+        ]
+    },
+    "ch2_romance_4a2c7180": {
+        "area": [
+            480,
+            0,
+            480,
+            270
         ]
     },
     "ch2_romance_52dd24ea": {
@@ -530,6 +570,14 @@
             90
         ],
         "properties": "bottom_right"
+    },
+    "ch2_romance_5c242691": {
+        "area": [
+            1120,
+            225,
+            400,
+            135
+        ]
     },
     "ch2_romance_6ef06340": {
         "area": [
@@ -571,6 +619,14 @@
             90
         ]
     },
+    "ch2_romance_86612e14": {
+        "area": [
+            1120,
+            90,
+            480,
+            270
+        ]
+    },
     "ch2_romance_8dcf138d": {
         "area": [
             880,
@@ -580,6 +636,23 @@
         ],
         "properties": "bottom_right"
     },
+    "ch2_romance_9f7ab171": {
+        "area": [
+            1120,
+            90,
+            480,
+            270
+        ]
+    },
+    "ch2_romance_a2c1947e": {
+        "area": [
+            1120,
+            135,
+            560,
+            225
+        ],
+        "properties": "bottom_left"
+    },
     "ch2_romance_a876ae6a": {
         "area": [
             1040,
@@ -588,6 +661,23 @@
             270
         ],
         "properties": "bottom_right"
+    },
+    "ch2_romance_a8fd4fdb": {
+        "area": [
+            1120,
+            135,
+            480,
+            225
+        ]
+    },
+    "ch2_romance_b426b09f": {
+        "area": [
+            1120,
+            135,
+            320,
+            225
+        ],
+        "properties": "bottom_left"
     },
     "ch2_romance_b9402366": {
         "area": [
@@ -620,6 +710,14 @@
             0,
             800,
             135
+        ]
+    },
+    "ch2_romance_cc0beb66": {
+        "area": [
+            480,
+            0,
+            400,
+            270
         ]
     },
     "ch2_romance_cd536e52": {
@@ -722,6 +820,191 @@
             90,
             480,
             180
+        ]
+    },
+    "ch2_romance_f705d880": {
+        "area": [
+            1120,
+            270,
+            480,
+            90
+        ]
+    },
+    "ch3_comfort_0371beba": {
+        "area": [
+            880,
+            0,
+            480,
+            225
+        ]
+    },
+    "ch3_comfort_0c422c08": {
+        "area": [
+            1040,
+            135,
+            320,
+            180
+        ]
+    },
+    "ch3_comfort_1417bf37": {
+        "area": [
+            480,
+            45,
+            480,
+            225
+        ]
+    },
+    "ch3_comfort_2235432f": {
+        "area": [
+            880,
+            90,
+            480,
+            135
+        ]
+    },
+    "ch3_comfort_23dde44a": {
+        "area": [
+            480,
+            90,
+            480,
+            180
+        ]
+    },
+    "ch3_comfort_47d3b77c": {
+        "area": [
+            880,
+            45,
+            480,
+            180
+        ]
+    },
+    "ch3_comfort_47ea9995": {
+        "area": [
+            800,
+            0,
+            560,
+            225
+        ]
+    },
+    "ch3_comfort_5047fdf1": {
+        "area": [
+            880,
+            0,
+            480,
+            225
+        ]
+    },
+    "ch3_comfort_59a9c7bd": {
+        "area": [
+            960,
+            45,
+            400,
+            180
+        ]
+    },
+    "ch3_comfort_678252b3": {
+        "area": [
+            480,
+            90,
+            400,
+            180
+        ]
+    },
+    "ch3_comfort_7cb6b68a": {
+        "area": [
+            800,
+            45,
+            560,
+            180
+        ],
+        "properties": "bottom_right"
+    },
+    "ch3_comfort_979f80fc": {
+        "area": [
+            1040,
+            180,
+            320,
+            135
+        ]
+    },
+    "ch3_comfort_9ea1855b": {
+        "area": [
+            1040,
+            180,
+            320,
+            135
+        ]
+    },
+    "ch3_comfort_a9df5c8f": {
+        "area": [
+            480,
+            135,
+            400,
+            135
+        ]
+    },
+    "ch3_comfort_aa568d0a": {
+        "area": [
+            1040,
+            90,
+            320,
+            225
+        ]
+    },
+    "ch3_comfort_ae86ae91": {
+        "area": [
+            1040,
+            0,
+            400,
+            360
+        ]
+    },
+    "ch3_comfort_b9db1009": {
+        "area": [
+            880,
+            45,
+            480,
+            180
+        ]
+    },
+    "ch3_comfort_bb4b51ee": {
+        "area": [
+            800,
+            0,
+            560,
+            225
+        ]
+    },
+    "ch3_comfort_bf179b12": {
+        "area": [
+            880,
+            90,
+            480,
+            135
+        ]
+    },
+    "ch3_comfort_d0a62f06": {
+        "area": [
+            1040,
+            180,
+            320,
+            135
+        ]
+    },
+    "ch3_comfort_de033777": {
+        "area": [
+            1040,
+            45,
+            400,
+            270
+        ]
+    },
+    "ch3_comfort_fee112a7": {
+        "area": [
+            1040,
+            90,
+            400,
+            225
         ]
     }
 }

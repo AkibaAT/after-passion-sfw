@@ -479,11 +479,84 @@
             90
         ]
     },
+    "ch2_romance_01d17b0b": {
+        "area": [
+            1280,
+            135,
+            400,
+            180
+        ]
+    },
+    "ch2_romance_07186461": {
+        "area": [
+            1200,
+            0,
+            400,
+            270
+        ]
+    },
+    "ch2_romance_094e328a": {
+        "area": [
+            480,
+            45,
+            560,
+            225
+        ]
+    },
+    "ch2_romance_0b677b1c": {
+        "area": [
+            1360,
+            135,
+            480,
+            270
+        ],
+        "properties": "bottom_left"
+    },
+    "ch2_romance_0fe0d896": {
+        "area": [
+            1440,
+            45,
+            480,
+            90
+        ]
+    },
+    "ch2_romance_10872213": {
+        "area": [
+            880,
+            180,
+            320,
+            90
+        ]
+    },
+    "ch2_romance_134c8125": {
+        "area": [
+            1120,
+            225,
+            480,
+            135
+        ]
+    },
+    "ch2_romance_1a83335f": {
+        "area": [
+            1280,
+            225,
+            400,
+            90
+        ]
+    },
     "ch2_romance_1dba1368": {
         "area": [
             480,
             180,
             240,
+            90
+        ]
+    },
+    "ch2_romance_1e8df9d6": {
+        "area": [
+            1200,
+            180,
+            400,
             90
         ]
     },
@@ -495,6 +568,22 @@
             135
         ]
     },
+    "ch2_romance_2423611b": {
+        "area": [
+            1440,
+            0,
+            480,
+            135
+        ]
+    },
+    "ch2_romance_29a7e4ee": {
+        "area": [
+            1040,
+            45,
+            480,
+            225
+        ]
+    },
     "ch2_romance_2d10eba3": {
         "area": [
             1440,
@@ -503,6 +592,14 @@
             270
         ],
         "properties": "bottom_left"
+    },
+    "ch2_romance_2e20b1bc": {
+        "area": [
+            1120,
+            180,
+            400,
+            180
+        ]
     },
     "ch2_romance_2fcb1d93": {
         "area": [
@@ -546,6 +643,14 @@
             180
         ]
     },
+    "ch2_romance_4a25137a": {
+        "area": [
+            480,
+            0,
+            560,
+            270
+        ]
+    },
     "ch2_romance_4a2c7180": {
         "area": [
             480,
@@ -553,6 +658,15 @@
             480,
             270
         ]
+    },
+    "ch2_romance_4ec494e2": {
+        "area": [
+            1440,
+            135,
+            480,
+            135
+        ],
+        "properties": "bottom_right"
     },
     "ch2_romance_52dd24ea": {
         "area": [
@@ -571,12 +685,44 @@
         ],
         "properties": "bottom_right"
     },
+    "ch2_romance_5a5fd5d2": {
+        "area": [
+            1120,
+            225,
+            480,
+            135
+        ]
+    },
     "ch2_romance_5c242691": {
         "area": [
             1120,
             225,
             400,
             135
+        ]
+    },
+    "ch2_romance_68b70dfa": {
+        "area": [
+            1120,
+            90,
+            480,
+            270
+        ]
+    },
+    "ch2_romance_6c0c440f": {
+        "area": [
+            640,
+            180,
+            400,
+            225
+        ]
+    },
+    "ch2_romance_6d248572": {
+        "area": [
+            1120,
+            135,
+            480,
+            225
         ]
     },
     "ch2_romance_6ef06340": {
@@ -594,6 +740,15 @@
             480,
             135
         ]
+    },
+    "ch2_romance_77bd2ce9": {
+        "area": [
+            880,
+            135,
+            480,
+            225
+        ],
+        "properties": "bottom_right"
     },
     "ch2_romance_797de638": {
         "area": [
@@ -627,12 +782,37 @@
             270
         ]
     },
+    "ch2_romance_87ddd835": {
+        "area": [
+            1120,
+            135,
+            480,
+            225
+        ]
+    },
+    "ch2_romance_8b1db9f2": {
+        "area": [
+            1280,
+            90,
+            400,
+            225
+        ]
+    },
     "ch2_romance_8dcf138d": {
         "area": [
             880,
             135,
             400,
             225
+        ],
+        "properties": "bottom_right"
+    },
+    "ch2_romance_93b413ea": {
+        "area": [
+            1200,
+            135,
+            320,
+            135
         ],
         "properties": "bottom_right"
     },
@@ -644,6 +824,14 @@
             270
         ]
     },
+    "ch2_romance_a0eaa9d9": {
+        "area": [
+            880,
+            225,
+            480,
+            135
+        ]
+    },
     "ch2_romance_a2c1947e": {
         "area": [
             1120,
@@ -652,6 +840,14 @@
             225
         ],
         "properties": "bottom_left"
+    },
+    "ch2_romance_a6050e7b": {
+        "area": [
+            1120,
+            270,
+            480,
+            90
+        ]
     },
     "ch2_romance_a876ae6a": {
         "area": [
@@ -704,6 +900,30 @@
         ],
         "properties": "bottom_right"
     },
+    "ch2_romance_c107c13a": {
+        "area": [
+            1280,
+            90,
+            640,
+            180
+        ]
+    },
+    "ch2_romance_c4deefd5": {
+        "area": [
+            480,
+            45,
+            560,
+            225
+        ]
+    },
+    "ch2_romance_c6856db4": {
+        "area": [
+            480,
+            180,
+            240,
+            90
+        ]
+    },
     "ch2_romance_c6d0217a": {
         "area": [
             1120,
@@ -711,6 +931,23 @@
             800,
             135
         ]
+    },
+    "ch2_romance_c90fe510": {
+        "area": [
+            880,
+            45,
+            560,
+            225
+        ]
+    },
+    "ch2_romance_ca2e9c6c": {
+        "area": [
+            1520,
+            45,
+            400,
+            90
+        ],
+        "properties": "bottom_right"
     },
     "ch2_romance_cc0beb66": {
         "area": [
@@ -728,6 +965,14 @@
             90
         ],
         "properties": "bottom_right"
+    },
+    "ch2_romance_ce2a6429": {
+        "area": [
+            1200,
+            90,
+            400,
+            180
+        ]
     },
     "ch2_romance_d3a32609": {
         "area": [
@@ -754,6 +999,14 @@
             270
         ]
     },
+    "ch2_romance_d9f53eea": {
+        "area": [
+            880,
+            90,
+            480,
+            270
+        ]
+    },
     "ch2_romance_dcf2347a": {
         "area": [
             1200,
@@ -772,6 +1025,14 @@
         ],
         "properties": "bottom_right"
     },
+    "ch2_romance_e341431d": {
+        "area": [
+            1120,
+            180,
+            400,
+            180
+        ]
+    },
     "ch2_romance_e850cc0d": {
         "area": [
             560,
@@ -780,6 +1041,14 @@
             315
         ],
         "properties": "bottom_right"
+    },
+    "ch2_romance_eafe6dd0": {
+        "area": [
+            1120,
+            135,
+            480,
+            225
+        ]
     },
     "ch2_romance_ecd8974d": {
         "area": [
@@ -805,6 +1074,15 @@
             225
         ]
     },
+    "ch2_romance_f3ef66e6": {
+        "area": [
+            1520,
+            180,
+            400,
+            90
+        ],
+        "properties": "bottom_right"
+    },
     "ch2_romance_f59596ff": {
         "area": [
             240,
@@ -813,6 +1091,14 @@
             270
         ],
         "properties": "bottom_right"
+    },
+    "ch2_romance_f6b6f6f6": {
+        "area": [
+            560,
+            135,
+            480,
+            270
+        ]
     },
     "ch2_romance_f6df35b7": {
         "area": [

@@ -25,72 +25,100 @@ label ch3_comfort:
 
     "I get it, with the break-up and his money being basically held hostage…"
 
+    voice "voice/3-comfort/001.opus"
     ni "That {i}stinky, matted-fur {b}bitch{/b}{/i} couldn't even handle an ounce of criticism!"
 
     "...he's been at it for a while."
 
+    voice "voice/3-comfort/002.opus"
     ni "That {i}limp-knotted {b}fucker{/b}{/i} better not show his face right now."
 
     "Shouldn't we be calming him down?"
 
     "Seemingly on a similar wavelength, Nate reaches a hand out to Nic and pats his shoulder."
 
+    voice "voice/3-comfort/003.opus"
     na "I know, hun. I know."
 
+    voice "voice/3-comfort/004.opus"
     na "We're here, it'll be okay. If he shows up we've got your-"
 
+    voice "voice/3-comfort/005.opus"
     ni "I {i}dare{/i} that {i}slimy-nosed {b}ass sniffer{/b}{i} to show his awful mug here!"
 
+    voice "voice/3-comfort/006.opus"
     ni "I mean, he slept with my co-worker!"
 
+    voice "voice/3-comfort/007.opus"
     ni "He did that shit and claimed it was to help {i}me{/i} out!"
 
+    voice "voice/3-comfort/008.opus"
     w "That's horrible! What kind of man cheats on their partner?"
 
+    voice "voice/3-comfort/009.opus"
     ni "I'm not going to miss the stupid shit he used to pull."
 
+    voice "voice/3-comfort/010.opus"
     ni "I made most of the money, you know? He {i}still{/i} belittled me!"
 
+    voice "voice/3-comfort/011.opus"
     ni "Constant remarks like \"You're my little dragon,\" and \"Let your wolf handle things, you're so fragile\"."
 
+    voice "voice/3-comfort/012.opus"
     ni "I always hated that shit, he'd set himself above me in everything!"
 
+    voice "voice/3-comfort/013.opus"
     na "Huh, that seems abusive. It sounds like he isolated you, too."
 
+    voice "voice/3-comfort/014.opus"
     ni "Well, yeah. He made me stop talking to other people unless he liked them."
 
+    voice "voice/3-comfort/015.opus"
     ni "He'd tell me I was {i}his{/i} and nobody else could have me."
 
+    voice "voice/3-comfort/016.opus"
     ni "Like, I'm my own person! I can't stand that shit."
 
+    voice "voice/3-comfort/017.opus"
     na "Wolves can get a bit territorial, it's part of the appeal - but that sounds extreme."
 
+    voice "voice/3-comfort/018.opus"
     w "...I only do that because you said you want me to."
 
     "Nate looks my way as if trying to act as though he heard me but is focused on Nic."
 
+    voice "voice/3-comfort/019.opus"
     ni "Yes, and he's always walking around all musky and sweaty - like, boy! You stink!"
 
+    voice "voice/3-comfort/020.opus"
     na "Ugh, I know! It's not appealing."
 
+    voice "voice/3-comfort/021.opus"
     w "...Hey! You said you like my musk!"
 
+    voice "voice/3-comfort/022.opus"
     na "Yeah, love, that's alright."
 
     "Is he even listening to me?"
 
+    voice "voice/3-comfort/023.opus"
     w "You could have said something-"
 
+    voice "voice/3-comfort/024.opus"
     ni "Oh, and don't even get me started on the constant need to look my best physically, otherwise people {i}compare{/i} us!"
 
+    voice "voice/3-comfort/025.opus"
     na "Oh, hun. Tell me about it! I couldn't keep it up, my sanity would have snapped before my body did!"
 
+    voice "voice/3-comfort/026.opus"
     w "...I love your body regardless…"
 
+    voice "voice/3-comfort/027.opus"
     na "Fuck Zephyr, honestly!"
 
     "He definitely isn't listening."
 
+    voice "voice/3-comfort/028.opus"
     ni "Goddamnit, he gets me {i}so{/i} worked up!"
 
     "Have I been awful to Nate?"
@@ -105,8 +133,10 @@ label ch3_comfort:
 
     "More than that, Nate has been so different lately, and it's starting to worry me."
 
+    voice "voice/3-comfort/029.opus"
     na "Nic, hun… calm down, he's not here and you're safe."
 
+    voice "voice/3-comfort/030.opus"
     w "Nate, do you think we could talk on the balcony for a minute?"
 
     "Nate looks at me with a concerned expression."
@@ -117,44 +147,60 @@ label ch3_comfort:
 
     ##Balcony
 
+    voice "voice/3-comfort/031.opus"
     na "Hey, love. What's up?"
 
+    voice "voice/3-comfort/032.opus"
     w "Am I that bad?"
 
     "I see the confusion on his face."
 
+    voice "voice/3-comfort/033.opus"
     na "What are you talking about?"
 
+    voice "voice/3-comfort/034.opus"
     w "Nate, you can barely listen to me or focus on me lately. Have I been driving you away?"
 
     "His eyes widen, and he looks away for a moment."
 
+    voice "voice/3-comfort/035.opus"
     na "I don't think this is the best time to-"
 
     "I shake my head."
 
+    voice "voice/3-comfort/036.opus"
     w "Neither of us are nearly as plastered as Nic, if there's ever a time it's going to be now."
 
+    voice "voice/3-comfort/037.opus"
     w "You had me thinking you enjoyed the stereotypical 'wolf boyfriend' things, and I'm just now finding out on our {i}third{/i} anniversary that you don't?"
 
+    voice "voice/3-comfort/038.opus"
     na "Well, it's not that I don't enjoy them…"
 
+    voice "voice/3-comfort/039.opus"
     na "There are aspects of that that are very appealing to me, but sometimes the expectations of that kind of relationship get rough!"
 
+    voice "voice/3-comfort/040.opus"
     w "But… I don't {i}have{/i} any expectations of you, Nate! I just want to love you."
 
+    voice "voice/3-comfort/041.opus"
     na "Wolfrick, {i}you{/i} don't have to expect them of me."
 
+    voice "voice/3-comfort/042.opus"
     na "You being-"
 
     "Nate motions to all of me."
 
+    voice "voice/3-comfort/043.opus"
     na "Well, {i}you{/i} - puts this… this {i}image{/i} of a put together couple into peoples' minds!"
 
+    voice "voice/3-comfort/044.opus"
     na "A wolf with an amazing body and that musk, and his partner who {i}must{/i} be a cute, little submissive bottom!"
 
+    voice "voice/3-comfort/045.opus"
     na "It's always \"Wolfrick makes the big bucks, Nate must be his trophy husband!\" or \"Wow, Nate! You must love having such a strong and protective wolf for a husband\"!"
 
+    voice "voice/3-comfort/046.opus"
     na "Everyone around us says this stuff and everyone else holds the expectations against me {i}for{/i} you, but you never seem to notice!"
 
     "I'm stunned. Is his confidence taking blows from everyone all the time like this?"
@@ -167,44 +213,62 @@ label ch3_comfort:
 
     "I need to express what I feel now."
 
+    voice "voice/3-comfort/047.opus"
     w "It feels like you ignore me all the time."
 
+    voice "voice/3-comfort/048.opus"
     w "You put your causes first, and I love that you care…"
 
+    voice "voice/3-comfort/049.opus"
     w "...but sometimes you get so invested that you forget to do things I need help with, or outright don't listen when I'm trying to communicate."
 
+    voice "voice/3-comfort/050.opus"
     na "Do I really? I guess I hadn't noticed…"
 
+    voice "voice/3-comfort/051.opus"
     w "Well, there was earlier - you got so drawn in to the news broadcast that you forgot to order lunch, and then I tried to make it up by making dinner for us and that got ruined."
 
+    voice "voice/3-comfort/052.opus"
     na "{i}Ruined?!{/i} My apologies for helping out my cousin, so sorry it interrupted {i}dinner{/i} but-"
 
+    voice "voice/3-comfort/053.opus"
     w "N-no, that's not the issue, Nate! I don't care that you're - no, {i}we're{/i} - helping Nic!"
 
+    voice "voice/3-comfort/054.opus"
     w "I'm upset that I couldn't make the night romantic for us!"
 
     "Nate is silent and I can see his eyes welling up."
 
     "I hate fighting with him, and it feels like we're heading that way."
 
+    voice "voice/3-comfort/055.opus"
     w "Then, there's just now with Nic - don't get me wrong, I love you and your family will always be welcome."
 
+    voice "voice/3-comfort/056.opus"
     w "You just…barely even acknowledged that I was there. It made me feel like I was eavesdropping while you guys were taking potshots at wolves in general."
 
+    voice "voice/3-comfort/057.opus"
     w "It hurt, Nate."
 
+    voice "voice/3-comfort/058.opus"
     na "Oh… I guess that was all pretty hurtful, yeah."
 
+    voice "voice/3-comfort/059.opus"
     na "I'm sorry…"
 
+    voice "voice/3-comfort/060.opus"
     na "I guess I feel like sometimes you make all the decisions for us, like while we were part of the resistance against the former High King Emperor Rexford."
 
+    voice "voice/3-comfort/061.opus"
     na "I was hailed as some \"chosen one\" but it always felt like you did everything, up until the last second."
 
+    voice "voice/3-comfort/062.opus"
     na "I guess after we succeeded in overthrowing him and helped assign Lycanus to the throne, I felt like I needed something of my own to focus on."
 
+    voice "voice/3-comfort/063.opus"
     na "The flower shop helped, but there was something {i}missing{/i}."
 
+    voice "voice/3-comfort/064.opus"
     na "I love flowers, don't get me wrong-"
 
     "Nate's eyes are aglow."
@@ -213,8 +277,10 @@ label ch3_comfort:
 
     "I missed this look, he had it all the time back then."
 
+    voice "voice/3-comfort/065.opus"
     na "But there just isn't any {i}passion{/i} in that for me."
 
+    voice "voice/3-comfort/066.opus"
     na "Fighting for these causes - they're something I can do to make change, and {i}I'm{/i} in control of  leading the charge!"
 
     "I smile, seeing him full of life." 
@@ -225,22 +291,30 @@ label ch3_comfort:
 
     "Not allowing him to be able to handle a situation is unfair to him."
 
+    voice "voice/3-comfort/067.opus"
     w "Nate… you're right."
 
+    voice "voice/3-comfort/068.opus"
     w "I shouldn't take control from you like that, I'm sorry."
 
+    voice "voice/3-comfort/069.opus"
     w "I promise, I'll work on that."
 
+    voice "voice/3-comfort/070.opus"
     w "I love who you are so much, I guess I just need to take a step back sometimes and let you be that man."
 
     "Nate smiles, and moves closer. He takes my hand in his."
 
+    voice "voice/3-comfort/071.opus"
     na "We'll get there, Wolfrick. We'll get there."
 
+    voice "voice/3-comfort/072.opus"
     na "For the record, I don't {i}always{/i} want you to give me the reins. We need to handle things together, too."
 
+    voice "voice/3-comfort/073.opus"
     na "...and I will do my best to listen to you more. I didn't realize I had started to ignore you."
 
+    voice "voice/3-comfort/074.opus"
     na "I'm sorry, Wolfrick."
 
     "We share a hug, and then a kiss."
@@ -251,6 +325,7 @@ label ch3_comfort:
 
     "We hear him in the bathroom through the walls."
 
+    voice "voice/3-comfort/075.opus"
     ni "HHUUUUUURGGHHHHHLLLLLLBLHHHHHHHH–"
 
     "I turn to Nate and chuckle."

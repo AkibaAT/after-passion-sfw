@@ -1,3 +1,5 @@
+default player_name="Human From The Alley"
+
 label ch0_awakening:
 
     stop music
@@ -25,14 +27,11 @@ label ch0_awakening:
     voice "voice/0-awakening/007.opus" 
     "Aside from my name, I can't remember {i}anything{i}."
 
-    
     voice "voice/0-awakening/MyNameIs.opus" 
-    $ player_name = renpy.input("My name is...")
+    $ player_input = renpy.input("My name is...").strip()
 
-    $ player_name = player_name.strip()
-
-    if player_name != "Sonic":
-        $ player_name = "Human From The Alley"
+    if player_name == "Sonic":
+        $ player_name = "Sonic"
 
     voice "voice/0-awakening/ThatSoundsRight.opus"
     "%(player_name)s. That sounds right." 

@@ -5,9 +5,10 @@ label ch3_comfort:
     show nic pants_chill shirt_chill face_sad:
         y1
         x0_8
-    show nate accessories_glasses accessories_hat shirt_chill pants_chill shirt_hoodie:
+    show nate reverse accessories_glasses shirt_chill pants_chill shirt_hoodie:
         y1
         x0_5
+        reverse
     show wolfrick reverse accessories_glasses accessories_watch pants_joggers shirt_joggers:
         y1
         x0_2
@@ -100,7 +101,7 @@ label ch3_comfort:
 
     "...still…"
 
-    "While I'm not nearly the abusive asshole Zephyr is, I feel like there's a line between us and I am dancing on the very first treadings of it."
+    "While I'm not nearly the abusive asshole Zephyr is, I feel like there's a line between us, and I am dancing on the very first treadings of it."
 
     "More than that, Nate has been so different lately, and it's starting to worry me."
 

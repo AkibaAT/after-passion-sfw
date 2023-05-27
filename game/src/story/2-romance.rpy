@@ -186,7 +186,7 @@ label ch2_romance:
     show wolfrick:
         walk_out_right()
     scene bg apartment_corner with dissolve
-    show nate accessories_glasses accessories_hat shirt_chill pants_chill shirt_hoodie at y1:
+    show nate accessories_glasses shirt_chill pants_chill shirt_hoodie at y1:
         walk_in_right(9)
         pause 0.1
         push_right
@@ -353,7 +353,7 @@ label ch2_romance:
         pause 0.1
         walk_to(2)
         pause 0.1
-    show nate accessories_glasses accessories_hat shirt_chill pants_chill shirt_hoodie:
+    show nate accessories_glasses shirt_chill pants_chill shirt_hoodie:
         y1
         x1_3
         pause 1
@@ -445,7 +445,7 @@ label ch2_romance:
     "He turns to smile at me and I smile back, as we head out into the living room."
 
     scene bg apartment_couch with dissolve
-    show nate accessories_glasses accessories_hat shirt_chill pants_chill shirt_hoodie:
+    show nate accessories_glasses shirt_chill pants_chill shirt_hoodie:
         y1
         x1_3
         pause 1

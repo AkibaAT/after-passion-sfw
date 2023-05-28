@@ -92,7 +92,7 @@ label ch1_tension:
 
     "When I pointed it out to Nate, he fell in love with this place. Now, five years later, here we are."
 
-    show wolfrick face_neutral
+    show wolfrick face_stern
 
     "The sign on the door says {i}'Open'{/i} so he might be with a customer."
 
@@ -137,7 +137,7 @@ label ch1_tension:
 
     "I swing the door of Nate's flower shop open, making sure not to open it too fast but still make an excitable entrance!"
 
-    show wolfrick face_neutral
+    show wolfrick face_stern
 
     "..."
 
@@ -186,7 +186,7 @@ label ch1_tension:
 
     play sound "effects/door_open.opus" volume 0.6
     scene bg flower_shop_backoffice
-    show nate reverse accessories_hat accessories_glasses shirt_chill shirt_overall at y1, x0_75, reverse
+    show nate reverse accessories_hat_leaf accessories_glasses shirt_chill shirt_overall at y1, x0_75, reverse
     show wolfrick reverse accessories_watch accessories_glasses pants_formal shirt_formal at y1, x0_2, reverse
     with dissolve
 
@@ -200,7 +200,7 @@ label ch1_tension:
     w "Hey, love. What's going on with this?"
 
     show nate face_happy at flip_back()
-    show wolfrick face_neutral:
+    show wolfrick face_stern:
         pause 0.8
         nod
 
@@ -243,7 +243,7 @@ label ch1_tension:
     voice "voice/1-tension/010.opus"
     na "The ones which were in effort of making the lower-end of the housing economy more affordable…?"
 
-    show wolfrick face_neutral
+    show wolfrick face_stern
 
     voice "voice/1-tension/011.opus"
     na "They would also allow for easier citizenship to the people who have begun to join us in this world recently."
@@ -259,7 +259,7 @@ label ch1_tension:
     voice "voice/1-tension/012.opus"
     w "Shit, maybe I should have heard that beggar out more. He might have been an {i}isekai'd individual{/i}."
 
-    show wolfrick face_neutral
+    show wolfrick face_stern
 
     voice "voice/1-tension/013.opus"
     w "Oh well, I'll just report him to the Isekai Bureau of Science."
@@ -281,7 +281,7 @@ label ch1_tension:
     w "That's never {i}not{/i} funny."
 
     show nate face_happy
-    show wolfrick face_neutral at no_offset
+    show wolfrick face_stern at no_offset
 
     "He grins in spite of himself."
 
@@ -312,7 +312,7 @@ label ch1_tension:
 
     "The way the council has been treating them is horrendous - they all end up living together in buildings that are even more cramped than hostels."
 
-    show wolfrick face_neutral
+    show wolfrick face_stern
 
     "Still, Nate doesn't seem to notice the things I have."
 
@@ -348,7 +348,7 @@ label ch1_tension:
 
     "I look around. Nate was supposed to have lunch here already, but there's nothing."
 
-    show wolfrick face_neutral
+    show wolfrick face_stern
     show nate face_concerned
 
     "Looking back to Nate, he's sheepishly scratching his neck, looking away."
@@ -411,7 +411,7 @@ label ch1_tension:
 
     na "You're cheesey. Sorry for forgetting."
 
-    show wolfrick face_neutral
+    show wolfrick face_stern
 
     w "That's alright, love. We'll make up for it {i}later on tonight{/i}, if you catch my drift~"
 
@@ -455,7 +455,7 @@ label ch1_tension:
 
     "He only did it because I loved it so much."
 
-    show wolfrick face_neutral
+    show wolfrick face_stern
 
     na "Well, you should probably go grab lunch and get back to the office. I'll grab something quick in a bit, we can have a nice dinner tonight."
 
@@ -463,7 +463,7 @@ label ch1_tension:
 
     "I nod."
 
-    show wolfrick face_neutral at no_offset
+    show wolfrick face_stern at no_offset
 
     w "Right-O."
 
@@ -475,7 +475,7 @@ label ch1_tension:
 
     na "Mmmmfgh-luvya-mfgfhhh."
 
-    show wolfrick face_neutral
+    show wolfrick face_stern
 
     w "Mffghg-luvyamore-mffffgh."
 
@@ -488,7 +488,7 @@ label ch1_tension:
 
     "I pop the finger guns."
 
-    show wolfrick face_neutral
+    show wolfrick face_stern
 
     w "Hasta la vista, baby."
 
@@ -503,7 +503,7 @@ label ch1_tension:
     "Nate rolls his eyes, and follows me out of the office."
 
     scene bg flower_shop_inside
-    show nate reverse accessories_hat accessories_glasses shirt_chill shirt_overall:
+    show nate reverse accessories_hat_leaf accessories_glasses shirt_chill shirt_overall:
         reverse
         xpos -0.5
         y1

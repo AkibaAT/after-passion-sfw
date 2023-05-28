@@ -10,8 +10,12 @@ layeredimage wolfrick:
     group body auto prefix "body":
         attribute chill default
     group face auto prefix "face":
-        attribute neutral default:
-            speakAnim("Wolfrick", combineDisplay("wolfrick_face_neutral_blinking", "wolfrick_speak"), "wolfrick_face_neutral_blinking")
+        attribute smiling default:
+            speakAnim("Wolfrick", combineDisplay("wolfrick_face_smiling_blinking", "wolfrick_speak"), "wolfrick_face_smiling_blinking")
+        attribute happy-with-eyes:
+            speakAnim("Wolfrick", combineDisplay("wolfrick_face_happy-with-eyes_blinking", "wolfrick_speak"), "wolfrick_face_happy-with-eyes_blinking")
+        attribute stern:
+            speakAnim("Wolfrick", combineDisplay("wolfrick_face_stern_blinking", "wolfrick_speak"), "wolfrick_face_stern_blinking")
         attribute angry:
             "wolfrick_face_angry_blinking"
         attribute concerned:
@@ -36,7 +40,9 @@ layeredimage wolfrick:
             "wolfrick_shirt_chill_formal"
     group shirt if_any ["body_crossed"] auto prefix "shirt" variant "crossed"
 
-image wolfrick_face_neutral_blinking = combineDisplay("wolfrick_face_neutral", "wolfrick_blink")
+image wolfrick_face_smiling_blinking = combineDisplay("wolfrick_face_smiling", "wolfrick_blink_big")
+image wolfrick_face_happy-with-eyes_blinking = combineDisplay("wolfrick_face_happy-with-eyes", "wolfrick_blink_big")
+image wolfrick_face_stern_blinking = combineDisplay("wolfrick_face_stern", "wolfrick_blink")
 image wolfrick_face_angry_blinking = combineDisplay("wolfrick_face_angry", "wolfrick_blink")
 image wolfrick_face_concerned_blinking = combineDisplay("wolfrick_face_concerned", "wolfrick_blink_big")
 image wolfrick_face_embarrassed_blinking = combineDisplay("wolfrick_face_embarrassed", "wolfrick_blink_big")
@@ -54,13 +60,13 @@ image wolfrick_speak:
 image wolfrick_blink:
     alpha 0
     choice:
-        5.0
+        3.5
     choice:
         2.2
     choice:
-        4.5
+        1.7
     choice:
-        0.4
+        0.7
     alpha 1
     "wolfrick_eyes_half"
     .016
@@ -73,13 +79,13 @@ image wolfrick_blink:
 image wolfrick_blink_big:
     alpha 0
     choice:
-        5.0
+        3.5
     choice:
         2.2
     choice:
-        4.5
+        1.7
     choice:
-        0.4
+        0.7
     alpha 1
     "wolfrick_eyes_big_half"
     .016
@@ -92,13 +98,13 @@ image wolfrick_blink_big:
 image wolfrick_blink_sad:
     alpha 0
     choice:
-        5.0
+        3.5
     choice:
         2.2
     choice:
-        4.5
+        1.7
     choice:
-        0.4
+        0.7
     alpha 1
     "wolfrick_eyes_sad_half"
     .016

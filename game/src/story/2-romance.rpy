@@ -118,7 +118,7 @@ label ch2_romance:
 
     "I look to see the person standing next to Nate - his cousin, Nic."
 
-    show wolfrick face_neutral
+    show wolfrick face_stern
 
     "Looking back to Nate, he puts on a smile."
 
@@ -140,7 +140,7 @@ label ch2_romance:
     voice "voice/2-romance/007.opus"
     w "Happy anniversary."
 
-    show wolfrick face_neutral
+    show wolfrick face_stern
 
     "I turn toward Nic."
 
@@ -156,7 +156,7 @@ label ch2_romance:
     voice "voice/2-romance/010.opus"
     w "Woah, that's great news!"
 
-    show wolfrick face_neutral:
+    show wolfrick face_stern:
         pause 0.7
         parallel:
             push_left(distance=10)
@@ -260,7 +260,7 @@ label ch2_romance:
     show nate:
         pause 0.3
         walk_to(9)
-    show wolfrick face_neutral:
+    show wolfrick face_stern:
         nod()
         pause 0.2
         walk_to(7, 2)
@@ -321,7 +321,7 @@ label ch2_romance:
 
     "I smile at Nate and lift up as many of the bags of luggage as I can."
 
-    show wolfrick face_neutral
+    show wolfrick face_stern
 
     "Nic is holding a bag, and Nate has another one. I am carrying the other three."
 

@@ -310,3 +310,119 @@ label ch5_after_passion:
 
     voice "voice/5-after_passion/064.opus"
     ni "I’m taking my money, and then you and I will never meet again."
+
+    voice "voice/5-after_passion/065.opus"
+    ni "I’m done supporting a criminal."
+
+    voice "voice/5-after_passion/066.opus"
+    z "B-but, baby!"
+
+    "Nic shakes his head and holds out his hand."
+
+    voice "voice/5-after_passion/067.opus"
+    ni "Hand it over."
+
+    "Zephyr is…quivering?"
+
+    "Tears are forming in his eyes, but he produces his wallet and takes the ATM card out of it."
+
+    voice "voice/5-after_passion/068.opus"
+    z "H-here. It’s yours."
+
+    "Nic smirks over Zephyr confidently and takes the card."
+
+    "Somehow, he’s come out on top."
+
+    voice "voice/5-after_passion/069.opus"
+    ni "Now, there’s the door. {i}Please{/i} let it hit you on the way out."
+
+    "With that, Zephyr scrambles to his feet and rushes out the door."
+
+    "Nic turns to us and smiles."
+
+    voice "voice/5-after_passion/070.opus"
+    ni "So, how’d I do?"
+
+    "Nate is upon him in a flash, hugging him."
+
+    "I move to join them both."
+
+    voice "voice/5-after_passion/071.opus"
+    na "Nic, that was amazing!"
+
+    voice "voice/5-after_passion/071.opus"
+    na "You didn’t let him get to you and stood your ground."
+
+    voice "voice/5-after_passion/072.opus"
+    w "Yeah, I’m impressed! W-was that scary? Are you alright?"
+
+    "Nic thinks for a moment and then shrugs."
+
+    voice "voice/5-after_passion/073.opus"
+    ni "Hmm… nah! At first I was scared, yeah. But then I realized I’m better off."
+
+    voice "voice/5-after_passion/074.opus"
+    ni "Oh! Anyway, I’ve gotta finish getting ready~"
+
+    "With that, he’s back into the bathroom."
+
+    "Nate and I look at one another."
+
+    voice "voice/5-after_passion/075.opus"
+    na "Talk about whiplash."
+
+    voice "voice/5-after_passion/076.opus"
+    w "Yeah…"
+
+    "Nate looks to the side, sullenly."
+
+    "He probably feels guilty for something he shouldn't."
+
+    "Having Zephyr come into the apartment, having Nic move in which brought Zephyr here…"
+
+    "Nate beats himself up over things like that sometimes, but I don't know that that's what is wrong."
+
+    "I decide to ask  and hear him out before jumping to conclusions."
+
+    "I step closer to him."
+
+    voice "voice/5-after_passion/077.opus"
+    w "Nate?"
+
+    voice "voice/5-after_passion/078.opus"
+    na "Yes, Wolfrick?"
+
+    voice "voice/5-after_passion/079.opus"
+    w "What's the matter?"
+
+    voice "voice/5-after_passion/080.opus"
+    na "Are we going to… be okay?"
+
+    "Oh. That's what he's worried about."
+
+    voice "voice/5-after_passion/081.opus"
+    na "I don't ever want to fight with you like what just happened here."
+
+    voice "voice/5-after_passion/082.opus"
+    w "We'll be okay, Nate."
+
+    "We have one thing going for us that Zephyr couldn't figure out."
+
+    voice "voice/5-after_passion/083.opus"
+    w "You're {i}more{/i} than enough for me."
+
+    "That one thing makes all the difference."
+
+    "I pull my manatee in close, and embrace him."
+
+    "No, not my manatee. My Nate."
+
+    "I'm realizing more and more that I don't need to be the {i}wolf{/i} of his dreams."
+
+    voice "voice/5-after_passion/084.opus"
+    w "Nate, I'm here. Your husband is here."
+
+    "Nate gently hums and I nuzzle him gently."
+
+    voice "voice/5-after_passion/085.opus"
+    na "Mmm… My husband~"

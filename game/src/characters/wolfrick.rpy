@@ -28,9 +28,9 @@ layeredimage wolfrick:
             "wolfrick_face_shocked_blinking"
     group eyes auto prefix "eyes"
     group accessories auto prefix "accessories" multiple:
-        attribute watch if_all "reverse":
+        attribute watch if_all "reverse" if_not "body_crossed":
             "wolfrick_reverse_accessories_watch"
-        attribute watch if_not "reverse":
+        attribute watch if_not ["reverse", "body_crossed"]:
             "wolfrick_accessories_watch"
     group pants auto prefix "pants"
     group shirt if_any ["body_chill"] auto prefix "shirt" variant "chill":

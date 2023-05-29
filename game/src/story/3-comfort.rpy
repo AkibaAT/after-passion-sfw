@@ -6,14 +6,14 @@ label ch3_comfort:
     centered "Chapter [chapter_list[3][title]]"
 
     scene bg apartment_dining
-    show nic pants_chill shirt_chill face_sad:
+    show nic face_angry pants_chill shirt_chill:
         y1
         x0_8
     show nate reverse accessories_glasses shirt_chill pants_chill shirt_hoodie:
         y1
         x0_5
         reverse
-    show wolfrick reverse accessories_glasses accessories_watch pants_joggers shirt_joggers:
+    show wolfrick face_stern reverse accessories_glasses accessories_watch pants_joggers shirt_joggers:
         y1
         x0_2
         reverse
@@ -29,15 +29,19 @@ label ch3_comfort:
 
     "I get it, with the break-up and his money being basically held hostage…"
 
-    voice "voice/3-comfort/001.opus"
+    #voice "voice/3-comfort/001.opus"
     ni "That {i}stinky, matted-fur {b}bitch{/b}{/i} couldn't even handle an ounce of criticism!"
 
     "...he's been at it for a while."
 
-    voice "voice/3-comfort/002.opus"
+    #voice "voice/3-comfort/002.opus"
     ni "That {i}limp-knotted {b}fucker{/b}{/i} better not show his face right now."
 
+    show wolfrick face_concerned
+
     "Shouldn't we be calming him down?"
+
+    show nate at push_right
 
     "Seemingly on a similar wavelength, Nate reaches a hand out to Nic and pats his shoulder."
 
@@ -47,51 +51,55 @@ label ch3_comfort:
     voice "voice/3-comfort/004.opus"
     na "We're here, it'll be okay. If he shows up we've got your-"
 
-    voice "voice/3-comfort/005.opus"
+    #voice "voice/3-comfort/005.opus"
     ni "I {i}dare{/i} that {i}slimy-nosed {b}ass sniffer{/b}{i} to show his awful mug here!"
 
-    voice "voice/3-comfort/006.opus"
+    #voice "voice/3-comfort/006.opus"
     ni "I mean, he slept with my co-worker!"
 
-    voice "voice/3-comfort/007.opus"
+    #voice "voice/3-comfort/007.opus"
     ni "He did that shit and claimed it was to help {i}me{/i} out!"
 
     voice "voice/3-comfort/008.opus"
+    show wolfrick body_crossed face_concerned
+
     w "That's horrible! What kind of man cheats on their partner?"
 
-    voice "voice/3-comfort/009.opus"
+    #voice "voice/3-comfort/009.opus"
     ni "I'm not going to miss the stupid shit he used to pull."
 
-    voice "voice/3-comfort/010.opus"
+    #voice "voice/3-comfort/010.opus"
     ni "I made most of the money, you know? He {i}still{/i} belittled me!"
 
-    voice "voice/3-comfort/011.opus"
+    #voice "voice/3-comfort/011.opus"
     ni "Constant remarks like \"You're my little dragon,\" and \"Let your wolf handle things, you're so fragile\"."
 
-    voice "voice/3-comfort/012.opus"
+    #voice "voice/3-comfort/012.opus"
     ni "I always hated that shit, he'd set himself above me in everything!"
 
     voice "voice/3-comfort/013.opus"
     na "Huh, that seems abusive. It sounds like he isolated you, too."
 
-    voice "voice/3-comfort/014.opus"
+    #voice "voice/3-comfort/014.opus"
     ni "Well, yeah. He made me stop talking to other people unless he liked them."
 
-    voice "voice/3-comfort/015.opus"
+    #voice "voice/3-comfort/015.opus"
     ni "He'd tell me I was {i}his{/i} and nobody else could have me."
 
-    voice "voice/3-comfort/016.opus"
+    #voice "voice/3-comfort/016.opus"
     ni "Like, I'm my own person! I can't stand that shit."
 
     voice "voice/3-comfort/017.opus"
     na "Wolves can get a bit territorial, it's part of the appeal - but that sounds extreme."
 
     voice "voice/3-comfort/018.opus"
+    show wolfrick face_sad
+
     w "...I only do that because you said you want me to."
 
     "Nate looks my way as if trying to act as though he heard me but is focused on Nic."
 
-    voice "voice/3-comfort/019.opus"
+    #voice "voice/3-comfort/019.opus"
     ni "Yes, and he's always walking around all musky and sweaty - like, boy! You stink!"
 
     voice "voice/3-comfort/020.opus"
@@ -106,9 +114,9 @@ label ch3_comfort:
     "Is he even listening to me?"
 
     voice "voice/3-comfort/023.opus"
-    w "You could have said something-"
+    w "You should have said something-"
 
-    voice "voice/3-comfort/024.opus"
+    #voice "voice/3-comfort/024.opus"
     ni "Oh, and don't even get me started on the constant need to look my best physically, otherwise people {i}compare{/i} us!"
 
     voice "voice/3-comfort/025.opus"
@@ -118,11 +126,13 @@ label ch3_comfort:
     w "...I love your body regardless…"
 
     voice "voice/3-comfort/027.opus"
+    show nate face_angry
+
     na "Fuck Zephyr, honestly!"
 
     "He definitely isn't listening."
 
-    voice "voice/3-comfort/028.opus"
+    #voice "voice/3-comfort/028.opus"
     ni "Goddamnit, he gets me {i}so{/i} worked up!"
 
     "Have I been awful to Nate?"
@@ -132,6 +142,8 @@ label ch3_comfort:
     "Yeah… Zephyr has committed a long list of terrible deeds, and thankfully Nic is finally out of that relationship.."
 
     "...still…"
+
+    show nate face_neutral
 
     "While I'm not nearly the abusive asshole Zephyr is, I feel like there's a line between us, and I am dancing on the very first treadings of it."
 
@@ -143,41 +155,90 @@ label ch3_comfort:
     voice "voice/3-comfort/030.opus"
     w "Nate, do you think we could talk on the balcony for a minute?"
 
+    show nate:
+        flip_back()
+        pause 0.2
+        function add_attributes(["face_concerned"])
+
     "Nate looks at me with a concerned expression."
 
+    show nate -reverse:
+        no_reverse
+    show wolfrick body_chill:
+        flip_back()
+        walk_out_left()
+
+    play sound ['<silence 0.6>', 'audio/effects/door_open.opus'] volume 0.5
     "I stand up to walk out the balcony door."
+
+    show nate:
+        flip()
+        pause 0.1
+        push_right(2)
+        pause 0.1
+        flip_back()
+        pause 0.1
+        walk_out_left()
 
     "Nate pats Nic on the shoulder and stands up to follow."
 
-    ##Balcony
+    scene bg apartment_balcony_day
+    show nate accessories_glasses shirt_chill pants_chill shirt_hoodie:
+        y1
+        x1_3
+    show wolfrick reverse face_sad accessories_glasses accessories_watch pants_joggers shirt_joggers:
+        y1
+        x0_3
+        reverse
+    with dissolve
+    show nate:
+        walk_in_right()
 
     voice "voice/3-comfort/031.opus"
     na "Hey, love. What's up?"
 
+    show wolfrick face_concerned
+    show nate:
+        reset_pos(8)
+
     voice "voice/3-comfort/032.opus"
     w "Am I that bad?"
+
+    show nate face_shocked
 
     "I see the confusion on his face."
 
     voice "voice/3-comfort/033.opus"
+    show nate face_concerned
+
     na "What are you talking about?"
 
+    show wolfrick face_sad
     voice "voice/3-comfort/034.opus"
     w "Nate, you can barely listen to me or focus on me lately. Have I been driving you away?"
 
+    show nate face_shocked
+
     "His eyes widen, and he looks away for a moment."
 
+    show nate face_concerned
     voice "voice/3-comfort/035.opus"
     na "I don't think this is the best time to-"
 
+    show wolfrick at quick_shake
+
     "I shake my head."
 
+    show wolfrick face_concerned
     voice "voice/3-comfort/036.opus"
     w "Neither of us are nearly as plastered as Nic, if there's ever a time it's going to be now."
 
+    show wolfrick face_sad
     voice "voice/3-comfort/037.opus"
     w "You had me thinking you enjoyed the stereotypical 'wolf boyfriend' things, and I'm just now finding out on our {i}third{/i} anniversary that you don't?"
 
+    show nate face_sad
+    show wolfrick face_concerned
     voice "voice/3-comfort/038.opus"
     na "Well, it's not that I don't enjoy them…"
 
@@ -307,7 +368,13 @@ label ch3_comfort:
     voice "voice/3-comfort/070.opus"
     w "I love who you are so much, I guess I just need to take a step back sometimes and let you be that man."
 
+    show nate face_happy:
+        walk_to(5.5)
+
     "Nate smiles, and moves closer. He takes my hand in his."
+
+    show nate face_neutral:
+        reset_pos(5.5)
 
     voice "voice/3-comfort/071.opus"
     na "We'll get there, Wolfrick. We'll get there."
@@ -318,21 +385,76 @@ label ch3_comfort:
     voice "voice/3-comfort/073.opus"
     na "...and I will do my best to listen to you more. I didn't realize I had started to ignore you."
 
+    show wolfrick face_stern
+
     voice "voice/3-comfort/074.opus"
     na "I'm sorry, Wolfrick."
 
+    show wolfrick:
+        parallel:
+            hug_right()
+        parallel:
+            pause 0.4
+            function add_attributes(["face_smiling"])
+    show nate:
+        parallel:
+            hug_left()
+        parallel:
+            pause 0.5
+            function add_attributes(["face_happy"])
+
     "We share a hug, and then a kiss."
 
+    show wolfrick face_smiling:
+        no_offset
+        pause 0.8
+        walk_out_right(1.6)
+    show nate face_happy:
+        no_offset
+        flip()
+        walk_out_right()
+    play sound "effects/door_full.opus"
+    scene bg apartment_dining
+    show nate reverse accessories_glasses shirt_chill pants_chill shirt_hoodie face_concerned:
+        y1
+        x1_3
+        reverse
+        walk_in_left()
+    show wolfrick reverse accessories_glasses accessories_watch pants_joggers shirt_joggers face_stern:
+        y1
+        x1_3
+        reverse
+        walk_in_left(5)
+    with dissolve
+
     "After we head back inside, Nic is nowhere to be found."
+
+    show nate face_neutral:
+        reset_pos(2)
+    show wolfrick:
+        reset_pos(5)
 
     "At first, Nate has a look of worry, but that fades quickly."
 
     "We hear him in the bathroom through the walls."
 
-    voice "voice/3-comfort/075.opus"
+    #voice "voice/3-comfort/075.opus"
     ni "HHUUUUUURGGHHHHHLLLLLLBLHHHHHHHH–"
 
+    show wolfrick:
+        flip_back()
+        pause 0.1
+        parallel:
+            quick_nod(2)
+        parallel:
+            pause 0.1
+            function add_attributes(["face_smiling"])
+
     "I turn to Nate and chuckle."
+
+    show wolfrick at no_offset
+    show nate face_happy:
+        nod()
 
     "He smirks at me and shrugs."
 

@@ -2,6 +2,9 @@ label ch4_passion:
 
     stop music
 
+    scene black
+    centered "Chapter [chapter_list[4][title]]"
+
     ##Bedroom BG maybe?
     "Nate and I are lying in bed, about a foot apart."
 
@@ -226,3 +229,5 @@ label ch4_passion:
     "That look of passion that I've come to love."
 
     $ set_chapter_progress(5)
+
+    scene black with fade

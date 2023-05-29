@@ -2,6 +2,9 @@ label ch1_tension:
 
     stop music
 
+    scene black
+    centered "Chapter [chapter_list[1][title]]"
+
     scene bg city_day_4
     play music "music/City_Center.opus" volume 0.4 fadein 1.0 fadeout 2.0
     play sound "effects/city_crowd.opus" volume 0.1 loop
@@ -191,14 +194,16 @@ label ch1_tension:
     play sound "effects/door_open.opus" volume 0.5
     scene bg flower_shop_backoffice
     show nate reverse accessories_hat_bucket accessories_glasses shirt_chill shirt_overall at y1, x0_75, reverse
-    show wolfrick reverse accessories_watch accessories_glasses pants_formal shirt_formal at y1, x0_2, reverse
+    show wolfrick reverse accessories_watch accessories_glasses pants_formal shirt_formal face_happy-with-eyes at y1, x0_2, reverse
     with dissolve
 
     "I open the door quietly and enter, seeing my adorable manatee husband standing, turned away from the door with his arms crossed."
 
+    show wolfrick face_smiling
+
     "Nate is staring at the small television up in the corner of the room."
 
-    show wolfrick face_sad
+    show wolfrick face_stern
 
     voice "voice/1-tension/003.opus"
     w "Hey, love. What's going on with this?"
@@ -563,6 +568,6 @@ label ch1_tension:
 
     "He's gonna get it {i}good{/i} later."
 
-    scene black with dissolve
+    scene black with fade
 
     $ set_chapter_progress(2)

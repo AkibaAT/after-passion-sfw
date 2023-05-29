@@ -4,6 +4,9 @@ label ch5_after_passion:
 
     stop music
 
+    scene black
+    centered "Chapter [chapter_list[5][title]]"
+
     "Nate and I are sitting on the couch watching the news, and Nic is finishing up breakfast on the seat nearby."
 
     "He cooked the three of us breakfast to show his appreciation for letting him stay with us."
@@ -426,3 +429,5 @@ label ch5_after_passion:
 
     voice "voice/5-after_passion/085.opus"
     na "Mmm… My husband~"
+
+    scene black with fade

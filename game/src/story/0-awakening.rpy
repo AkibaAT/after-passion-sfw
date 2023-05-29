@@ -1,6 +1,7 @@
 default player_name="Human From The Alley"
 
-label main_menu:
+# This completely breaks script reloads, disable when developing
+label main_menu_disable:
     # Immediately jump into the prologue, skipping the menu
     if persistent.chapter_progress < 1:
         return
@@ -10,6 +11,9 @@ label main_menu:
 label ch0_awakening:
 
     stop music
+
+    scene black
+    centered "Chapter [chapter_list[0][title]]"
 
     voice "voice/0-awakening/001.opus"
     "..."
@@ -196,6 +200,6 @@ label ch0_awakening:
     show bg title
     $ renpy.movie_cutscene("videos/title.webm")
 
-    hide bg title with dissolve
+    scene black with fade
 
     $ set_chapter_progress(1)

@@ -96,11 +96,12 @@ define config.default_voice_volume = 0.7
 define config.sample_sound = "effects/city_crowd_sample.opus"
 define config.sample_voice = {
     "human": "voice/0-awakening/009.opus",
-    "nate": "voice/0-awakening/009.opus",
+    "nate": "voice/1-tension/004.opus",
     "nic": "voice/0-awakening/009.opus",
     "wolfrick": "voice/0-awakening/038.opus",
     "zephyr": "voice/0-awakening/009.opus"
 }
+define sample_music = "music/Guardian Angel_sample.opus"
 
 ## Uncomment the following line to set an audio file that will be played while
 ## the player is at the main menu. This file will continue playing into the

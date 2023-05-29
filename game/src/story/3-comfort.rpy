@@ -1,6 +1,10 @@
 label ch3_comfort:
 
     stop music
+
+    scene black
+    centered "Chapter [chapter_list[3][title]]"
+
     scene bg apartment_dining
     show nic pants_chill shirt_chill face_sad:
         y1
@@ -331,5 +335,7 @@ label ch3_comfort:
     "I turn to Nate and chuckle."
 
     "He smirks at me and shrugs."
+
+    scene black with fade
 
     $ set_chapter_progress(4)

@@ -241,6 +241,9 @@ screen quick_menu():
     ## Ensure this appears on top of other screens.
     zorder 100
 
+    frame:
+        style "quick_frame"
+
     if quick_menu:
 
         hbox:
@@ -265,6 +268,9 @@ init python:
     config.overlay_screens.append("quick_menu")
 
 default quick_menu = True
+
+style quick_frame:
+    background Image("gui/textbox.png", xalign=0.5, yalign=1.307)
 
 style quick_button is default
 style quick_button_text is button_text
@@ -778,7 +784,6 @@ screen preferences():
                     style_prefix "check"
                     label _("Skip")
                     textbutton _("Unseen Text") action Preference("skip", "toggle")
-                    textbutton _("After Choices") action Preference("after choices", "toggle")
                     textbutton _("Transitions") action InvertSelected(Preference("transitions", "toggle"))
 
                 null height (2 * gui.pref_spacing)
@@ -808,12 +813,19 @@ screen preferences():
                         bar value Preference("auto-forward time")
 
                 vbox:
+                    label _("Main Volume")
+                    hbox:
+                        bar value Preference("main volume")
+
+                vbox:
                     label _("Music Volume")
                     hbox:
                         bar value Preference("music volume")
+                        if sample_music:
+                            textbutton _("Test") action Play("music", sample_music, loop=False)
 
                 vbox:
-                    label _("Sound Volume")
+                    label _("Effects Volume")
                     hbox:
                         bar value Preference("sound volume")
                         if config.sample_sound:

@@ -73,7 +73,7 @@ label ch5_after_passion:
     nc "...and now, to George for the latest developments on the story surrounding the conspiracy theories recently brought up in popular media."
 
     voice "voice/5-after_passion/013.opus"
-    nc "Some members of the Bulls on Parade believe the sky is actually just a box enclosing us within a vault, and if there is some overseer sending in humans as an {i}experiment{/i}. George–"
+    nc "Some members of the Bulls on Parade believe the sky is actually just a box enclosing us within a vault, and that there is some overseer sending in humans as an {i}experiment{/i}. George–"
 
     "We look away from the TV at one another."
 

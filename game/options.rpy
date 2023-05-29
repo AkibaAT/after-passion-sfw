@@ -41,11 +41,11 @@ Sprites Edits: Akiba
 
 Programming: Akiba
 
-Release Management: Akiba
+Publishing: Akiba
 
-Sounds: Akiba
+Sounds: Akiba, Lavan, and Ryezun
 
-Voice Acting: Akiba, Lavan, and Ryezun
+Voice Acting: Akiba as Wolfrick and Zephyr, Lavan as Nic, and Ryezun as Human and Nate
 
 Voice Acting Director: Lavan
 
@@ -106,7 +106,7 @@ define config.sample_voice = {
 ## the player is at the main menu. This file will continue playing into the
 ## game, until it is stopped or another file is played.
 
-define config.main_menu_music = "music/H.opus"
+define config.main_menu_music = "music/Guardian Angel.opus"
 
 
 ## Transitions #################################################################

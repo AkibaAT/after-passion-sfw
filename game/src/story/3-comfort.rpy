@@ -182,6 +182,7 @@ label ch3_comfort:
 
     "Nate pats Nic on the shoulder and stands up to follow."
 
+    play ambient "audio/effects/day_balcony.opus" volume 0.5
     scene bg apartment_balcony_day
     show nate accessories_glasses shirt_chill pants_chill shirt_hoodie:
         y1
@@ -413,6 +414,7 @@ label ch3_comfort:
         no_offset
         flip()
         walk_out_right()
+    stop ambient
     play sound "effects/door_full.opus"
     scene bg apartment_dining
     show nate reverse accessories_glasses shirt_chill pants_chill shirt_hoodie face_concerned:

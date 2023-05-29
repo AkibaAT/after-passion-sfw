@@ -1816,5 +1816,218 @@
             400,
             225
         ]
+    },
+    "ch4_passion_00fd891b": {
+        "area": [
+            1520,
+            0,
+            400,
+            405
+        ],
+        "properties": "bottom_left"
+    },
+    "ch4_passion_1060cb89": {
+        "area": [
+            1040,
+            585,
+            240,
+            135
+        ]
+    },
+    "ch4_passion_109c02b0": {
+        "area": [
+            1520,
+            0,
+            400,
+            405
+        ]
+    },
+    "ch4_passion_14540acc": {
+        "area": [
+            1040,
+            0,
+            640,
+            225
+        ]
+    },
+    "ch4_passion_2ebbb4d2": {
+        "area": [
+            1520,
+            135,
+            400,
+            270
+        ]
+    },
+    "ch4_passion_3ce33ff6": {
+        "area": [
+            1520,
+            225,
+            400,
+            180
+        ]
+    },
+    "ch4_passion_46679dee": {
+        "area": [
+            1040,
+            540,
+            320,
+            180
+        ]
+    },
+    "ch4_passion_532a58a4": {
+        "area": [
+            1040,
+            90,
+            400,
+            225
+        ]
+    },
+    "ch4_passion_643445c6": {
+        "area": [
+            1520,
+            180,
+            400,
+            225
+        ]
+    },
+    "ch4_passion_69506441": {
+        "area": [
+            1040,
+            45,
+            480,
+            270
+        ]
+    },
+    "ch4_passion_71fc9ded": {
+        "area": [
+            560,
+            135,
+            320,
+            180
+        ],
+        "properties": "bottom_left"
+    },
+    "ch4_passion_72aec87d": {
+        "area": [
+            1280,
+            630,
+            320,
+            180
+        ],
+        "properties": "bottom_right"
+    },
+    "ch4_passion_7f80ef3e": {
+        "area": [
+            1200,
+            180,
+            400,
+            225
+        ]
+    },
+    "ch4_passion_95197ca1": {
+        "area": [
+            1280,
+            225,
+            320,
+            180
+        ]
+    },
+    "ch4_passion_9fe64abf": {
+        "area": [
+            1040,
+            90,
+            320,
+            135
+        ]
+    },
+    "ch4_passion_a99697d0": {
+        "area": [
+            1040,
+            45,
+            480,
+            180
+        ]
+    },
+    "ch4_passion_abcdada9": {
+        "area": [
+            1040,
+            225,
+            320,
+            180
+        ],
+        "properties": "bottom_right"
+    },
+    "ch4_passion_c2eb4b07": {
+        "area": [
+            1200,
+            135,
+            400,
+            270
+        ]
+    },
+    "ch4_passion_d0e329d7": {
+        "area": [
+            0,
+            0,
+            400,
+            315
+        ]
+    },
+    "ch4_passion_d79fe67d": {
+        "area": [
+            1520,
+            270,
+            240,
+            135
+        ]
+    },
+    "ch4_passion_dd020635": {
+        "area": [
+            0,
+            0,
+            400,
+            360
+        ],
+        "properties": "bottom_right"
+    },
+    "ch4_passion_defc1480": {
+        "area": [
+            1040,
+            270,
+            320,
+            135
+        ]
+    },
+    "ch4_passion_e48ead96": {
+        "area": [
+            1520,
+            135,
+            400,
+            270
+        ]
+    },
+    "ch4_passion_ec6fc477": {
+        "area": [
+            1040,
+            135,
+            240,
+            180
+        ]
+    },
+    "ch4_passion_f34e24de": {
+        "area": [
+            1040,
+            45,
+            400,
+            270
+        ]
+    },
+    "ch4_passion_fc347591": {
+        "area": [
+            1520,
+            0,
+            400,
+            450
+        ]
     }
 }

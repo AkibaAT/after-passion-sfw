@@ -14,6 +14,8 @@ layeredimage nate:
     group face if_not ["eyes_half"] auto prefix "face":
         attribute neutral default:
             speakAnim("Nate", combineDisplay("nate_face_neutral_blinking", "nate_speak"), "nate_face_neutral_blinking")
+        attribute sleeping:
+            "nate_face_neutral"
         attribute angry:
             speakAnim("Nate", combineDisplay("nate_face_angry_blinking", "nate_speak_reverse"), "nate_face_angry_blinking")
         attribute concerned:

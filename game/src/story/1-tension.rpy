@@ -3,6 +3,8 @@ label ch1_tension:
     stop music
 
     scene bg city_day_4
+    play music "music/City_Center.opus" volume 0.4 fadein 1.0 fadeout 2.0
+    play sound "effects/city_crowd.opus" volume 0.1 loop
     show wolfrick accessories_watch accessories_glasses face_concerned pants_formal shirt_formal at y1, x1_3:
         pause 0.1
         walk_to(5)
@@ -122,7 +124,7 @@ label ch1_tension:
             pause 0.5
             fade_out()
 
-    play sound "effects/door_open.opus"
+    play sound "effects/door_open.opus" volume 0.5
 
     "It's go time."
 
@@ -130,6 +132,7 @@ label ch1_tension:
     show wolfrick face_blushing accessories_glasses accessories_watch pants_formal shirt_formal at y1, walk_in_right
     with dissolve
 
+    stop music fadeout 2.0
     voice "voice/1-tension/001.opus"
     w "Happy anniversary, my love!"
 
@@ -165,18 +168,19 @@ label ch1_tension:
     show wolfrick reverse at x0_5:
         reverse
         pause 0.5
-        walk_to(8)
+        walk_to(8.5)
         pause 0.5
         hug_right
 
+    play sound ["<silence 2.5>", "<from 0.4>effects/door_full.opus"] volume 0.5
     "I decide to lock the door and flip the sign over to {i}'Closed'{/i} just in case."
 
     show wolfrick:
-        reset_pos(8)
+        reset_pos(8.5)
         pause 0.1
         flip_back()
         pause 0.5
-        walk_to(-2.5, 2.5)
+        walk_to(-2.5, 3.0)
 
     "I turn toward his back office and make my way there."
 
@@ -184,9 +188,9 @@ label ch1_tension:
 
     "Within, I hear what sounds like a droning voice that is either very small and quiet or, somehow, very distant."
 
-    play sound "effects/door_open.opus" volume 0.6
+    play sound "effects/door_open.opus" volume 0.5
     scene bg flower_shop_backoffice
-    show nate reverse accessories_hat_leaf accessories_glasses shirt_chill shirt_overall at y1, x0_75, reverse
+    show nate reverse accessories_hat_bucket accessories_glasses shirt_chill shirt_overall at y1, x0_75, reverse
     show wolfrick reverse accessories_watch accessories_glasses pants_formal shirt_formal at y1, x0_2, reverse
     with dissolve
 
@@ -217,7 +221,7 @@ label ch1_tension:
 
     "He sighs and shakes his head."
 
-    show nate at no_offset
+    show nate face_neutral at no_offset
 
     voice "voice/1-tension/005.opus"
     na "The council vetoed the new initiatives from the peoples' representatives."
@@ -226,7 +230,7 @@ label ch1_tension:
     na "There seems to be no support from the High Emperor King President Lycanus, either."
 
     show wolfrick face_shocked
-
+    show nate face_concerned
     voice "voice/1-tension/007.opus"
     w "New… initiatives?"
 
@@ -283,7 +287,7 @@ label ch1_tension:
     show nate face_happy
     show wolfrick face_stern at no_offset
 
-    "He grins in spite of himself."
+    "He grins, in spite of himself."
 
     show wolfrick at walk_to
     show nate face_neutral
@@ -296,7 +300,7 @@ label ch1_tension:
         hug_right()
     show nate face_shocked at hug_left
 
-    "He is hugged in spite of himself."
+    "He is hugged, in spite of himself."
 
     show nate face_sad at no_offset
     show wolfrick face_shocked at no_offset
@@ -344,7 +348,10 @@ label ch1_tension:
     voice "voice/1-tension/021.opus"
     na "Anyway…"
 
-    show wolfrick face_sad
+    show wolfrick face_sad:
+        flip_back()
+        pause 0.7
+        flip()
 
     "I look around. Nate was supposed to have lunch here already, but there's nothing."
 
@@ -365,6 +372,7 @@ label ch1_tension:
 
     show wolfrick face_concerned
 
+    voice "voice/1-tension/024.opus"
     w "...Where's lunch? I'm hungry and we only have about forty-five minutes before I have to head back."
 
     show nate face_shocked at slow_nod
@@ -373,18 +381,22 @@ label ch1_tension:
 
     show nate face_neutral at no_offset
 
+    voice "voice/1-tension/025.opus"
     na "Well… you see, I sort of… forgot."
 
     show wolfrick face_sad
 
+    voice "voice/1-tension/026.opus"
     w "...Oh."
 
     show nate face_concerned
 
+    voice "voice/1-tension/027.opus"
     na "I tried to call you to give you a heads-up but you didn't answer, so I left a message. My bad."
 
     show wolfrick face_blushing
 
+    voice "voice/1-tension/028.opus"
     w "Oh? Huh. I'll listen to it when I get back, what a pleasant surprise!"
 
     show nate face_shocked
@@ -393,10 +405,12 @@ label ch1_tension:
 
     show nate face_neutral
 
+    voice "voice/1-tension/029.opus"
     na "What? A surprise?"
 
     show wolfrick face_happy at nod
 
+    voice "voice/1-tension/030.opus"
     w "Yes, I get to hear your voice at work as much as I want!"
 
     show nate at quick_nod(3)
@@ -409,10 +423,12 @@ label ch1_tension:
     show nate at no_offset
     show wolfrick at no_offset
 
+    voice "voice/1-tension/031.opus"
     na "You're cheesey. Sorry for forgetting."
 
     show wolfrick face_stern
 
+    voice "voice/1-tension/032.opus"
     w "That's alright, love. We'll make up for it {i}later on tonight{/i}, if you catch my drift~"
 
     show nate face_happy
@@ -422,8 +438,10 @@ label ch1_tension:
     show wolfrick face_happy
     show nate face_neutral
 
+    voice "voice/1-tension/033.opus"
     na "Dick, right?"
 
+    voice "voice/1-tension/034.opus"
     na "Is that the drift? Did I get it right?"
 
     "He definitely catches the drift."
@@ -438,10 +456,13 @@ label ch1_tension:
 
     show wolfrick face_blushing at no_offset
 
+    voice "voice/1-tension/035.opus"
     w "Yes, you did."
 
+    voice "voice/1-tension/036.opus"
     na "Mmmm you're all musky. Did you run here?"
 
+    voice "voice/1-tension/037.opus"
     w "I might have~"
 
     show nate at nod(2)
@@ -457,6 +478,7 @@ label ch1_tension:
 
     show wolfrick face_stern
 
+    voice "voice/1-tension/038.opus"
     na "Well, you should probably go grab lunch and get back to the office. I'll grab something quick in a bit, we can have a nice dinner tonight."
 
     show wolfrick face_happy at nod
@@ -465,6 +487,7 @@ label ch1_tension:
 
     show wolfrick face_stern at no_offset
 
+    voice "voice/1-tension/039.opus"
     w "Right-O."
 
     show wolfrick face_blushing at hug_right
@@ -473,10 +496,12 @@ label ch1_tension:
 
     show wolfrick at no_offset
 
+    voice "voice/1-tension/040.opus"
     na "Mmmmfgh-luvya-mfgfhhh."
 
     show wolfrick face_stern
 
+    voice "voice/1-tension/041.opus"
     w "Mffghg-luvyamore-mffffgh."
 
     show wolfrick face_happy
@@ -490,6 +515,7 @@ label ch1_tension:
 
     show wolfrick face_stern
 
+    voice "voice/1-tension/042.opus"
     w "Hasta la vista, baby."
 
     show wolfrick:
@@ -515,7 +541,7 @@ label ch1_tension:
         walk_to(12, 2.1)
     with dissolve
 
-    play sound ["<silence 1.5>", "effects/slap.opus"] volume 0.4
+    play sound ["<silence 1.5>", "effects/slap_eco.opus"] volume 0.6
 
     "He walks me to the door and I feel a slap on my ass as I'm heading out the door."
 
@@ -523,7 +549,7 @@ label ch1_tension:
     show nate at x0_9:
         hug_right(0.7)
 
-    play sound ["<silence 0.4>", "effects/door_close.opus"]
+    play sound ["<silence 0.4>", "effects/door_close.opus"] volume 0.5
 
     "I turn to retaliate but he shuts the arched door behind me."
 

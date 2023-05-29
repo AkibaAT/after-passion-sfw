@@ -30,6 +30,42 @@ define config.version = "1.0"
 ## triple-quotes, and leave a blank line between paragraphs.
 
 define gui.about = _p("""
+
+Audio Editing: Ryezun
+
+CGs: JadenPup
+
+Sprites: Cody(0rang3)
+
+Sprites Edits: Akiba
+
+Programming: Akiba
+
+Release Management: Akiba
+
+Sounds: Akiba
+
+Voice Acting: Akiba, Lavan, and Ryezun
+
+Voice Acting Director: Lavan
+
+Writing: Lavan
+
+
+CC By-NC-SA 4.0
+
+Joao Picoito - Heavy Falling Feather
+
+Joao Picoito - Palavras do Silencio
+
+
+CC By 4.0
+
+Kathrin Klimek
+
+
+'Guardian Angel' created by Haoran, edited for use.
+
 """)
 
 
@@ -92,7 +128,9 @@ define config.intra_transition = dissolve
 
 ## A transition that is used after a game has been loaded.
 
-define config.after_load_transition = None
+define Swing = Swing(delay=0.5, vertical=True, reverse=True, background='#0a0d14', flatten=False)
+
+define config.after_load_transition = Swing
 
 
 ## Used when entering the main menu after the game has ended.

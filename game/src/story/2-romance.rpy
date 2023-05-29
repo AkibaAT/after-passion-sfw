@@ -108,6 +108,8 @@ label ch2_romance:
             pause 0.5
             function add_attributes(['face_shocked'])
 
+    play sound 'audio/effects/door_open.ogg'
+
     "I open the front door and see them standing at the door with several bags of luggage."
 
     show wolfrick face_shocked at no_offset
@@ -164,6 +166,8 @@ label ch2_romance:
             pause 0.05
             function add_attributes(['face_shocked'])
 
+    play sound 'audio/effects/hit_body.ogg'
+
     "I feel a slap on my arm."
 
     show wolfrick at no_offset
@@ -186,7 +190,7 @@ label ch2_romance:
     show wolfrick:
         walk_out_right()
     scene bg apartment_corner with dissolve
-    show nate accessories_glasses shirt_chill pants_chill shirt_hoodie at y1:
+    show nate accessories_glasses accessories_hat_bucket shirt_chill pants_chill shirt_hoodie at y1:
         walk_in_right(9)
         pause 0.1
         push_right
@@ -278,6 +282,7 @@ label ch2_romance:
         walk_out_right(1.4)
     scene bg apartment_dining with dissolve
     show nic pants_chill shirt_chill face_sad at y1, x0_9
+    play sound 'audio/effects/door_open.opus'
 
     "Nate opens it and Nic is leaning against the wall across the hall."
 
@@ -330,7 +335,7 @@ label ch2_romance:
 
     "We move everything into the apartment and I lead Nic to the room."
 
-    scene bg apartment_corner with dissolve
+    scene bg apartment_bedroom_spare with dissolve
 
     voice "voice/2-romance/027.opus"
     w "Here we are."
@@ -353,7 +358,19 @@ label ch2_romance:
         pause 0.1
         walk_to(2)
         pause 0.1
-    show nate accessories_glasses shirt_chill pants_chill shirt_hoodie:
+    show nate accessories_glasses accessories_hat_bucket shirt_chill pants_chill shirt_hoodie:
+        y1
+        x1_3
+        walk_in_right(1, 2)
+        pause 0.1
+        slow_nod()
+        pause 0.1
+        flip()
+        pause 0.1
+        walk_to(8.5, steps=4)
+        pause 0.2
+        flip_back()
+    show wolfrick accessories_glasses accessories_watch pants_joggers shirt_joggers:
         y1
         x1_3
         pause 1
@@ -363,19 +380,7 @@ label ch2_romance:
         pause 0.1
         flip()
         pause 0.1
-        walk_to(6, 1.2)
-        pause 0.2
-        flip_back()
-    show wolfrick accessories_glasses accessories_watch pants_joggers shirt_joggers:
-        y1
-        x0_8
-        walk_in_right(1, 2)
-        pause 0.1
-        slow_nod()
-        pause 0.1
-        flip()
-        pause 0.1
-        walk_to(9, steps=4)
+        walk_to(5.5, 1.2)
         pause 0.5
         flip_back()
 
@@ -387,10 +392,10 @@ label ch2_romance:
         reverse
     show nate:
         no_offset
-        x0_6
+        x0_85
     show wolfrick:
         no_offset
-        x0_9
+        x0_55
 
     voice "voice/2-romance/030.opus"
     w "We have spare blankets and pillows inside one of those boxes..."
@@ -414,25 +419,17 @@ label ch2_romance:
 
     show nic at nod
     show nate:
+        flip()
+        walk_to(9, 1, 1)
+    show wolfrick:
         pause 0.5
         flip()
         walk_to(6.5, 1, 1)
-    show wolfrick:
-        flip()
-        walk_to(9.5, 1, 1)
 
     "Nic nods and Nate nears the doorway."
 
     show nate:
-        x0_65
-        reverse
-        pause 0.65
-        function add_attributes(['face_happy'])
-        pause 0.7
-        function remove_attributes(['face_happy'])
-        walk_out_right(2.3)
-    show wolfrick:
-        x0_95
+        x0_9
         reverse
         flip_back()
         pause 0.1
@@ -441,11 +438,19 @@ label ch2_romance:
         function remove_attributes(['face_happy'])
         flip()
         walk_out_right()
+    show wolfrick:
+        x0_65
+        reverse
+        pause 0.65
+        function add_attributes(['face_happy'])
+        pause 0.7
+        function remove_attributes(['face_happy'])
+        walk_out_right(2.3)
 
     "He turns to smile at me and I smile back, as we head out into the living room."
 
     scene bg apartment_couch with dissolve
-    show nate accessories_glasses shirt_chill pants_chill shirt_hoodie:
+    show nate accessories_glasses accessories_hat_bucket shirt_chill pants_chill shirt_hoodie:
         y1
         x1_3
         pause 1

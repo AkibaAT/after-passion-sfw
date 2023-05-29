@@ -1,5 +1,12 @@
 default player_name="Human From The Alley"
 
+label main_menu:
+    # Immediately jump into the prologue, skipping the menu
+    if persistent.chapter_progress < 1:
+        return
+
+    call screen main_menu()
+
 label ch0_awakening:
 
     stop music
@@ -30,7 +37,7 @@ label ch0_awakening:
     voice "voice/0-awakening/MyNameIs.opus" 
     $ player_input = renpy.input("My name is...").strip()
 
-    if player_name == "Sonic":
+    if player_input == "Sonic":
         $ player_name = "Sonic"
 
     voice "voice/0-awakening/ThatSoundsRight.opus"

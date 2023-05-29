@@ -23,7 +23,7 @@ label ch5_after_passion:
     "I turn toward Nate."
 
     voice "voice/5-after_passion/001.opus"
-    w "So…about Nic being here…"
+    w "So… about Nic being here…"
 
     "We hear the sound of the shower running."
 

@@ -162,7 +162,7 @@ label ch5_after_passion:
     n "Watch what you say, Zephyr."
     
     voice "voice/5-after_passion/027-02.opus"
-    n "You might be twenty percent bigger, but Wolfrick has taken down bigger and better men."
+    n "You might be twenty percent bigger, but Wolfrick has taken down bigger {/i}and{/i} better men."
     
     voice "voice/5-after_passion/027-03.opus"
     ni "...if you could even call yourself a man."

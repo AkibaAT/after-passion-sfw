@@ -250,17 +250,17 @@ label ch4_passion:
         reverse
         reset_pos(2.5)
 
-    #voice "voice/4-passion/016.opus"
+    voice "voice/4-passion/016.opus"
     ni "Why is it so hard for him to just love me?!"
 
     "His voice is shaky and strained."
 
     "He doesn't sound drunk anymore, but now…"
 
-    #voice "voice/4-passion/017.opus"
+    voice "voice/4-passion/017.opus"
     ni "I did everything and {i}gave{/i} everything I could for him!"
 
-    #voice "voice/4-passion/018.opus"
+    voice "voice/4-passion/018.opus"
     ni "You would think it would be enough for {i}anybody{/i}, but with him {i}nothing{/i} will {i}{b}ever{/b}{/i} be enough!"
 
     "Nic sobs onto Nate's shoulder."
@@ -293,14 +293,14 @@ label ch4_passion:
 
     show nate at no_offset
 
-    #voice "voice/4-passion/021.opus"
+    voice "voice/4-passion/021.opus"
     ni "Don't I know it…"
 
     show wolfrick face_smiling
     voice "voice/4-passion/022.opus"
     w "But not you, Nic. Not you, ever."
 
-    #voice "voice/4-passion/023.opus"
+    voice "voice/4-passion/023.opus"
     ni "Wha–"
 
     "He gasps and I see his eyes move to meet mine."
@@ -352,7 +352,7 @@ label ch4_passion:
 
     "Nic wipes his tears and looks at Nate."
 
-    #voice "voice/4-passion/032.opus"
+    voice "voice/4-passion/032.opus"
     ni "Y-yes?"
 
     voice "voice/4-passion/033.opus"
@@ -379,7 +379,7 @@ label ch4_passion:
 
     show nic at no_offset
 
-    #voice "voice/4-passion/037.opus"
+    voice "voice/4-passion/037.opus"
     show nic face_neutral
 
     ni "Thank you, both of you."
@@ -403,6 +403,7 @@ label ch4_passion:
 
     "I told him he could borrow any of my CDs."
 
+    play sound '/effects/snore.opus' volume 0.05
     "Nate and I are holding hands as we head back to the room, and before long we hear Nic's snoring coming from the other room."
 
     scene bg apartment_bedroom_main

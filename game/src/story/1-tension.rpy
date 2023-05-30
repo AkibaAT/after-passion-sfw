@@ -141,7 +141,7 @@ label ch1_tension:
         parallel:
             pause 0.5
             fade_out()
-
+            
     play sound "effects/door_open.opus" volume 0.5
 
     "It's go time."
@@ -210,6 +210,7 @@ label ch1_tension:
     "Within, I hear what sounds like a droning voice that is either very small and quiet or, somehow, very distant."
 
     play sound "effects/door_open.opus" volume 0.5
+    play music "music/Guardian Angel1.opus" volume 0.4 fadein 1.0 fadeout 2.0
     scene bg flower_shop_backoffice
     show nate preset_work reverse:
         y1
@@ -592,6 +593,7 @@ label ch1_tension:
 
     "He's gonna get it {i}good{/i} later."
 
+    stop music fadeout 2.0
     scene black with fade
 
     $ set_chapter_progress(2)

@@ -201,6 +201,7 @@ label ch2_romance:
 
     "Nate puts a hand on Nic's shoulder."
 
+    play music "music/Guardian Angel1.opus" volume 0.4 fadein 1.0 fadeout 2.0
     voice "voice/2-romance/013.opus"
     na "We'll just… be a moment."
 
@@ -614,6 +615,8 @@ label ch2_romance:
 
     "Nate leans in and kisses me on the cheek."
 
+    stop music fadeout 2.0
     scene black with fade
 
     $ set_chapter_progress(3)
+ 

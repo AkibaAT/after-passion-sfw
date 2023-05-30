@@ -183,6 +183,8 @@ label ch3_comfort:
     "Nate pats Nic on the shoulder and stands up to follow."
 
     play ambient "audio/effects/day_balcony.opus" volume 0.5
+    play music "music/Guardian Angel2.opus" volume 0.4 fadein 1.0 fadeout 2.0
+
     scene bg apartment_balcony_day
     show nate preset_casual:
         y1
@@ -460,6 +462,7 @@ label ch3_comfort:
 
     "He smirks at me and shrugs."
 
-    scene black with fade
+    stop music fadeout 2.0
+    scene black with fade   
 
     $ set_chapter_progress(4)

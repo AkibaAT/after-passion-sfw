@@ -394,6 +394,7 @@ label ch4_passion:
     show wolfrick:
         pause 2.5
         walk_out_right(1.5)
+    play sound ["<silence 2.5>", "audio/effects/slide_door_open.opus"] volume 5
 
     "We stay on the balcony with him for a while and eventually, we move inside."
 

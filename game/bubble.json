@@ -2029,5 +2029,202 @@
             400,
             450
         ]
+    },
+    "ch5_after_passion_0b3ebe67": {
+        "area": [
+            880,
+            180,
+            400,
+            225
+        ],
+        "properties": "bottom_right"
+    },
+    "ch5_after_passion_0bd74f3d": {
+        "area": [
+            400,
+            135,
+            480,
+            360
+        ]
+    },
+    "ch5_after_passion_10b04d5f": {
+        "area": [
+            480,
+            270,
+            400,
+            315
+        ]
+    },
+    "ch5_after_passion_11c01f30": {
+        "area": [
+            480,
+            270,
+            400,
+            225
+        ]
+    },
+    "ch5_after_passion_153be940": {
+        "area": [
+            560,
+            360,
+            320,
+            135
+        ]
+    },
+    "ch5_after_passion_21c32d51": {
+        "area": [
+            560,
+            45,
+            800,
+            270
+        ],
+        "properties": "top_left"
+    },
+    "ch5_after_passion_2e40f4a2": {
+        "area": [
+            1360,
+            0,
+            560,
+            180
+        ]
+    },
+    "ch5_after_passion_33dfb5c4": {
+        "area": [
+            560,
+            360,
+            320,
+            135
+        ]
+    },
+    "ch5_after_passion_39673b8d": {
+        "area": [
+            400,
+            180,
+            480,
+            315
+        ]
+    },
+    "ch5_after_passion_506ae9b8": {
+        "area": [
+            560,
+            45,
+            800,
+            225
+        ]
+    },
+    "ch5_after_passion_54294c6c": {
+        "area": [
+            560,
+            45,
+            800,
+            135
+        ]
+    },
+    "ch5_after_passion_5d3bcc30": {
+        "area": [
+            480,
+            360,
+            400,
+            135
+        ]
+    },
+    "ch5_after_passion_5e810f7f": {
+        "area": [
+            1120,
+            0,
+            800,
+            225
+        ],
+        "properties": "bottom_right"
+    },
+    "ch5_after_passion_63950e38": {
+        "area": [
+            480,
+            315,
+            400,
+            270
+        ]
+    },
+    "ch5_after_passion_694774fd": {
+        "area": [
+            1200,
+            90,
+            400,
+            180
+        ]
+    },
+    "ch5_after_passion_7c729a91": {
+        "area": [
+            480,
+            360,
+            400,
+            225
+        ]
+    },
+    "ch5_after_passion_9442da6f": {
+        "area": [
+            480,
+            315,
+            400,
+            180
+        ],
+        "properties": "bottom_right"
+    },
+    "ch5_after_passion_97f7e3c9": {
+        "area": [
+            1600,
+            45,
+            320,
+            135
+        ]
+    },
+    "ch5_after_passion_9b8e8c89": {
+        "area": [
+            0,
+            270,
+            480,
+            135
+        ]
+    },
+    "ch5_after_passion_a8eefa45": {
+        "area": [
+            1360,
+            135,
+            240,
+            135
+        ],
+        "properties": "bottom_right"
+    },
+    "ch5_after_passion_b53df80e": {
+        "area": [
+            560,
+            45,
+            800,
+            270
+        ]
+    },
+    "ch5_after_passion_e361a878": {
+        "area": [
+            720,
+            225,
+            320,
+            180
+        ]
+    },
+    "ch5_after_passion_ef0dcbb6": {
+        "area": [
+            480,
+            450,
+            240,
+            135
+        ]
+    },
+    "ch5_after_passion_f22e25b8": {
+        "area": [
+            480,
+            270,
+            400,
+            225
+        ]
     }
 }

@@ -1,4 +1,19 @@
+init python:
+    def wolfrick_adjuster(names):
+        atts = set(names[1:])
+        
+        attributes_to_add = []
+        if "preset_casual" in atts:
+            attributes_to_add = ["accessories_glasses", "accessories_watch", "pants_joggers", "shirt_joggers"]
+        elif "preset_work" in atts:
+            attributes_to_add = ["accessories_glasses", "accessories_watch", "shirt_formal", "pants_formal"]
+
+        atts.update(attributes_to_add)
+
+        return names[0], *atts
+
 define w = Character(None, image="Wolfrick", kind=bubble, callback=speaker("Wolfrick"), voice_tag="wolfrick")
+define config.adjust_attributes["wolfrick"] = wolfrick_adjuster
 
 layeredimage wolfrick:
     xanchor 0.5
@@ -6,6 +21,10 @@ layeredimage wolfrick:
     yoffset 340
 
     attribute reverse null
+
+    group preset auto prefix "preset":
+        attribute casual null
+        attribute work null
 
     group body auto prefix "body":
         attribute chill default

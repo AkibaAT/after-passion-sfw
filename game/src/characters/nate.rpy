@@ -1,4 +1,19 @@
+init python:
+    def nate_adjuster(names):
+        atts = set(names[1:])
+        
+        attributes_to_add = []
+        if "preset_casual" in atts:
+            attributes_to_add = ["accessories_glasses", "shirt_chill", "pants_chill", "shirt_hoodie", "-shirt_overall"]
+        elif "preset_work" in atts:
+            attributes_to_add = ["accessories_glasses", "shirt_chill", "pants_chill", "shirt_overall", "-shirt_hoodie"]
+
+        atts.update(attributes_to_add)
+
+        return names[0], *atts
+
 define na = Character(None, image="Nate", kind=bubble, callback=speaker("Nate"), voice_tag="nate")
+define config.adjust_attributes["nate"] = nate_adjuster
 
 layeredimage nate:
     xanchor 0.5
@@ -10,6 +25,10 @@ layeredimage nate:
 
     always:
         "nate_body_chill"
+
+    group preset auto prefix "preset":
+        attribute casual null
+        attribute work null
 
     group face if_not ["eyes_half"] auto prefix "face":
         attribute neutral default:
@@ -24,6 +43,8 @@ layeredimage nate:
             speakAnim("Nate", combineDisplay("nate_face_happy_blinking", "nate_speak_reverse"), "nate_face_happy_blinking")
         attribute sad:
             speakAnim("Nate", combineDisplay("nate_face_sad_blinking", "nate_speak_reverse"), "nate_face_sad_blinking")
+        attribute shocked:
+            speakAnim("Nate", combineDisplay("nate_face_shocked_blinking", "nate_speak_reverse"), "nate_face_shocked_blinking")
     group face if_any ["eyes_half"] auto prefix "face":
         attribute neutral default:
             speakAnim("Nate", combineDisplay("nate_face_neutral_blinking_half", "nate_speak"), "nate_face_neutral_blinking_half")
@@ -50,6 +71,7 @@ image nate_face_angry_blinking = combineDisplay("nate_face_angry", "nate_blink")
 image nate_face_concerned_blinking = combineDisplay("nate_face_concerned", "nate_blink")
 image nate_face_happy_blinking = combineDisplay("nate_face_happy", "nate_blink")
 image nate_face_sad_blinking = combineDisplay("nate_face_sad", "nate_blink")
+image nate_face_shocked_blinking = combineDisplay("nate_face_shocked", "nate_blink")
 
 image nate_face_neutral_blinking_half = combineDisplay("nate_face_neutral", "nate_blink_half")
 image nate_face_angry_blinking_half = combineDisplay("nate_face_angry", "nate_blink_half")

@@ -102,11 +102,13 @@ label ch2_romance:
     voice "voice/2-romance/001.opus"
     na "{size=-12}...and I know things have been rough, so I don't mind at all.{/size}"
 
+    voice "voice/2-romance/002.opus"
     ni "{size=-11}I just don't want to be a burden to you both, but if you're sure…{/size}"
 
     voice "voice/2-romance/003.opus"
     na "{size=-10}Nonsense. Just let me talk to him, he'll understand.{/size}"
 
+    voice "voice/2-romance/004.opus"
     ni "{size=-9}Thank you. Should I… wait out here?{/size}"
 
     voice "voice/2-romance/005.opus"
@@ -164,6 +166,7 @@ label ch2_romance:
     voice "voice/2-romance/008.opus"
     w "Hey, Nic. Moving in?"
 
+    voice "voice/2-romance/009.opus"
     ni "H-hey. If it's alright with you, yeah. I… broke up with Zephyr. He kicked me out."
 
     show wolfrick face_happy
@@ -352,6 +355,7 @@ label ch2_romance:
     voice "voice/2-romance/024.opus"
     w "We have a spare bedroom, and you're welcome to it."
 
+    voice "voice/2-romance/025.opus"
     ni "Oh, that's… are you sure? I know this is sudden and I don't want to step on your toes…"
 
     voice "voice/2-romance/026.opus"
@@ -465,6 +469,7 @@ label ch2_romance:
     voice "voice/2-romance/034.opus"
     na "I'm just going to go talk with Wolfrick, okay Nic?"
 
+    voice "voice/2-romance/035.opus"
     ni "Y-yes. Thank you both, this is great! I'll just try to stay out of the way."
 
     voice "voice/2-romance/036.opus"

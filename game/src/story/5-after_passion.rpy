@@ -113,7 +113,7 @@ label ch5_after_passion:
     voice "voice/5-after_passion/020.opus"
     zwho "{size=15}...better come the {size=20}fuck{/size} out here right now, you dragon bitch!{/size}"
 
-    voice "voice/5-after_passion/021.opus"
+    voice "voice/5-after_passion/021.opus"  
     zwho "{size=15}I don’t know who the fuck you think you are leaving me, but I promise you you won’t like what happens when I get in there!{/size}"
 
     "Nate and I look toward one another, and then Nic comes out of the bathroom with panic on his face."
@@ -130,7 +130,7 @@ label ch5_after_passion:
     "I move to the door to look through the peephole and am greeted with the sight of Zephyr's ugly muzzle."
 
     voice "voice/5-after_passion/023.opus"
-    z "I know you're there, dragon-bitch. I heard you all walk up to the door and I can smell your scaly ass."
+    z "I know you're there, wolf-bitch. I heard you all walk up to the door and I can smell your furry ass."
 
     "I shake my head in annoyance and give Nate a glance, nodding."
 

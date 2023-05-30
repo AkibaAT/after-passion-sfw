@@ -157,6 +157,17 @@ label ch5_after_passion:
 
     voice "voice/5-after_passion/027.opus"
     z "Still a pipsqueak, I see. I ain't even got a buzz."
+    
+    voice "voice/5-after_passion/027-01.opus"
+    n "Watch what you say, Zephyr."
+    
+    voice "voice/5-after_passion/027-02.opus"
+    n "You might be twenty percent bigger, but Wolfrick has taken down bigger and better men."
+    
+    voice "voice/5-after_passion/027-03.opus"
+    ni "...if you could even call yourself a man."
+    
+    "I wave a hand to silence them, letting them know I have the situation under control."
 
     voice "voice/5-after_passion/028.opus"
     w "Nic can't talk right now, you need to leave."

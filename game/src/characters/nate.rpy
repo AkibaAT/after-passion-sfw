@@ -5,8 +5,10 @@ init python:
         attributes_to_add = []
         if "preset_casual" in atts:
             attributes_to_add = ["accessories_glasses", "shirt_chill", "pants_chill", "shirt_hoodie", "-shirt_overall"]
+        elif "preset_super_casual" in atts:
+            attributes_to_add = ["accessories_glasses", "shirt_chill", "pants_chill", "-shirt_hoodie", "-shirt_overall"]
         elif "preset_work" in atts:
-            attributes_to_add = ["accessories_glasses", "shirt_chill", "pants_chill", "shirt_overall", "-shirt_hoodie"]
+            attributes_to_add = ["accessories_hat_bucket", "accessories_glasses", "shirt_chill", "pants_chill", "shirt_overall", "-shirt_hoodie"]
 
         atts.update(attributes_to_add)
 
@@ -26,8 +28,9 @@ layeredimage nate:
     always:
         "nate_body_chill"
 
-    group preset auto prefix "preset":
+    group preset prefix "preset":
         attribute casual null
+        attribute super_casual null
         attribute work null
 
     group face if_not ["eyes_half"] auto prefix "face":

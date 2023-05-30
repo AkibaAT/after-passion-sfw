@@ -6,7 +6,7 @@ label ch2_romance:
     centered "Chapter [chapter_list[2][title]]"
 
     scene bg apartment_kitchen
-    show wolfrick accessories_glasses accessories_watch pants_joggers shirt_joggers face_stern at x0_4, y1
+    show wolfrick preset_casual face_stern at x0_4, y1
     with dissolve
 
     "..."
@@ -50,7 +50,8 @@ label ch2_romance:
             pause 0.5
             fade_to(0, 1.3)
     scene bg apartment_dining with dissolve
-    show wolfrick accessories_glasses accessories_watch pants_joggers shirt_joggers at y1:
+    show wolfrick preset_casual:
+        y1
         walk_in_right(7)
 
     show wolfrick face_stern
@@ -206,14 +207,14 @@ label ch2_romance:
     show wolfrick:
         walk_out_right()
     scene bg apartment_corner with dissolve
-    show nate accessories_glasses shirt_chill pants_chill shirt_hoodie:
+    show nate preset_casual:
         y1
         walk_in_right(9)
         pause 0.1
         push_right
         pause 0.1
         walk_to(7.5, 0.8, 1)
-    show wolfrick accessories_glasses accessories_watch pants_joggers shirt_joggers:
+    show wolfrick preset_casual face_stern:
         y1
         walk_in_right(4, 1.2)
         pause 0.1
@@ -302,8 +303,8 @@ label ch2_romance:
         walk_out_right(1.4)
     play sound '<from 0.2>audio/effects/door_open.opus' volume 0.5
     scene bg apartment_dining with dissolve
-    show nic pants_chill shirt_chill face_sad at y1, x0_9
-    show nate accessories_glasses shirt_chill pants_chill shirt_hoodie:
+    show nic preset_casual face_sad at y1, x0_9
+    show nate preset_casual:
         y1
         walk_in_right(6)
         flip()
@@ -317,7 +318,7 @@ label ch2_romance:
         flip_back()
         walk_to(2.5)
         flip()
-    show wolfrick face_stern accessories_glasses accessories_watch pants_joggers shirt_joggers:
+    show wolfrick preset_casual face_stern:
         x1_3
         y1
         pause 1.0
@@ -404,7 +405,7 @@ label ch2_romance:
     voice "voice/2-romance/029.opus"
     na "It's only got a few boxes in the corner but there's a twin bed and more than enough room."
 
-    show nic face_sad pants_chill shirt_chill:
+    show nic preset_casual face_sad:
         y1
         x1_3
         pause 2
@@ -416,7 +417,7 @@ label ch2_romance:
         pause 0.1
         walk_to(2)
         pause 0.1
-    show nate accessories_glasses shirt_chill pants_chill shirt_hoodie:
+    show nate preset_casual:
         y1
         x1_3
         pause 1
@@ -429,7 +430,7 @@ label ch2_romance:
         walk_to(5.5, 1.2)
         pause 0.2
         flip_back()
-    show wolfrick face_stern accessories_glasses accessories_watch pants_joggers shirt_joggers:
+    show wolfrick preset_casual face_stern:
         y1
         x1_3
         walk_in_right(1, 2)
@@ -508,12 +509,12 @@ label ch2_romance:
     "He turns to smile at me and I smile back, as we head out into the living room."
 
     scene bg apartment_couch with dissolve
-    show nate accessories_glasses shirt_chill pants_chill shirt_hoodie:
+    show nate preset_casual:
         y1
         x1_3
         pause 1
         walk_in_right(5)
-    show wolfrick face_stern accessories_glasses accessories_watch pants_joggers shirt_joggers:
+    show wolfrick preset_casual face_stern:
         y1
         walk_in_right(2)
         flip()

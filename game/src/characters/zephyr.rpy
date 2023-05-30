@@ -1,5 +1,18 @@
+init python:
+    def zephyr_adjuster(names):
+        atts = set(names[1:])
+        
+        attributes_to_add = []
+        if "preset_casual" in atts:
+            attributes_to_add = ["pants_joggers", "shirt_joggers"]
+
+        atts.update(attributes_to_add)
+
+        return names[0], *atts
+
 define z = Character(None, image="Zephyr", kind=bubble, callback=speaker("Zephyr"), voice_tag="zephyr")
 define zwho = Character(None, image="Zephyr", kind=bubble, callback=speaker("???"), voice_tag="zephyr")
+define config.adjust_attributes["zephyr"] = zephyr_adjuster
 
 layeredimage zephyr:
     xanchor 0.5

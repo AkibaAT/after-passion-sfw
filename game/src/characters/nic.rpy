@@ -1,4 +1,17 @@
+init python:
+    def nic_adjuster(names):
+        atts = set(names[1:])
+        
+        attributes_to_add = []
+        if "preset_casual" in atts:
+            attributes_to_add = ["pants_chill", "shirt_chill"]
+
+        atts.update(attributes_to_add)
+
+        return names[0], *atts
+
 define ni = Character(None, image="Nic", kind=bubble, callback=speaker("Nic"), voice_tag="nic")
+define config.adjust_attributes["nic"] = nic_adjuster
 
 layeredimage nic:
     xanchor 0.5
@@ -9,6 +22,9 @@ layeredimage nic:
 
     always:
         "nic_body_chill"
+
+    group preset prefix "preset":
+        attribute casual null
 
     group face auto prefix "face":
         attribute neutral default:

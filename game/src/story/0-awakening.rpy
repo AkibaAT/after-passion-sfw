@@ -133,12 +133,14 @@ label ch0_awakening:
     voice "voice/0-awakening/032.opus"
     "My memory is gone, yet I instinctively know this is a situation I want to work out in my favor."
 
-    show wolfrick shirt_formal pants_formal accessories_glasses accessories_watch body_chill at y1, walk_in_right
+    show wolfrick preset_work:
+        y1
+        walk_in_right()
 
     voice "voice/0-awakening/033.opus"
     "I know what I must do."
 
-    show wolfrick at walk_to()
+    show wolfrick at walk_to
 
     voice "voice/0-awakening/034.opus"
     "I reach out toward him, my eyes full of fear and pleading and my body frail and lithe in comparison to his large, muscular frame."

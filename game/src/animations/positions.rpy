@@ -94,6 +94,9 @@ transform y1_2:
 transform y1_3:
     ypos 1.3
 
+transform y1_4:
+    ypos 1.4
+
 transform walk_z_back(z=0.8, speed=1.5, steps=2):
     parallel:
         easein speed zoom z

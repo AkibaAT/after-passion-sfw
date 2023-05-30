@@ -6,14 +6,14 @@ label ch3_comfort:
     centered "Chapter [chapter_list[3][title]]"
 
     scene bg apartment_dining
-    show nic face_angry pants_chill shirt_chill:
+    show nic preset_casual face_angry:
         y1
         x0_8
-    show nate reverse accessories_glasses shirt_chill pants_chill shirt_hoodie:
+    show nate preset_casual reverse:
         y1
         x0_5
         reverse
-    show wolfrick face_stern reverse accessories_glasses accessories_watch pants_joggers shirt_joggers:
+    show wolfrick preset_casual face_stern reverse:
         y1
         x0_2
         reverse
@@ -184,10 +184,10 @@ label ch3_comfort:
 
     play ambient "audio/effects/day_balcony.opus" volume 0.5
     scene bg apartment_balcony_day
-    show nate accessories_glasses shirt_chill pants_chill shirt_hoodie:
+    show nate preset_casual:
         y1
         x1_3
-    show wolfrick reverse face_sad accessories_glasses accessories_watch pants_joggers shirt_joggers:
+    show wolfrick preset_casual reverse face_sad:
         y1
         x0_3
         reverse
@@ -417,12 +417,12 @@ label ch3_comfort:
     stop ambient
     play sound "effects/door_full.opus"
     scene bg apartment_dining
-    show nate reverse accessories_glasses shirt_chill pants_chill shirt_hoodie face_concerned:
+    show nate preset_casual reverse face_concerned:
         y1
         x1_3
         reverse
         walk_in_left()
-    show wolfrick reverse accessories_glasses accessories_watch pants_joggers shirt_joggers face_stern:
+    show wolfrick preset_casual reverse face_stern:
         y1
         x1_3
         reverse

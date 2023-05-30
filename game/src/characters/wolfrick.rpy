@@ -22,7 +22,7 @@ layeredimage wolfrick:
 
     attribute reverse null
 
-    group preset auto prefix "preset":
+    group preset prefix "preset":
         attribute casual null
         attribute work null
 

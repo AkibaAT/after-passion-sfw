@@ -95,7 +95,7 @@ label ch4_passion:
 
     "He sighs and gets up from bed."
 
-    show nate accessories_glasses shirt_chill:
+    show nate preset_super_casual:
         y1
         no_offset
 
@@ -115,7 +115,7 @@ label ch4_passion:
 
     "I turn to get out of bed myself."
 
-    show wolfrick accessories_glasses shirt_joggers:
+    show wolfrick preset_casual:
         y1
         no_offset
 
@@ -207,18 +207,18 @@ label ch4_passion:
     "He nods to me and we walk off to find Nic."
 
     scene bg apartment_balcony_night
-    show nic reverse pants_chill shirt_robe face_sad:
+    show nic reverse shirt_robe face_sad:
         y1
         x0_5
         reverse
     with dissolve
     play sound "audio/effects/slide_door_open.opus" volume 5
-    show nate reverse accessories_glasses shirt_chill pants_chill:
+    show nate preset_super_casual reverse:
         y1
         x1_3
         pause 0.1
         walk_in_right(7.5, 1.5)
-    show wolfrick face_stern reverse accessories_glasses accessories_watch pants_joggers shirt_joggers:
+    show wolfrick preset_casual face_stern reverse:
         y1
         x1_3
         pause 0.5

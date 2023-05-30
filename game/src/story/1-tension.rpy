@@ -8,7 +8,9 @@ label ch1_tension:
     scene bg city_day_4
     play music "music/City_Center.opus" volume 0.4 fadein 1.0 fadeout 2.0
     play sound "effects/city_crowd.opus" volume 0.1 loop
-    show wolfrick accessories_watch accessories_glasses face_concerned pants_formal shirt_formal at y1, x1_3:
+    show wolfrick preset_work face_concerned:
+        y1
+        x1_3
         pause 0.1
         walk_to(5)
     with dissolve
@@ -22,7 +24,9 @@ label ch1_tension:
     "Nate is waiting for me."
 
     scene bg city_day_3
-    show wolfrick accessories_watch accessories_glasses face_concerned pants_formal shirt_formal at y1, x1_3:
+    show wolfrick preset_work face_concerned:
+        y1
+        x1_3
         pause 0.1
         walk_to(5)
     with dissolve
@@ -36,7 +40,9 @@ label ch1_tension:
     "Shit. What kind of husband am I?"
 
     scene bg city_day_2
-    show wolfrick accessories_watch accessories_glasses face_concerned pants_formal shirt_formal at y1, x1_3:
+    show wolfrick preset_work face_concerned:
+        y1
+        x1_3
         pause 0.1
         walk_to(5)
     with dissolve
@@ -50,7 +56,9 @@ label ch1_tension:
     "I should have finished the call with my last client earlier than I did."
 
     scene bg city_day_1
-    show wolfrick accessories_watch accessories_glasses face_concerned pants_formal shirt_formal at y1, x1_3:
+    show wolfrick preset_work face_concerned:
+        y1
+        x1_3
         pause 0.1
         walk_to(5)
     with dissolve
@@ -64,7 +72,9 @@ label ch1_tension:
     "I only noticed the time after they had mentioned they would have to take a lunch break soon."
 
     scene bg city_day_3
-    show wolfrick accessories_watch accessories_glasses face_concerned pants_formal shirt_formal at y1, x1_3:
+    show wolfrick preset_work face_concerned:
+        y1
+        x1_3
         pause 0.1
         walk_to(5)
     with dissolve
@@ -82,18 +92,23 @@ label ch1_tension:
     "I should have left sooner."
 
     scene bg flower_shop_outside
-    show wolfrick accessories_watch accessories_glasses pants_formal shirt_formal face_shocked at y1, walk_in_right:
+    show wolfrick preset_work face_shocked:
+        y1
+        walk_in_right()
         block:
             nod()
             repeat
 
     "Panting, I finally reach the arched wooden door with stained glass panes embedded in the upper half-circle."
 
-    show wolfrick at x0_8, nod(speed=1)
+    show wolfrick:
+        reset_pos(8)
+        nod(speed=1)
 
     "The rest of the storefront is pretty run-of-the-mill, but this door immediately caught my eye."
 
-    show wolfrick face_happy at no_offset
+    show wolfrick face_happy:
+        no_offset
 
     "When I pointed it out to Nate, he fell in love with this place. Now, five years later, here we are."
 
@@ -132,7 +147,9 @@ label ch1_tension:
     "It's go time."
 
     scene bg flower_shop_inside
-    show wolfrick face_blushing accessories_glasses accessories_watch pants_formal shirt_formal at y1, walk_in_right
+    show wolfrick preset_work face_blushing :
+        y1
+        walk_in_right()
     with dissolve
 
     stop music fadeout 2.0
@@ -168,12 +185,13 @@ label ch1_tension:
 
     "Looking around, I try to find any sign of where he might be."
 
-    show wolfrick reverse at x0_5:
+    show wolfrick reverse:
+        x0_5
         reverse
         pause 0.5
         walk_to(8.5)
         pause 0.5
-        hug_right
+        hug_right()
 
     play sound ["<silence 2.5>", "<from 0.4>effects/door_full.opus"] volume 0.5
     "I decide to lock the door and flip the sign over to {i}'Closed'{/i} just in case."
@@ -193,8 +211,14 @@ label ch1_tension:
 
     play sound "effects/door_open.opus" volume 0.5
     scene bg flower_shop_backoffice
-    show nate reverse accessories_hat_bucket accessories_glasses shirt_chill shirt_overall at y1, x0_75, reverse
-    show wolfrick reverse accessories_watch accessories_glasses pants_formal shirt_formal face_happy-with-eyes at y1, x0_2, reverse
+    show nate preset_work reverse:
+        y1
+        x0_75
+        reverse
+    show wolfrick preset_work reverse face_happy-with-eyes:
+        y1
+        x0_2
+        reverse
     with dissolve
 
     "I open the door quietly and enter, seeing my adorable manatee husband standing, turned away from the door with his arms crossed."
@@ -534,12 +558,12 @@ label ch1_tension:
     "Nate rolls his eyes, and follows me out of the office."
 
     scene bg flower_shop_inside
-    show nate reverse accessories_hat_leaf accessories_glasses shirt_chill shirt_overall:
+    show nate preset_work reverse:
         reverse
         xpos -0.5
         y1
         walk_to(9, 2.0, 4)
-    show wolfrick reverse accessories_watch accessories_glasses pants_formal shirt_formal:
+    show wolfrick preset_work reverse:
         reverse
         xpos 0
         y1

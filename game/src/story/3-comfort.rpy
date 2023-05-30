@@ -29,12 +29,12 @@ label ch3_comfort:
 
     "I get it, with the break-up and his money being basically held hostage…"
 
-    #voice "voice/3-comfort/001.opus"
+    voice "voice/3-comfort/001.opus"
     ni "That {i}stinky, matted-fur {b}bitch{/b}{/i} couldn't even handle an ounce of criticism!"
 
     "...he's been at it for a while."
 
-    #voice "voice/3-comfort/002.opus"
+    voice "voice/3-comfort/002.opus"
     ni "That {i}limp-knotted {b}fucker{/b}{/i} better not show his face right now."
 
     show wolfrick face_concerned
@@ -51,13 +51,13 @@ label ch3_comfort:
     voice "voice/3-comfort/004.opus"
     na "We're here, it'll be okay. If he shows up we've got your-"
 
-    #voice "voice/3-comfort/005.opus"
+    voice "voice/3-comfort/005.opus"
     ni "I {i}dare{/i} that {i}slimy-nosed {b}ass sniffer{/b}{i} to show his awful mug here!"
 
-    #voice "voice/3-comfort/006.opus"
+    voice "voice/3-comfort/006.opus"
     ni "I mean, he slept with my co-worker!"
 
-    #voice "voice/3-comfort/007.opus"
+    voice "voice/3-comfort/007.opus"
     ni "He did that shit and claimed it was to help {i}me{/i} out!"
 
     voice "voice/3-comfort/008.opus"
@@ -65,28 +65,28 @@ label ch3_comfort:
 
     w "That's horrible! What kind of man cheats on their partner?"
 
-    #voice "voice/3-comfort/009.opus"
+    voice "voice/3-comfort/009.opus"
     ni "I'm not going to miss the stupid shit he used to pull."
 
-    #voice "voice/3-comfort/010.opus"
+    voice "voice/3-comfort/010.opus"
     ni "I made most of the money, you know? He {i}still{/i} belittled me!"
 
-    #voice "voice/3-comfort/011.opus"
+    voice "voice/3-comfort/011.opus"
     ni "Constant remarks like \"You're my little dragon,\" and \"Let your wolf handle things, you're so fragile\"."
 
-    #voice "voice/3-comfort/012.opus"
+    voice "voice/3-comfort/012.opus"
     ni "I always hated that shit, he'd set himself above me in everything!"
 
     voice "voice/3-comfort/013.opus"
     na "Huh, that seems abusive. It sounds like he isolated you, too."
 
-    #voice "voice/3-comfort/014.opus"
+    voice "voice/3-comfort/014.opus"
     ni "Well, yeah. He made me stop talking to other people unless he liked them."
 
-    #voice "voice/3-comfort/015.opus"
+    voice "voice/3-comfort/015.opus"
     ni "He'd tell me I was {i}his{/i} and nobody else could have me."
 
-    #voice "voice/3-comfort/016.opus"
+    voice "voice/3-comfort/016.opus"
     ni "Like, I'm my own person! I can't stand that shit."
 
     voice "voice/3-comfort/017.opus"
@@ -99,7 +99,7 @@ label ch3_comfort:
 
     "Nate looks my way as if trying to act as though he heard me but is focused on Nic."
 
-    #voice "voice/3-comfort/019.opus"
+    voice "voice/3-comfort/019.opus"
     ni "Yes, and he's always walking around all musky and sweaty - like, boy! You stink!"
 
     voice "voice/3-comfort/020.opus"
@@ -116,7 +116,7 @@ label ch3_comfort:
     voice "voice/3-comfort/023.opus"
     w "You should have said something-"
 
-    #voice "voice/3-comfort/024.opus"
+    voice "voice/3-comfort/024.opus"
     ni "Oh, and don't even get me started on the constant need to look my best physically, otherwise people {i}compare{/i} us!"
 
     voice "voice/3-comfort/025.opus"
@@ -132,7 +132,7 @@ label ch3_comfort:
 
     "He definitely isn't listening."
 
-    #voice "voice/3-comfort/028.opus"
+    voice "voice/3-comfort/028.opus"
     ni "Goddamnit, he gets me {i}so{/i} worked up!"
 
     "Have I been awful to Nate?"
@@ -440,7 +440,7 @@ label ch3_comfort:
 
     "We hear him in the bathroom through the walls."
 
-    #voice "voice/3-comfort/075.opus"
+    voice "voice/3-comfort/075.opus"
     ni "HHUUUUUURGGHHHHHLLLLLLBLHHHHHHHH–"
 
     show wolfrick:

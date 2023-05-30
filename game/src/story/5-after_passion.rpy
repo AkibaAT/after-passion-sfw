@@ -178,43 +178,52 @@ label ch5_after_passion:
     voice "voice/5-after_passion/031.opus"
     na "We should let him fight this fight, we'll be here for support."
 
+    voice "voice/5-after_passion/032.opus"
+    w "What? No, I…"
+
+    "I remember our talk. He's right, I take charge all the time."
+    
+    "This isn't my cause."
+    
+    "It's Nic's, and I should support him with it and not take the reins."
+
     "I nod, and back up to let Zephyr in."
 
     "He cautiously enters, his eyes on mine the whole way, and walks up to Nic aggressively."
 
-    voice "voice/5-after_passion/032.opus"
+    voice "voice/5-after_passion/033.opus"
     z "So, you decided to hide here, huh?"
 
-    voice "voice/5-after_passion/033.opus"
+    voice "voice/5-after_passion/034.opus"
     ni "I’m {i}not{/i} hiding."
 
-    voice "voice/5-after_passion/034.opus"
+    voice "voice/5-after_passion/035.opus"
     ni "I’m staying with them because the person who was {i}supposed{/i} to be my partner betrayed me."
 
     "Zephyr is immediately angry and growls at Nic."
 
-    voice "voice/5-after_passion/035.opus"
+    voice "voice/5-after_passion/036.opus"
     z "I already {i}told you,{/i} I was doing that for you!"
 
     "Nic is fed up. He scoffs."
 
-    voice "voice/5-after_passion/036.opus"
+    voice "voice/5-after_passion/037.opus"
     ni "How exactly does {i}you{/i} getting your {b}dick{/b} wet help {i}me{/i}?!"
 
     "Zephyr stops and looks away."
 
-    voice "voice/5-after_passion/037.opus"
+    voice "voice/5-after_passion/038.opus"
     z "You have to believe me, I swear it wasn’t what it seemed."
 
-    voice "voice/5-after_passion/038.opus"
+    voice "voice/5-after_passion/039.opus"
     z "There were people who wanted to take you from me, so I made a deal to protect you."
 
     "Nic scoffs again."
 
-    voice "voice/5-after_passion/039.opus"
+    voice "voice/5-after_passion/040.opus"
     ni "Honestly? {i}Good{/i}! Let them take me!"
 
-    voice "voice/5-after_passion/040.opus"
+    voice "voice/5-after_passion/041.opus"
     ni "I’d rather be with stupid mafia kidnappers than your abusive, matted-fur ass a second longer!"
 
     "Not quite sure where all of the bark is coming from on Nic, Nate and I redouble our defensive placement."
@@ -223,158 +232,158 @@ label ch5_after_passion:
 
     "Nic seems ready for this, though."
 
-    voice "voice/5-after_passion/040.opus"
+    voice "voice/5-after_passion/042.opus"
     z "I didn’t go through all this shit just to have you {i}leave me{/i} like a punk ass bitch!"
 
-    voice "voice/5-after_passion/041.opus"
+    voice "voice/5-after_passion/043.opus"
     z "You’re {i}mine{/i}, Dominic."
 
-    voice "voice/5-after_passion/042.opus"
+    voice "voice/5-after_passion/044.opus"
     z "{b}Mine.{/b}"
 
     "Nic looks to waver for a moment, but looks at me and Nate and smiles."
 
-    voice "voice/5-after_passion/043.opus"
+    voice "voice/5-after_passion/045.opus"
     ni "Zephyr…"
 
     "Nic moves closer to Zephyr, his voice calmer."
 
     "Zephyr takes Nic’s hands and gets on his knees."
 
-    voice "voice/5-after_passion/044.opus"
+    voice "voice/5-after_passion/046.opus"
     z "I know I’m aggressive, and get angry sometimes, and I’m stronger than you – but I’d never hurt ya."
 
     "Nic’s face softens, and it looks like his plea is working."
 
-    voice "voice/5-after_passion/045.opus"
+    voice "voice/5-after_passion/047.opus"
     z "You just need to follow my lead, baby–"
 
-    voice "voice/5-after_passion/046.opus"
+    voice "voice/5-after_passion/048.opus"
     z "--let your big, bad wolf give ya the world."
 
-    voice "voice/5-after_passion/047.opus"
+    voice "voice/5-after_passion/049.opus"
     z "Let me protect you from everything, let me show you how much I love ya."
 
-    voice "voice/5-after_passion/048.opus"
+    voice "voice/5-after_passion/050.opus"
     z "I didn’t sleep with that shithead for nothin, baby!"
 
-    voice "voice/5-after_passion/049.opus"
+    voice "voice/5-after_passion/051.opus"
     z "I wouldn’t hurt you like that, I {i}had{/i} to do it."
 
-    voice "voice/5-after_passion/050.opus"
+    voice "voice/5-after_passion/052.opus"
     z "Nic, baby. I’m your wolf."
 
-    voice "voice/5-after_passion/051.opus"
+    voice "voice/5-after_passion/053.opus"
     z "I’m the only one for you!"
 
-    voice "voice/5-after_passion/052.opus"
+    voice "voice/5-after_passion/054.opus"
     z "You know me."
 
-    voice "voice/5-after_passion/053.opus"
+    voice "voice/5-after_passion/055.opus"
     ni "You know, that might have been enough for me before."
 
-    voice "voice/5-after_passion/054.opus"
+    voice "voice/5-after_passion/056.opus"
     ni "I used to just let you walk all over me and get away with shady shit."
 
     "Nic’s voice is deadly calm, his words seem to be chosen carefully."
 
-    voice "voice/5-after_passion/055.opus"
+    voice "voice/5-after_passion/057.opus"
     ni "It was never easy. I tried every day to be the same person I always was–"
 
     "His gaze hardens a bit."
 
-    voice "voice/5-after_passion/056.opus"
+    voice "voice/5-after_passion/058.opus"
     ni "--even in spite of all of the shit I knew you’d done. Things your crew made you do, or you wanted to do, it doesn’t matter."
 
-    voice "voice/5-after_passion/057.opus"
+    voice "voice/5-after_passion/059.opus"
     ni "When you love someone, you put the best parts of yourself forward for them. When you can bring out the best in others, and they show it…"
 
     "Nic smiles at Nate and I again."
 
-    voice "voice/5-after_passion/058.opus"
+    voice "voice/5-after_passion/060.opus"
     ni "...and when they can do the same for you – you become something worth so much to one another."
 
-    voice "voice/5-after_passion/059.opus"
+    voice "voice/5-after_passion/061.opus"
     ni "You become family. That’s {i}real{/i} care, {i}real{/i} love."
 
-    voice "voice/5-after_passion/060.opus"
+    voice "voice/5-after_passion/062.opus"
     ni "Someone like you who only brings out the worst in others."
 
     "Nic scoffs, looking Zephyr up and down."
 
-    voice "voice/5-after_passion/061.opus"
+    voice "voice/5-after_passion/063.opus"
     ni "You have no worth. Not to anybody."
 
-    voice "voice/5-after_passion/062.opus"
+    voice "voice/5-after_passion/064.opus"
     ni "Nothing will ever be good enough for you. You don’t deserve me."
 
-    voice "voice/5-after_passion/063.opus"
+    voice "voice/5-after_passion/065.opus"
     ni "Now prove to me you have even a {i}shred{/i} of dignity and give me our ATM card!"
 
-    voice "voice/5-after_passion/064.opus"
+    voice "voice/5-after_passion/066.opus"
     ni "I’m taking my money, and then you and I will never meet again."
 
-    voice "voice/5-after_passion/065.opus"
+    voice "voice/5-after_passion/067.opus"
     ni "I’m done supporting a criminal."
 
-    voice "voice/5-after_passion/066.opus"
+    voice "voice/5-after_passion/068.opus"
     z "B-but, baby!"
 
     "Nic shakes his head and holds out his hand."
 
-    voice "voice/5-after_passion/067.opus"
+    voice "voice/5-after_passion/069.opus"
     ni "Hand it over."
 
     "Zephyr is…quivering?"
 
     "Tears are forming in his eyes, but he produces his wallet and takes the ATM card out of it."
 
-    voice "voice/5-after_passion/068.opus"
+    voice "voice/5-after_passion/070.opus"
     z "H-here. It’s yours."
 
     "Nic smirks over Zephyr confidently and takes the card."
 
     "Somehow, he’s come out on top."
 
-    voice "voice/5-after_passion/069.opus"
+    voice "voice/5-after_passion/071.opus"
     ni "Now, there’s the door. {i}Please{/i} let it hit you on the way out."
 
     "With that, Zephyr scrambles to his feet and rushes out the door."
 
     "Nic turns to us and smiles."
 
-    voice "voice/5-after_passion/070.opus"
+    voice "voice/5-after_passion/072.opus"
     ni "So, how’d I do?"
 
     "Nate is upon him in a flash, hugging him."
 
     "I move to join them both."
 
-    voice "voice/5-after_passion/071.opus"
+    voice "voice/5-after_passion/073.opus"
     na "Nic, that was amazing!"
 
-    voice "voice/5-after_passion/071.opus"
+    voice "voice/5-after_passion/074.opus"
     na "You didn’t let him get to you and stood your ground."
 
-    voice "voice/5-after_passion/072.opus"
+    voice "voice/5-after_passion/075.opus"
     w "Yeah, I’m impressed! W-was that scary? Are you alright?"
 
     "Nic thinks for a moment and then shrugs."
 
-    voice "voice/5-after_passion/073.opus"
+    voice "voice/5-after_passion/076.opus"
     ni "Hmm… nah! At first I was scared, yeah. But then I realized I’m better off."
 
-    voice "voice/5-after_passion/074.opus"
+    voice "voice/5-after_passion/077.opus"
     ni "Oh! Anyway, I’ve gotta finish getting ready~"
 
     "With that, he’s back into the bathroom."
 
     "Nate and I look at one another."
 
-    voice "voice/5-after_passion/075.opus"
+    voice "voice/5-after_passion/078.opus"
     na "Talk about whiplash."
 
-    voice "voice/5-after_passion/076.opus"
+    voice "voice/5-after_passion/079.opus"
     w "Yeah…"
 
     "Nate looks to the side, sullenly."
@@ -389,29 +398,29 @@ label ch5_after_passion:
 
     "I step closer to him."
 
-    voice "voice/5-after_passion/077.opus"
+    voice "voice/5-after_passion/080.opus"
     w "Nate?"
 
-    voice "voice/5-after_passion/078.opus"
+    voice "voice/5-after_passion/081.opus"
     na "Yes, Wolfrick?"
 
-    voice "voice/5-after_passion/079.opus"
+    voice "voice/5-after_passion/082.opus"
     w "What's the matter?"
 
-    voice "voice/5-after_passion/080.opus"
+    voice "voice/5-after_passion/083.opus"
     na "Are we going to… be okay?"
 
     "Oh. That's what he's worried about."
 
-    voice "voice/5-after_passion/081.opus"
+    voice "voice/5-after_passion/084.opus"
     na "I don't ever want to fight with you like what just happened here."
 
-    voice "voice/5-after_passion/082.opus"
+    voice "voice/5-after_passion/085.opus"
     w "We'll be okay, Nate."
 
     "We have one thing going for us that Zephyr couldn't figure out."
 
-    voice "voice/5-after_passion/083.opus"
+    voice "voice/5-after_passion/086.opus"
     w "You're {i}more{/i} than enough for me."
 
     "That one thing makes all the difference."
@@ -422,12 +431,12 @@ label ch5_after_passion:
 
     "I'm realizing more and more that I don't need to be the {i}wolf{/i} of his dreams."
 
-    voice "voice/5-after_passion/084.opus"
+    voice "voice/5-after_passion/087.opus"
     w "Nate, I'm here. Your husband is here."
 
     "Nate gently hums and I nuzzle him gently."
 
-    voice "voice/5-after_passion/085.opus"
+    voice "voice/5-after_passion/088.opus"
     na "Mmm… My husband~"
 
     scene black with fade

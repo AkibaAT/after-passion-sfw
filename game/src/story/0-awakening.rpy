@@ -1,6 +1,6 @@
 default player_name="Human From The Alley"
 
-# This completely breaks script reloads, disable when developing
+# Keep as main_menu_disable in VCS! It's being replaced during GitHub build.
 label main_menu_disable:
     # Immediately jump into the prologue, skipping the menu
     if persistent.chapter_progress < 1:

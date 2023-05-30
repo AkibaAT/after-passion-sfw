@@ -250,7 +250,7 @@ screen quick_menu():
             style_prefix "quick"
 
             xalign 0.5
-            yalign 1.0
+            yalign 0.99
 
             textbutton _("Back") action Rollback()
             textbutton _("History") action ShowMenu('history')
@@ -270,7 +270,7 @@ init python:
 default quick_menu = True
 
 style quick_frame:
-    background Image("gui/textbox.png", xalign=0.5, yalign=1.307)
+    background Image("gui/textbox.png", xalign=0.5, yalign=1.285)
 
 style quick_button is default
 style quick_button_text is button_text
@@ -321,7 +321,8 @@ screen navigation():
 
             textbutton _("End Replay") action EndReplay(confirm=True)
 
-        elif not main_menu:
+        # No main menu access until 
+        elif not main_menu and persistent.chapter_progress > 0:
 
             textbutton _("Main Menu") action MainMenu()
 
@@ -767,6 +768,13 @@ screen preferences():
 
     use game_menu(_("Preferences"), scroll="viewport"):
 
+        if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
+            $ columns = 2
+            $ rows = 6
+        else:
+            $ columns = 1
+            $ rows = 12
+
         vbox:
 
             hbox:
@@ -799,7 +807,7 @@ screen preferences():
                 ## Additional vboxes of type "radio_pref" or "check_pref" can be
                 ## added here, to add additional creator-defined preferences.
 
-            grid 2 6:
+            grid columns rows:
                 style_prefix "slider"
 
                 vbox:
@@ -1561,6 +1569,13 @@ define bubble.expand_area = {
 ## Mobile Variants
 ################################################################################
 
+image bg main_menu_composite_mobile = Composite(
+    (0, 0),
+    (0, 0), "bg main_menu",
+    (450, -330), Transform("wolfrick shirt_formal face_happy pants_formal accessories_glasses accessories_watch body_chill reverse", xzoom=-1),
+    (0, 0), "gui/phone/overlay/main_menu.png"
+)
+
 style pref_vbox:
     variant "medium"
     xsize 675
@@ -1572,19 +1587,26 @@ screen quick_menu():
 
     zorder 100
 
+    frame:
+        style "quick_frame"
+
     if quick_menu:
 
         hbox:
             style_prefix "quick"
 
             xalign 0.5
-            yalign 1.0
+            yalign 0.99
 
             textbutton _("Back") action Rollback()
             textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
             textbutton _("Auto") action Preference("auto-forward", "toggle")
             textbutton _("Menu") action ShowMenu()
 
+
+style quick_frame:
+    variant "small"
+    background Image("gui/phone/textbox.png", yalign=1.434)
 
 style window:
     variant "small"
@@ -1604,7 +1626,7 @@ style nvl_window:
 
 style main_menu_frame:
     variant "small"
-    background "gui/phone/overlay/main_menu.png"
+    background "bg main_menu_composite_mobile"
 
 style game_menu_outer_frame:
     variant "small"

@@ -250,7 +250,7 @@ screen quick_menu():
             style_prefix "quick"
 
             xalign 0.5
-            yalign 0.99
+            yalign 1.0
 
             textbutton _("Back") action Rollback()
             textbutton _("History") action ShowMenu('history')
@@ -270,7 +270,7 @@ init python:
 default quick_menu = True
 
 style quick_frame:
-    background Image("gui/textbox.png", xalign=0.5, yalign=1.285)
+    background Image("gui/textbox.png", xalign=0.5, yalign=1.307)
 
 style quick_button is default
 style quick_button_text is button_text

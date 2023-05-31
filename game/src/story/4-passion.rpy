@@ -141,6 +141,9 @@ label ch4_passion:
     voice "voice/4-passion/007.opus"
     na "That’s so… sweet."
 
+    show nate -reverse:
+        no_reverse
+
     voice "voice/4-passion/008.opus"
     na "You meant it when you said \"we\" were taking care of him, huh?"
 

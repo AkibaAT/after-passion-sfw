@@ -2,7 +2,7 @@ name: Release Workflow
 
 env:
   renpy_version: "8.1.0"
-  itch_project_name: akibaokapi/after-passion
+  itch_project_name: akibaokapi/after-passion-sfw
   build_name: AfterPassion
   android_build_name: games.akiba.afterpassion
 

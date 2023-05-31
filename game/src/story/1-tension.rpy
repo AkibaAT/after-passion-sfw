@@ -385,7 +385,8 @@ label ch1_tension:
 
     "I look around. Nate was supposed to have lunch here already, but there's nothing."
 
-    show wolfrick face_stern
+    show wolfrick reverse face_stern:
+        reverse
     show nate face_concerned
 
     "Looking back to Nate, he's sheepishly scratching his neck, looking away."

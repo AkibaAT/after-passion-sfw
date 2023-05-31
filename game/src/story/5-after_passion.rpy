@@ -526,6 +526,7 @@ label ch5_after_passion:
 
     show zephyr face_sad:
         y1_4
+    play music "music/June.opus" volume 0.15 fadein 1.0 fadeout 2.0
 
     voice "voice/5-after_passion/046.opus"
     z "I know I’m aggressive, and get angry sometimes, and I’m stronger than you – but I’d never hurt ya."
@@ -659,6 +660,7 @@ label ch5_after_passion:
     voice "voice/5-after_passion/072.opus"
     ni "So, how’d I do?"
 
+    stop music fadeout 2.0
     play music "music/Guardian Angel3.opus" volume 0.15 fadein 1.0 fadeout 2.0
     show nate face_happy:
         hug_left()

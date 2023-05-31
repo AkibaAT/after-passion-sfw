@@ -792,8 +792,6 @@ label ch5_after_passion:
 
     show wolfrick at hug_left
 
-    top_right "The End."
-
     "Nate gently hums and I nuzzle him gently."
 
     show wolfrick at no_offset

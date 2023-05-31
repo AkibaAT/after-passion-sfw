@@ -103,9 +103,9 @@ define config.sample_sound = "effects/city_crowd_sample.opus"
 define config.sample_voice = {
     "human": "voice/0-awakening/009.opus",
     "nate": "voice/1-tension/004.opus",
-    "nic": "voice/0-awakening/009.opus",
+    "nic": "voice/5-after_passion/077.opus",
     "wolfrick": "voice/0-awakening/038.opus",
-    "zephyr": "voice/0-awakening/009.opus"
+    "zephyr": "voice/5-after_passion/025.opus"
 }
 define sample_music = "music/Guardian Angel_sample.opus"
 

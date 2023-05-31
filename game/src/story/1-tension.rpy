@@ -98,6 +98,7 @@ label ch1_tension:
         block:
             nod()
             repeat
+    with dissolve
 
     "Panting, I finally reach the arched wooden door with stained glass panes embedded in the upper half-circle."
 
@@ -357,8 +358,6 @@ label ch1_tension:
 
     voice "voice/1-tension/018.opus"
     w "I thought that guy I met earlier was homeless, but he turned out to be one of them."
-
-    show wolfrick face_angry
 
     voice "voice/1-tension/019.opus"
     w "I don't know, Nate. They all seem to want something. How'd you like to see them all stealing your man, huh? I know {i}I{/i} wouldn't want them stealing {i}mine{/i}!"

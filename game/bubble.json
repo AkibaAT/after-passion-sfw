@@ -1957,6 +1957,15 @@
             225
         ]
     },
+    "ch4_passion_23d09b81": {
+        "area": [
+            1200,
+            405,
+            320,
+            135
+        ],
+        "properties": "top_right"
+    },
     "ch4_passion_2ebbb4d2": {
         "area": [
             1520,
@@ -2055,6 +2064,15 @@
             135
         ]
     },
+    "ch4_passion_a68dae1a": {
+        "area": [
+            480,
+            540,
+            400,
+            180
+        ],
+        "properties": "bottom_right"
+    },
     "ch4_passion_a9424e8d": {
         "area": [
             1120,
@@ -2094,6 +2112,14 @@
             0,
             400,
             315
+        ]
+    },
+    "ch4_passion_d2b970eb": {
+        "area": [
+            1280,
+            675,
+            320,
+            180
         ]
     },
     "ch4_passion_d79fe67d": {
@@ -2136,6 +2162,15 @@
             240,
             180
         ]
+    },
+    "ch4_passion_ecc353f2": {
+        "area": [
+            560,
+            675,
+            320,
+            135
+        ],
+        "properties": "bottom_left"
     },
     "ch4_passion_f34e24de": {
         "area": [

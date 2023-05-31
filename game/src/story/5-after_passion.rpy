@@ -262,7 +262,7 @@ label ch5_after_passion:
     z "I know you're there, wolf-bitch. I heard you all walk up to the door and I can smell your furry ass."
 
     show wolfrick face_angry:
-        no_offset
+        reset_pos(9)
         shake()
         pause 0.2
         flip_back(["face_stern"])

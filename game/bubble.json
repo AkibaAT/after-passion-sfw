@@ -1966,6 +1966,15 @@
         ],
         "properties": "top_right"
     },
+    "ch4_passion_277c243d": {
+        "area": [
+            480,
+            540,
+            400,
+            180
+        ],
+        "properties": "bottom_right"
+    },
     "ch4_passion_2ebbb4d2": {
         "area": [
             1520,
@@ -2154,6 +2163,15 @@
             400,
             270
         ]
+    },
+    "ch4_passion_e7354d07": {
+        "area": [
+            1280,
+            675,
+            320,
+            180
+        ],
+        "properties": "bottom_left"
     },
     "ch4_passion_ec6fc477": {
         "area": [

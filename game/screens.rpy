@@ -9,6 +9,23 @@ init offset = -1
 ## Styles
 ################################################################################
 
+style top_right_window is default
+style top_right_window:
+    xalign 0.9
+    xfill False
+    yalign 0.1
+    yfill False
+    xpadding 10
+
+style top_right_text is default
+style top_right_text:
+    textalign 0.5
+    color '#000000'
+    size 50
+    xalign 0.5
+    yalign 0.5
+    layout "subtitle"
+
 style default:
     properties gui.text_properties()
     language gui.language
@@ -366,7 +383,10 @@ screen main_menu():
 
     ## This empty frame darkens the main menu.
     frame:
-        style "main_menu_frame"
+        if persistent.chapter_progress < 6:
+            style "main_menu_frame"
+        else:
+            style "main_menu_end_frame"
 
     ## The use statement includes another screen inside this one. The actual
     ## contents of the main menu are in the navigation screen.
@@ -397,11 +417,23 @@ image bg main_menu_composite = Composite(
     (0, 0), "gui/overlay/main_menu.png"
 )
 
+image bg main_menu_end_composite = Composite(
+    (0, 0),
+    (0, 0), "cg end_menu",
+    (0, 0), "gui/overlay/main_menu.png"
+)
+
 style main_menu_frame:
     xsize 420
     yfill True
 
     background "bg main_menu_composite"
+
+style main_menu_end_frame:
+    xsize 420
+    yfill True
+
+    background "bg main_menu_end_composite"
 
 style main_menu_vbox:
     xalign 1.0
@@ -432,11 +464,6 @@ style main_menu_version:
 screen game_menu(title, scroll=None, yinitial=0.0):
 
     style_prefix "game_menu"
-
-    if main_menu:
-        add gui.main_menu_background
-    else:
-        add gui.game_menu_background
 
     frame:
         style "game_menu_outer_frame"
@@ -1576,6 +1603,12 @@ image bg main_menu_composite_mobile = Composite(
     (0, 0), "gui/phone/overlay/main_menu.png"
 )
 
+image bg main_menu_end_composite_mobile = Composite(
+    (0, 0),
+    (0, 0), "cg end_menu",
+    (0, 0), "gui/phone/overlay/main_menu.png"
+)
+
 style pref_vbox:
     variant "medium"
     xsize 675
@@ -1627,6 +1660,10 @@ style nvl_window:
 style main_menu_frame:
     variant "small"
     background "bg main_menu_composite_mobile"
+
+style main_menu_end_frame:
+    variant "small"
+    background "bg main_menu_end_composite_mobile"
 
 style game_menu_outer_frame:
     variant "small"

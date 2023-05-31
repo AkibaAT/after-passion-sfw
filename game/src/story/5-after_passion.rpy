@@ -1,4 +1,5 @@
 define nc = Character(None, kind=bubble, image="Newscaster", callback=speaker("Newscaster"), voice_tag="newscaster")
+define top_right = Character(None, what_style="top_right_text", window_style="top_right_window", statement_name="say-top-right")
 
 label ch5_after_passion:
 
@@ -791,6 +792,8 @@ label ch5_after_passion:
 
     show wolfrick at hug_left
 
+    top_right "The End."
+
     "Nate gently hums and I nuzzle him gently."
 
     show wolfrick at no_offset
@@ -799,4 +802,15 @@ label ch5_after_passion:
     na "Mmm… My husband~"
 
     stop music fadeout 2.0
+
+    scene cg end with dissolve
+
+    top_right "The End."
+
     scene black with fade
+
+    centered "Thank you for playing!"
+
+    scene black with fade
+
+    $ set_chapter_progress(6)

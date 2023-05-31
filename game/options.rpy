@@ -58,6 +58,9 @@ Joao Picoito - Heavy Falling Feather
 
 Joao Picoito - Palavras do Silencio
 
+CC BY-NC 4.0
+
+Kai Engel - June
 
 CC By 4.0
 

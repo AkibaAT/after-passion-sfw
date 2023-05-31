@@ -31,25 +31,27 @@ define config.version = "1.0"
 
 define gui.about = _p("""
 
-Audio Editing: Ryezun
-
-CGs: JadenPup
+Writing: Lavan
 
 Sprites: Cody(0rang3)
 
 Sprites Edits: Akiba
 
-Programming: Akiba
+CGs: JadenPup
 
-Publishing: Akiba
+Audio Editing: Ryezun
 
 Sounds: Akiba, Lavan, and Ryezun
 
-Voice Acting: Akiba as Wolfrick and Zephyr, Lavan as Nic, and Ryezun as Human and Nate
-
 Voice Acting Director: Lavan
 
-Writing: Lavan
+Voice Acting: Akiba (as Wolfrick and Zephyr), Lavan (as Nic), and Ryezun (as Human, Nate, and Newscaster)
+
+Lead Programmer: Akiba
+
+Programming: Ryezun
+
+Publishing: Akiba
 
 
 CC By-NC-SA 4.0

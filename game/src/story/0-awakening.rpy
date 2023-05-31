@@ -180,6 +180,7 @@ label ch0_awakening:
     "He begins to walk away."
 
     hide wolfrick
+    pause 0.5
     
     voice "voice/0-awakening/Freak.opus"
     w "Freak"

@@ -210,7 +210,7 @@ label ch1_tension:
     "Within, I hear what sounds like a droning voice that is either very small and quiet or, somehow, very distant."
 
     play sound "effects/door_open.opus" volume 0.5
-    play music "music/Guardian Angel1.opus" volume 0.4 fadein 1.0 fadeout 2.0
+    play music "music/Guardian Angel1.opus" volume 0.15 fadein 1.0 fadeout 2.0
     scene bg flower_shop_backoffice
     show nate preset_work reverse:
         y1

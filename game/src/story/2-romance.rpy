@@ -201,7 +201,7 @@ label ch2_romance:
 
     "Nate puts a hand on Nic's shoulder."
 
-    play music "music/Guardian Angel1.opus" volume 0.4 fadein 1.0 fadeout 2.0
+    play music "music/Guardian Angel1.opus" volume 0.15 fadein 1.0 fadeout 2.0
     voice "voice/2-romance/013.opus"
     na "We'll just… be a moment."
 

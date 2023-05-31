@@ -226,7 +226,7 @@ label ch4_passion:
 
     "We find him on the balcony, wrapped in a bathrobe and eyes wet with tears."
 
-    play music "music/Silencio.opus" volume 0.4 fadein 1.0 fadeout 2.0
+    play music "music/Silencio.opus" volume 0.15 fadein 1.0 fadeout 2.0
     show nate:
         reset_pos(7.5)
     show wolfrick:
@@ -405,7 +405,7 @@ label ch4_passion:
 
     "I told him he could borrow any of my CDs."
 
-    play sound '/effects/snore.opus' volume 0.08
+    play sound 'audio/effects/snore.opus' volume 0.08
     "Nate and I are holding hands as we head back to the room, and before long we hear Nic's snoring coming from the other room."
 
     scene bg apartment_bedroom_main
@@ -416,6 +416,7 @@ label ch4_passion:
         pause 1.5
         flip()
     with fade
+    stop sound
 
     "I turn to Nate in bed."
 

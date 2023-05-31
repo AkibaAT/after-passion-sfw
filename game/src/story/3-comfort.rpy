@@ -183,7 +183,7 @@ label ch3_comfort:
     "Nate pats Nic on the shoulder and stands up to follow."
 
     play ambient "audio/effects/day_balcony.opus" volume 0.5
-    play music "music/Guardian Angel2.opus" volume 0.4 fadein 1.0 fadeout 2.0
+    play music "music/Guardian Angel2.opus" volume 0.15 fadein 1.0 fadeout 2.0
 
     scene bg apartment_balcony_day
     show nate preset_casual:
@@ -293,8 +293,11 @@ label ch3_comfort:
     voice "voice/3-comfort/050.opus"
     na "Do I really? I guess I hadn't noticed…"
 
-    voice "voice/3-comfort/051.opus"
-    w "Well, there was earlier - you got so drawn in to the news broadcast that you forgot to order lunch, and then I tried to make it up by making dinner for us and that got ruined."
+    voice "voice/3-comfort/051-1.opus"
+    w "Well, there was earlier - you got so drawn in to the news broadcast that you forgot to order lunch."
+
+    voice "voice/3-comfort/051-2.opus"
+    w "Then I tried to make it up by making dinner for us, and that got ruined."
 
     voice "voice/3-comfort/052.opus"
     na "{i}Ruined?!{/i} My apologies for helping out my cousin, so sorry it interrupted {i}dinner{/i} but-"
@@ -315,6 +318,7 @@ label ch3_comfort:
     voice "voice/3-comfort/056.opus"
     w "You just…barely even acknowledged that I was there. It made me feel like I was eavesdropping while you guys were taking potshots at wolves in general."
 
+    show wolfrick face_sad
     voice "voice/3-comfort/057.opus"
     w "It hurt, Nate."
 
@@ -336,6 +340,8 @@ label ch3_comfort:
     voice "voice/3-comfort/063.opus"
     na "The flower shop helped, but there was something {i}missing{/i}."
 
+    show wolfrick face_concerned
+    show nate face_happy
     voice "voice/3-comfort/064.opus"
     na "I love flowers, don't get me wrong-"
 
@@ -345,11 +351,14 @@ label ch3_comfort:
 
     "I missed this look, he had it all the time back then."
 
+    show nate face_neutral
     voice "voice/3-comfort/065.opus"
     na "But there just isn't any {i}passion{/i} in that for me."
 
     voice "voice/3-comfort/066.opus"
     na "Fighting for these causes - they're something I can do to make change, and {i}I'm{/i} in control of  leading the charge!"
+
+    show wolfrick face_smiling
 
     "I smile, seeing him full of life." 
 

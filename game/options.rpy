@@ -23,7 +23,7 @@ define gui.show_name = True
 
 ## The version of the game.
 
-define config.version = "1.0"
+#define config.version = "1.0.3"
 
 
 ## Text that is placed on the game's about screen. Place the text between the
@@ -135,9 +135,9 @@ define config.intra_transition = dissolve
 
 ## A transition that is used after a game has been loaded.
 
-define Swing = Swing(delay=0.5, vertical=True, reverse=True, background='#0a0d14', flatten=False)
+define swing_horizontal = Swing(delay=0.5, vertical=True, reverse=True, background='#0a0d14', flatten=False)
 
-define config.after_load_transition = Swing
+define config.after_load_transition = swing_horizontal
 
 
 ## Used when entering the main menu after the game has ended.

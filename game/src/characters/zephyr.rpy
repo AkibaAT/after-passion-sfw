@@ -21,6 +21,9 @@ layeredimage zephyr:
 
     attribute reverse null
 
+    group preset prefix "preset":
+        attribute casual null
+
     group body auto prefix "body":
         attribute chill default
     group face auto prefix "face":

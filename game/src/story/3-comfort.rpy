@@ -465,7 +465,9 @@ label ch3_comfort:
 
     "I turn to Nate and chuckle."
 
-    show wolfrick at no_offset
+    show wolfrick -reverse:
+        no_offset
+        no_reverse 
     show nate face_happy:
         nod()
 

@@ -39,18 +39,24 @@ label ch0_awakening:
 
     voice "voice/0-awakening/MyNameIs.opus" 
     $ player_input = renpy.input("My name is...").strip()
-    $ name = "Human From The Alley"
 
     if player_input == "Sonic":
-        $ player_name = "Sonic"
-    # Trying to fix this up 
+        $ player_name = "Sonic" 
+        voice "voice/0-awakening/ThatSoundsRight.opus" # Will need to replace this with sonic voice line lol
+        "%(player_name)s. That sounds right." 
+        jump .ch0_awakening
+    elif player_input == "Human From The Alley":
+        $ player_name = "Human From The Alley"
+        voice "voice/0-awakening/ThatSoundsRight.opus"
+        "%(player_name)s. That sounds right." 
+        jump .ch0_awakening
+    else:
+        $ player_name = "Human From The Alley"
 
-    "%(player_input)s."
+    "%(player_input)s..."
 
-    "Hmm, that doesn't sound quite right. I think my name is %(name)s." # Add an if else here so it plays this if it isn't sonic and an alternative if it is.
-
-    #voice "voice/0-awakening/ThatSoundsRight.opus"
-    #"%(player_name)s. That sounds right." 
+    "Hmm, that doesn't sound quite right. I think my name is %(player_name)s." #Voice needed
+label .ch0_awakening:
 
     voice "voice/0-awakening/008.opus"
     "I examine my hands and body. Everything seems fine. I see no injuries."

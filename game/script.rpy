@@ -7,8 +7,8 @@
     store.current_label = None
     config.label_callback = label_callback
 
-    def set_chapter_progress(value, force=False):
-        if (persistent.chapter_progress < value) or force:
+    def set_chapter_progress(value):
+        if (persistent.chapter_progress < value):
             persistent.chapter_progress = value
 
 default persistent.chapter_progress = 0

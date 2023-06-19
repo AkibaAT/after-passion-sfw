@@ -14,8 +14,12 @@ label ch1_tension:
         pause 0.1
         walk_to(5)
     with dissolve
+    alt "Description: A city fades into view. To the right, the same wolf from before, dressed in a black suit and purple tie, and light blue pants, wearing glasses, and a wristwatch on his right arm, enters the scene from the right and stops at the middle."
+    alt "All of the following narration will be from the perspective of that same wolf."
 
     "I'm late."
+
+    alt "Description: The wolf starts walking towards the left, an array of different city backgrounds passing by."
 
     show wolfrick:
         reset_pos(5)
@@ -101,6 +105,7 @@ label ch1_tension:
     with dissolve
 
     "Panting, I finally reach the arched wooden door with stained glass panes embedded in the upper half-circle."
+    alt "Description: The wolf stops at a flower shop, flowers of all kinds standing out in front."
 
     show wolfrick:
         reset_pos(8)
@@ -152,6 +157,7 @@ label ch1_tension:
         y1
         walk_in_right()
     with dissolve
+    alt "Description: The wolf enters the flower shop, colorful flowers standing everywhere."
 
     stop music fadeout 2.0
     voice "voice/1-tension/001.opus"
@@ -170,6 +176,7 @@ label ch1_tension:
     voice "voice/1-tension/002.opus"
     w "...Nate?"
 
+    alt "Description: The wolf's smile fades as he looks around the empty flower shop."
     show wolfrick face_concerned
 
     "There really {i}is{/i} nobody here."

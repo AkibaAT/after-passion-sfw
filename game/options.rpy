@@ -100,13 +100,13 @@ define config.default_voice_volume = 0.7
 ## uncomment a line below and use it to set a sample sound to play.
 
 define config.sample_sound = "effects/city_crowd_sample.opus"
-define config.sample_voice = {
-    "human": "voice/0-awakening/009.opus",
-    "nate": "voice/1-tension/004.opus",
-    "nic": "voice/5-after_passion/077.opus",
-    "wolfrick": "voice/0-awakening/038.opus",
-    "zephyr": "voice/5-after_passion/025.opus"
-}
+define config.sample_voice = [
+    "voice/0-awakening/009.opus",
+    "voice/1-tension/004.opus",
+    "voice/5-after_passion/077.opus",
+    "voice/0-awakening/038.opus",
+    "voice/5-after_passion/025.opus"
+]
 define sample_music = "music/Guardian Angel_sample.opus"
 
 ## Uncomment the following line to set an audio file that will be played while

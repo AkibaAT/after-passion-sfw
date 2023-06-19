@@ -796,10 +796,14 @@ screen preferences():
 
         if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
             $ columns = 2
-            $ rows = 6
+            $ rows = 4
+            $ voice_columns = 3
+            $ voice_rows = 2
         else:
             $ columns = 1
-            $ rows = 12
+            $ rows = 7
+            $ voice_columns = 2
+            $ voice_rows = 3
 
         vbox:
 
@@ -830,6 +834,28 @@ screen preferences():
                     textbutton _("OpenDyslexic"):
                         action StylePreference("text", "dyslexic")
 
+            hbox:
+                box_wrap True
+                vbox:
+                    style_prefix "check"
+                    label _("Voice-overs")
+
+            grid voice_columns voice_rows:
+                style_prefix "check"
+                vbox:
+                    textbutton _("Mute Nate") action ToggleVoiceMute("nate")
+                vbox:
+                    textbutton _("Mute Nic") action ToggleVoiceMute("nic")
+                vbox:
+                    textbutton _("Mute Wolfrick") action ToggleVoiceMute("wolfrick")
+                vbox:
+                    textbutton _("Mute Zephyr") action ToggleVoiceMute("zephyr")
+                vbox:
+                    textbutton _("Mute Newscaster") action ToggleVoiceMute("newscaster")
+                if current_label == "ch0_awakening":
+                    vbox:
+                        textbutton _("Mute Human") action ToggleVoiceMute("human")
+
                 ## Additional vboxes of type "radio_pref" or "check_pref" can be
                 ## added here, to add additional creator-defined preferences.
 
@@ -847,7 +873,7 @@ screen preferences():
                         bar value Preference("auto-forward time")
 
                 vbox:
-                    label _("Main Volume")
+                    label _("Master Volume")
                     hbox:
                         bar value Preference("main volume")
 
@@ -866,46 +892,15 @@ screen preferences():
                             textbutton _("Test") action Play("sound", config.sample_sound)
 
                 vbox:
-                    label _("Voice Volume All Characters")
+                    label _("Voice Volume")
                     hbox:
                         bar value Preference("voice volume")
-
-                if current_label == "ch0_awakening":
-                    vbox:
-                        label _("Voice Volume Human")
-                        hbox:
-                            bar value SetCharacterVolume("human")
-                            textbutton _("Test") action PlayCharacterVoice("human", config.sample_voice["human"])
+                        textbutton _("Test") action Play("sound", renpy.random.choice(config.sample_voice))
 
                 vbox:
-                    label _("Voice Volume Nate")
-                    hbox:
-                        bar value SetCharacterVolume("nate")
-                        textbutton _("Test") action PlayCharacterVoice("nate", config.sample_voice["nate"])
-
-                vbox:
-                    label _("Voice Volume Nic")
-                    hbox:
-                        bar value SetCharacterVolume("nic")
-                        textbutton _("Test") action PlayCharacterVoice("nic", config.sample_voice["nic"])
-
-                vbox:
-                        label _("Voice Volume Wolfrick")
-                        hbox:
-                            bar value SetCharacterVolume("wolfrick")
-                            textbutton _("Test") action PlayCharacterVoice("wolfrick", config.sample_voice["wolfrick"])
-
-                vbox:
-                        label _("Voice Volume Zephyr")
-                        hbox:
-                            bar value SetCharacterVolume("zephyr")
-                            textbutton _("Test") action PlayCharacterVoice("zephyr", config.sample_voice["zephyr"])
-
-                if config.has_music or config.has_sound or config.has_voice:
-                    vbox:
-                        textbutton _("Mute All"):
-                            action Preference("all mute", "toggle")
-                            style "mute_all_button"
+                    textbutton _("Mute All"):
+                        action Preference("all mute", "toggle")
+                        style "mute_all_button"
 
 
 style pref_label is gui_label

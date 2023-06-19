@@ -39,7 +39,6 @@ jobs:
       - name: Build After Passion
         run: |
           unset ANDROID_NDK_HOME
-          sed -i 's/main_menu_disable/main_menu/' ./game/src/story/0-awakening.rpy
           wget -qO- https://github.com/kobaltcore/renkit/releases/download/v3.2.0/renkit-linux-amd64.tar.gz | sudo tar xz -C /usr/local/bin
           [ ! -d ~/.renutil ] && renutil install -v ${{ env.renpy_version }}
           mkdir -p ~/.renutil/${{ env.renpy_version }}/rapt/project/app/

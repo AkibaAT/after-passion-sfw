@@ -338,8 +338,7 @@ screen navigation():
 
             textbutton _("End Replay") action EndReplay(confirm=True)
 
-        # No main menu access until 
-        elif not main_menu and persistent.chapter_progress > 0:
+        elif not main_menu:
 
             textbutton _("Main Menu") action MainMenu()
 

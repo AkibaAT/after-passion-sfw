@@ -1,12 +1,4 @@
 #default player_name="Human From The Alley"
-# Keep as main_menu_disable in VCS! It's being replaced during GitHub build.
-label main_menu_disable:
-    # Immediately jump into the prologue, skipping the menu
-    if persistent.chapter_progress < 1:
-        return
-
-    call screen main_menu()
-
 label ch0_awakening:
 
     stop music
@@ -41,14 +33,14 @@ label ch0_awakening:
     $ player_input = renpy.input("My name is...").strip()
 
     if player_input == "Sonic":
-        $ player_name = "Sonic" 
+        $ player_name = "Sonic"
         voice "voice/0-awakening/ThatSoundsRight.opus" # Will need to replace this with sonic voice line lol
-        "%(player_name)s. That sounds right." 
+        "%(player_name)s. That sounds right."
         jump .ch0_awakening
     elif player_input == "Human From The Alley":
         $ player_name = "Human From The Alley"
         voice "voice/0-awakening/ThatSoundsRight.opus"
-        "%(player_name)s. That sounds right." 
+        "%(player_name)s. That sounds right."
         jump .ch0_awakening
     else:
         $ player_name = "Human From The Alley"

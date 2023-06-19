@@ -6,6 +6,8 @@ label ch0_awakening:
     scene black
     centered "Chapter [chapter_list[0][title]]"
 
+    alt "There is no light, and no information as to where you are."
+
     voice "voice/0-awakening/001.opus"
     "..."
 
@@ -16,6 +18,8 @@ label ch0_awakening:
     "...and why do I feel like I hit my head?"
 
     scene bg dark_alley
+
+    alt "A dark alleyway is revealed, with a large bright opening at the far side."
 
     voice "voice/0-awakening/004.opus"
     "I wake up in a shallow puddle, the ground around me covered in trash bags."
@@ -29,7 +33,8 @@ label ch0_awakening:
     voice "voice/0-awakening/007.opus" 
     "Aside from my name, I can't remember {i}anything{i}."
 
-    voice "voice/0-awakening/MyNameIs.opus" 
+    voice "voice/0-awakening/MyNameIs.opus"
+    alt "Please enter a name after the prompt, and confirm with the enter key."
     $ player_input = renpy.input("My name is...").strip()
 
     if player_input == "Sonic":
@@ -66,6 +71,7 @@ label .ch0_awakening:
     "After a few moments, I stand up and make my way toward the opening of the alleyway."
 
     scene bg dark_alley_exit with dissolve
+    alt "The alleyway opens up to a busy city street."
     voice "voice/0-awakening/013.opus"
     "Just as I get there, I stumble and grab the wall to stabilize myself."
 
@@ -73,6 +79,7 @@ label .ch0_awakening:
     "I look around to see a sight beyond my imagination."
 
     scene bg city_day_4
+    alt "A bright city scape is revealed."
 
     play sound "effects/city_crowd.opus" volume 0.1 loop
 
@@ -139,6 +146,7 @@ label .ch0_awakening:
     show wolfrick preset_work:
         y1
         walk_in_right()
+    alt "A wolf anthro is revealed, entering your vision from the right. He is dressed in a black suit and purple tie, and light blue pants. He is wearing glasses, and a wristwatch on his right arm."
 
     voice "voice/0-awakening/033.opus"
     "I know what I must do."
@@ -158,6 +166,7 @@ label .ch0_awakening:
     voice "voice/0-awakening/036.opus"
     "The wolf looks at me with shock before covering his nose, and hands me something from his pocket."
 
+    alt "The wolf's expression turns sad."
     show wolfrick face_sad
 
     voice "voice/0-awakening/037.opus"
@@ -169,6 +178,7 @@ label .ch0_awakening:
     voice "voice/0-awakening/039.opus"
     "I'm confused, and look toward him."
 
+    alt "The wolf looks at you with concern."
     show wolfrick face_concerned
 
     voice "voice/0-awakening/040.opus"
@@ -184,6 +194,7 @@ label .ch0_awakening:
 
     hide wolfrick
     pause 0.5
+    alt "The exits your vision to the left."
     
     voice "voice/0-awakening/Freak.opus"
     w "Freak"
@@ -203,6 +214,7 @@ label .ch0_awakening:
     scene black with dissolve
     stop sound
 
+    alt "An animated logo appears, a pink heart, the title \"After Passion\" fades into view, turns from pink to blue, and then the whole scene fades to black."
     show bg title
     $ renpy.movie_cutscene("videos/title.webm")
 

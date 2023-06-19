@@ -79,7 +79,7 @@ label ch2_romance:
 
     "But today is different. It's our fifth wedding anniversary."
 
-    "We've been together for about eight years altogether but we never really took our anniversary seriously until after the wedding."
+    "We've been together for about five years altogether but we never really took our anniversary seriously until after the wedding."
 
     "..."
 

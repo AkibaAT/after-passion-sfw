@@ -52,7 +52,8 @@ label ch0_awakening:
 
     "%(player_input)s..."
 
-    "Hmm, that doesn't sound quite right. I think my name is %(player_name)s." #Voice needed
+    voice "voice/0-awakening/Ithinkmynameis.opus"
+    "Hmm, that doesn't sound right. I think my name is %(player_name)s." #Voice needed
 label .ch0_awakening:
 
     voice "voice/0-awakening/008.opus"
@@ -81,7 +82,7 @@ label .ch0_awakening:
     scene bg city_day_4
     alt "Description: A bright city scape is revealed."
 
-    play sound "effects/city_crowd.opus" volume 0.1 loop
+    play sound "effects/city_crowd.opus" volume 0.2 loop
 
     voice "voice/0-awakening/015.opus"
     "Anthros. Anthros everywhere."

@@ -229,7 +229,7 @@ label ch4_passion:
 
     "We find him on the balcony, wrapped in a bathrobe and eyes wet with tears."
 
-    play music "music/Silencio.opus" volume 0.1 fadein 1.0 fadeout 2.0
+    play music "music/Silencio.opus" volume 0.3 fadein 1.0 fadeout 2.0
     show nate:
         reset_pos(7.5)
     show wolfrick:

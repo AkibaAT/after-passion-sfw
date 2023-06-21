@@ -168,7 +168,7 @@ label ch3_comfort:
         flip_back()
         walk_out_left()
 
-    play sound ['<silence 0.6>', 'audio/effects/door_open.opus'] volume 0.5
+    play sound ['<silence 0.6>', 'audio/effects/door_open.opus'] volume 0.8
     "I stand up to walk out the balcony door."
 
     show nate:
@@ -182,8 +182,8 @@ label ch3_comfort:
 
     "Nate pats Nic on the shoulder and stands up to follow."
 
-    play ambient "audio/effects/day_balcony.opus" volume 0.5
-    play music "music/Guardian Angel2.opus" volume 0.25 fadein 1.0 fadeout 2.0
+    play ambient "audio/effects/day_balcony.opus" volume 0.05
+    play music "music/Guardian Angel2.opus" volume 0.15 fadein 1.0 fadeout 2.0
 
     scene bg apartment_balcony_day
     show nate preset_casual:

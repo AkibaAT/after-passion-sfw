@@ -41,17 +41,17 @@ label ch4_passion:
 
     "…"
 
-    play sound "audio/effects/shuffling.opus" volume 0.1
+    play sound "audio/effects/shuffling.opus" volume 0.05
     "I hear something outside the room, and listen carefully."
 
     show wolfrick -eyes_sad_closed
 
-    play ambient "audio/effects/crying.opus" volume 0.8
-    play sound "audio/effects/shuffling.opus" volume 0.2
+    play ambient "audio/effects/crying.opus" volume 0.3
+    play sound "audio/effects/shuffling.opus" volume 0.1
     "A sniffle, and some shuffling."
 
     stop ambient
-    play sound "audio/effects/slide_door_open.opus" volume 3
+    play sound "audio/effects/slide_door_open.opus" volume 1
     "The sound of the balcony door sliding open."
 
     show wolfrick:
@@ -66,7 +66,7 @@ label ch4_passion:
         shake()
         pause 0.1
         flip_back(["face_neutral", "eyes_half"])
-    play sound "<to 2>audio/effects/shuffling_cloth.opus" volume 0.8 fadeout 0.5
+    play sound "<to 2>audio/effects/shuffling_cloth.opus" volume 0.3 fadeout 0.5
 
     "He stirs in his sleep and turns toward me."
 
@@ -78,7 +78,7 @@ label ch4_passion:
     voice "voice/4-passion/003.opus"
     w "I think Nic is up. I heard sniffling."
 
-    play sound ["<silence 0.8>", "<to 2>audio/effects/shuffling_cloth.opus"] volume 1.3 fadeout 0.5
+    play sound ["<silence 0.8>", "<to 2>audio/effects/shuffling_cloth.opus"] volume 0.5 fadeout 0.5
     show nate -reverse:
         no_offset
         no_reverse()
@@ -102,7 +102,7 @@ label ch4_passion:
     voice "voice/4-passion/004.opus"
     na "Well, I should go check on him."
 
-    play sound "<to 2>audio/effects/shuffling_cloth.opus" volume 1.3 fadeout 0.5
+    play sound "<to 2>audio/effects/shuffling_cloth.opus" volume 0.5 fadeout 0.5
     show wolfrick face_stern:
         parallel:
             shake()
@@ -215,7 +215,7 @@ label ch4_passion:
         x0_5
         reverse
     with dissolve
-    play sound "audio/effects/slide_door_open.opus" volume 5
+    play sound "audio/effects/slide_door_open.opus"
     show nate preset_super_casual reverse:
         y1
         x1_3
@@ -229,7 +229,7 @@ label ch4_passion:
 
     "We find him on the balcony, wrapped in a bathrobe and eyes wet with tears."
 
-    play music "music/Silencio.opus" volume 0.3 fadein 1.0 fadeout 2.0
+    play music "music/Silencio.opus" volume 0.05 fadein 1.0 fadeout 2.0
     show nate:
         reset_pos(7.5)
     show wolfrick:
@@ -398,7 +398,7 @@ label ch4_passion:
     show wolfrick:
         pause 2.5
         walk_out_right(1.5)
-    play sound ["<silence 2.5>", "audio/effects/slide_door_open.opus"] volume 5
+    play sound ["<silence 2.5>", "audio/effects/slide_door_open.opus"]
 
     "We stay on the balcony with him for a while and eventually, we move inside."
 
@@ -408,7 +408,7 @@ label ch4_passion:
 
     "I told him he could borrow any of my CDs."
 
-    play sound 'audio/effects/snore.opus' volume 0.08
+    play sound 'audio/effects/snore.opus' volume 0.2
     "Nate and I are holding hands as we head back to the room, and before long we hear Nic's snoring coming from the other room."
 
     scene bg apartment_bedroom_main

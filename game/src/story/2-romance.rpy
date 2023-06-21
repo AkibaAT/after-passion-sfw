@@ -124,7 +124,7 @@ label ch2_romance:
             pause 0.5
             function add_attributes(['face_shocked'])
 
-    play sound 'audio/effects/door_open.opus' volume 0.5
+    play sound 'audio/effects/door_open.opus' volume 0.8
 
     "I open the front door and see them standing at the door with several bags of luggage."
 
@@ -201,7 +201,7 @@ label ch2_romance:
 
     "Nate puts a hand on Nic's shoulder."
 
-    play music "music/Guardian Angel1.opus" volume 0.25 fadein 1.0 fadeout 2.0
+    play music "music/Guardian Angel1.opus" volume 0.15 fadein 1.0 fadeout 2.0
     voice "voice/2-romance/013.opus"
     na "We'll just… be a moment."
 
@@ -221,7 +221,7 @@ label ch2_romance:
         pause 0.1
         flip()
 
-    play sound ["<silence 1.0>", "audio/effects/door_close.opus"] volume 0.5
+    play sound ["<silence 1.0>", "audio/effects/door_close.opus"] volume 0.8
     "Nic nods and Nate ushers me inside, closing the door."
 
     show nate:
@@ -233,7 +233,7 @@ label ch2_romance:
         pause 0.1
         push_left(distance=10)
 
-    play sound ['<silence 0.1>', 'audio/effects/hit_body.opus'] volume 0.5
+    play sound ['<silence 0.1>', 'audio/effects/hit_body.opus']
     "He slaps my arm again."
 
     show nate at no_offset
@@ -302,7 +302,7 @@ label ch2_romance:
         no_offset
         pause 0.5
         walk_out_right(1.4)
-    play sound '<from 0.2>audio/effects/door_open.opus' volume 0.5
+    play sound '<from 0.2>audio/effects/door_open.opus' volume 0.8
     scene bg apartment_dining with dissolve
     show nic preset_casual face_sad at y1, x0_9
     show nate preset_casual:
@@ -443,7 +443,7 @@ label ch2_romance:
         walk_to(8.5, 2.0)
         flip_back()
 
-    play sound "<from 0.3>audio/effects/door_open.opus" volume 0.5
+    play sound "<from 0.3>audio/effects/door_open.opus" volume 0.8
     "I open the door, and lead the others inside. We leave Nic's luggage on the far side of the room and I move back to the doorway."
 
     show nic reverse:
@@ -506,7 +506,7 @@ label ch2_romance:
         function remove_attributes(['face_happy'])
         walk_out_right()
 
-    play sound ["<silence 1>", "audio/effects/door_open.opus"] volume 0.5
+    play sound ["<silence 1>", "audio/effects/door_open.opus"] volume 0.8
     "He turns to smile at me and I smile back, as we head out into the living room."
 
     scene bg apartment_couch with dissolve
@@ -520,7 +520,7 @@ label ch2_romance:
         walk_in_right(2)
         flip()
 
-    play sound "audio/effects/door_close.opus" volume 0.5
+    play sound "audio/effects/door_close.opus" volume 0.8
     "Nate closes Nic's door and we move to the opposite end of the room."
 
     show nate:

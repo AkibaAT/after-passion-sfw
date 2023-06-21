@@ -6,8 +6,8 @@ label ch1_tension:
     centered "Chapter [chapter_list[1][title]]"
 
     scene bg city_day_4
-    play music "music/City_Center.opus" volume 0.4 fadein 1.0 fadeout 2.0
-    play sound "effects/city_crowd.opus" volume 0.1 loop
+    play music "music/City_Center.opus" volume 0.5 fadein 1.0 fadeout 2.0
+    play sound "effects/city_crowd.opus" volume 0.25 loop
     show wolfrick preset_work face_concerned:
         y1
         x1_3
@@ -15,7 +15,7 @@ label ch1_tension:
         walk_to(5)
     with dissolve
     alt "Description: A city fades into view. To the right, the same wolf from before, dressed in a black suit and purple tie, and light blue pants, wearing glasses, and a wristwatch on his right arm, enters the scene from the right and stops at the middle."
-    alt "All of the following narration will be from the perspective of that same wolf."
+    alt "Description: All of the following narration will be from the perspective of that same wolf."
 
     "I'm late."
 
@@ -130,7 +130,6 @@ label ch1_tension:
 
     "I don't hear anyone on the inside of the storeroom moving around or talking."
 
-
     "I know I'm in the clear - my wolf senses are pretty good for that."
 
     show wolfrick face_happy
@@ -148,7 +147,7 @@ label ch1_tension:
             pause 0.5
             fade_out()
             
-    play sound "effects/door_open.opus" volume 0.5
+    play sound "effects/door_open.opus" volume 0.8
 
     "It's go time."
 
@@ -201,7 +200,7 @@ label ch1_tension:
         pause 0.5
         hug_right()
 
-    play sound ["<silence 2.5>", "<from 0.4>effects/door_full.opus"] volume 0.5
+    play sound ["<silence 2.5>", "<from 0.4>effects/door_full.opus"] volume 0.8
     "I decide to lock the door and flip the sign over to {i}'Closed'{/i} just in case."
 
     show wolfrick:
@@ -217,8 +216,8 @@ label ch1_tension:
 
     "Within, I hear what sounds like a droning voice that is either very small and quiet or, somehow, very distant."
 
-    play sound "effects/door_open.opus" volume 0.5
-    play music "music/Guardian Angel1.opus" volume 0.25 fadein 1.0 fadeout 2.0
+    play sound "effects/door_open.opus" volume 0.8
+    play music "music/Guardian Angel1.opus" volume 0.15 fadein 1.0 fadeout 2.0
     scene bg flower_shop_backoffice
     show nate preset_work reverse:
         y1
@@ -229,6 +228,8 @@ label ch1_tension:
         x0_2
         reverse
     with dissolve
+
+    alt "Description: The scene changes to a brightly lit backroom office with an open window towards the outside and a small desk towards the back. A manetee wearing a gardening apron and a green hat stands turned away from the door while the wolf enters from the left."
 
     "I open the door quietly and enter, seeing my adorable manatee husband standing, turned away from the door with his arms crossed."
 
@@ -578,7 +579,7 @@ label ch1_tension:
         walk_to(12, 2.1)
     with dissolve
 
-    play sound ["<silence 1.5>", "effects/slap_eco.opus"] volume 0.6
+    play sound ["<silence 1.5>", "effects/slap_eco.opus"] volume 1
 
     "He walks me to the door and I feel a slap on my ass as I'm heading out the door."
 
@@ -586,7 +587,7 @@ label ch1_tension:
     show nate at x0_9:
         hug_right(0.7)
 
-    play sound ["<silence 0.4>", "effects/door_close.opus"] volume 0.5
+    play sound ["<silence 0.4>", "effects/door_close.opus"] volume 1
 
     "I turn to retaliate but he shuts the arched door behind me."
 

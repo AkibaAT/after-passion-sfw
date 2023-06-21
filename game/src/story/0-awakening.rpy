@@ -84,7 +84,8 @@ label .ch0_awakening:
     scene bg city_day_4
     alt "Description: A bright city scape is revealed."
 
-    play sound "effects/city_crowd.opus" volume 0.2 loop
+    stop sound
+    play sound "effects/city_crowd.opus" volume 0.25 loop
 
     voice "voice/0-awakening/015.opus"
     human "Anthros. Anthros everywhere."

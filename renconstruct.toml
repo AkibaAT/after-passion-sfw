@@ -52,4 +52,4 @@
   clear_output_dir = false # whether to clear the output directory on startup
 
 [renutil]
-  version = "8.1.0" # the Ren'Py version to use (required)
+  version = "8.1.1" # the Ren'Py version to use (required)

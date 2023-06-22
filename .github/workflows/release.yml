@@ -42,10 +42,10 @@ jobs:
           wget -qO- https://github.com/kobaltcore/renkit/releases/download/v3.2.0/renkit-linux-amd64.tar.gz | sudo tar xz -C /usr/local/bin
           [ ! -d ~/.renutil ] && renutil install -v ${{ env.renpy_version }}
           mkdir -p ~/.renutil/${{ env.renpy_version }}/rapt/project/app/
-          echo -n '${{ secrets.ANDROID_KEYSTORE }}' | base64 --decode > ~/.renutil/${{ env.renpy_version }}/rapt/project/app/android.keystore
+          echo -n '${{ secrets.ANDROID_KEYSTORE }}' | base64 --decode > android.keystore
           echo "define config.version = \"${{ steps.get-release-version.outputs.version }}\"" >> game/options.rpy
           renconstruct build -i . -o .artifacts/ -c renconstruct.toml
-          rm ~/.renutil/${{ env.renpy_version }}/rapt/project/app/android.keystore
+          rm android.keystore
       - name: Set up butler
         uses: jdno/setup-butler@v1
       - name: Publish builds to itch.io

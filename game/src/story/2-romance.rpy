@@ -9,6 +9,8 @@ label ch2_romance:
     show wolfrick preset_casual face_stern at x0_4, y1
     with dissolve
 
+    alt "Description: Wolfrick is in his apartment, standing in the brightly lit kitchen, preparing dinner for Nate. He is wearing a violet tanktop and a pair of gray jogging pants."
+
     "..."
 
     "The table is set with our fine china and a couple of wine glasses."
@@ -53,6 +55,7 @@ label ch2_romance:
     show wolfrick preset_casual:
         y1
         walk_in_right(7)
+    alt "Description: Wolfrick moves from the kitchen over to the living room. A couch, coffee table and recliner can be seen in the background. A wooden dining table surrounded by 4 white chairs stands in the foreground, right behind Wolfrick."
 
     show wolfrick face_stern
 
@@ -220,6 +223,7 @@ label ch2_romance:
         walk_in_right(4, 1.2)
         pause 0.1
         flip()
+    alt "Description: Wolfrick and Nate walk into a small room, a window in the corner giving view to the skyscrapers outside. A small table with a basket of fresh fruits stands towards the wall."
 
     play sound ["<silence 1.0>", "audio/effects/door_close.opus"] volume 0.8
     "Nic nods and Nate ushers me inside, closing the door."
@@ -309,6 +313,7 @@ label ch2_romance:
         y1
         walk_in_right(6)
         flip()
+    alt "Description: Wolfrick and Nate move from the small room back outside to the dining room where Nic is waiting. Nic is a red dragon wearing a bright pink shirt and gray cargo pants."
 
     "Nate opens it and Nic is leaning against the wall across the hall."
 
@@ -396,6 +401,8 @@ label ch2_romance:
     "We move everything into the apartment and I lead Nic to the room."
 
     scene bg apartment_bedroom_spare with dissolve
+
+    alt "Description: A small room with a lot of boxes stacked on top of each other is shown."
 
     voice "voice/2-romance/027.opus"
     w "Here we are."
@@ -519,6 +526,7 @@ label ch2_romance:
         y1
         walk_in_right(2)
         flip()
+    alt "Description: The scene changes to the far side of the living room, Nate and Wolfrick standing by the balcony window."
 
     play sound "audio/effects/door_close.opus" volume 0.8
     "Nate closes Nic's door and we move to the opposite end of the room."
@@ -617,6 +625,7 @@ label ch2_romance:
 
     stop music fadeout 2.0
     scene black with fade
+    alt "Description: The scene fades to black."
 
     $ set_chapter_progress(3)
  

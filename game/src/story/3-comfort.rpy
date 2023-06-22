@@ -19,6 +19,8 @@ label ch3_comfort:
         reverse
     with dissolve
 
+    alt "Description: From left to right, Wolfrick, Nate and Nic are standing in the living room."
+
     "It's been a few hours since Nic arrived, and we're all just sitting at the table in the dining room drinking."
 
     "None of us have to work tomorrow since it's Saturday, but Nate still goes in to check on his shop for a few hours in the middle of the day."
@@ -196,6 +198,7 @@ label ch3_comfort:
     with dissolve
     show nate:
         walk_in_right()
+    alt "Description: The scene switches to an outside of the balcony, Nate joining Wolfrick, who is standing next to the railing, lookíng sad and looking away from Nate."
 
     voice "voice/3-comfort/031.opus"
     na "Hey, love. What's up?"
@@ -474,6 +477,7 @@ label ch3_comfort:
     "He smirks at me and shrugs."
 
     stop music fadeout 2.0
-    scene black with fade   
+    scene black with fade
+    alt "Description: The scene fades to black."
 
     $ set_chapter_progress(4)

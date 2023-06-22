@@ -223,5 +223,6 @@ label .ch0_awakening:
     $ renpy.movie_cutscene("videos/title.webm")
 
     scene black with fade
+    alt "Description: The scene fades to black."
 
     $ set_chapter_progress(1)

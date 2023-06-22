@@ -603,5 +603,6 @@ label ch1_tension:
 
     stop music fadeout 2.0
     scene black with fade
+    alt "Description: The scene fades to black."
 
     $ set_chapter_progress(2)

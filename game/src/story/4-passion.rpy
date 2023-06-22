@@ -12,6 +12,7 @@ label ch4_passion:
     show wolfrick accessories_watch pants_joggers face_sad eyes_sad_closed:
         reset_pos(5, 4)
     with fade
+    alt "Description: Wolfrick and Nate are lying in bed, both with their eyes closed, Wolfrick occupying the right side of the bed."
 
     "Nate and I are lying in bed, about a foot apart."
 
@@ -95,6 +96,8 @@ label ch4_passion:
 
     "He sighs and gets up from bed."
 
+    alt "Description: Nate gets up from the bed, putting on a white t-shirt and blue pants."
+
     show nate preset_super_casual:
         y1
         no_offset
@@ -114,6 +117,8 @@ label ch4_passion:
         move_to_y(10)
 
     "I turn to get out of bed myself."
+
+    alt "Description: Wolfrick gets up from the bed as well, putting on his purple tanktop and gray jogging pants."
 
     show wolfrick preset_casual:
         y1
@@ -226,6 +231,7 @@ label ch4_passion:
         x1_3
         pause 0.5
         walk_in_right(9.5)
+    alt "Description: Nic is outside on the dark balcony, wearing a rainbow colored bathrobe and a sad expression."
 
     "We find him on the balcony, wrapped in a bathrobe and eyes wet with tears."
 
@@ -404,6 +410,8 @@ label ch4_passion:
 
     scene black with fade
 
+    alt "Description: The scene fades to black."
+
     "Nic gets ready to sleep again, putting on a chunky pair of headphones and plugging it into his walkman."
 
     "I told him he could borrow any of my CDs."
@@ -421,6 +429,8 @@ label ch4_passion:
     with fade
     stop sound
 
+    alt "Description: The screen fades to show the bedroom again, Wolfrick and Nate back in bed, undressed."
+
     "I turn to Nate in bed."
 
     "He's lying facing me. He's a half-foot away."
@@ -432,3 +442,7 @@ label ch4_passion:
     $ set_chapter_progress(5)
     stop music fadeout 2.0
     scene black with fade
+
+    stop music fadeout 2.0
+    scene black with fade
+    alt "Description: The scene fades to black."

@@ -24,6 +24,8 @@ label ch5_after_passion:
         reverse
     with fade
 
+    alt "Description: The scene fades in to show the coffee table and couch, with Nate, Wolfrick and Nic."
+
     "Nate and I are sitting on the couch watching the news, and Nic is finishing up breakfast on the seat nearby."
 
     "He cooked the three of us breakfast to show his appreciation for letting him stay with us."
@@ -416,6 +418,8 @@ label ch5_after_passion:
 
     "He cautiously enters, his eyes on mine the whole way, and walks up to Nic aggressively."
 
+    alt "Description: Zephyr enters from the right. He is taller than everyone else by a full head, towering above the others. He wears a dark purple tanktop and dark pink jogging pants."
+
     show zephyr:
         reset_pos(4.5)
     show wolfrick -reverse:
@@ -802,6 +806,8 @@ label ch5_after_passion:
     stop music fadeout 2.0
 
     scene cg end with dissolve
+
+    alt "Description: The scene fades to a drawing of Wolfrick, Nate and Nic standing together, Nic grinning while ruffling the other two's head."
 
     top_right "The End."
 

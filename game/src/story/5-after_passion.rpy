@@ -2,6 +2,9 @@ define nc = Character(None, kind=bubble, image="Newscaster", callback=speaker("N
 define top_right = Character(None, what_style="top_right_text", window_style="top_right_window", statement_name="say-top-right")
 
 label ch5_after_passion:
+    $ set_chapter_progress(5)
+    stop music fadeout 2.0
+    scene black with fade
 
     stop music
 

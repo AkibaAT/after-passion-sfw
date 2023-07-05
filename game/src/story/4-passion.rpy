@@ -433,15 +433,14 @@ label ch4_passion:
 
     "I turn to Nate in bed."
 
+    show wolfrick reverse:
+        reverse
+
     "He's lying facing me. He's a half-foot away."
 
     "I see it in his eyes again."
 
     "That look of passion that I've come to love."
-
-    $ set_chapter_progress(5)
-    stop music fadeout 2.0
-    scene black with fade
 
     stop music fadeout 2.0
     scene black with fade

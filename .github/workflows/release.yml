@@ -36,7 +36,7 @@ jobs:
             ~/.renutil
             !~/.renutil/**/*.keystore
           key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('renconstruct.toml') }}
-      - name: Build After Passion
+      - name: Build
         run: |
           unset ANDROID_NDK_HOME
           wget -qO- https://github.com/kobaltcore/renkit/releases/download/v3.2.0/renkit-linux-amd64.tar.gz | sudo tar xz -C /usr/local/bin
@@ -45,6 +45,9 @@ jobs:
           echo -n '${{ secrets.ANDROID_KEYSTORE }}' | base64 --decode > android.keystore
           echo "define config.version = \"${{ steps.get-release-version.outputs.version }}\"" >> game/options.rpy
           renconstruct build -i . -o .artifacts/ -c renconstruct.toml
+          mv .artifacts/${{ env.build_name }}-${{ steps.get-release-version.outputs.version }}-pc.zip .artifacts/${{ env.build_name }}-${{ steps.get-release-version.outputs.version }}-pc.zip
+          mv .artifacts/${{ env.build_name }}-${{ steps.get-release-version.outputs.version }}-mac.zip .artifacts/${{ env.build_name }}-${{ steps.get-release-version.outputs.version }}-mac.zip
+          mv .artifacts/${{ env.android_build_name }}-release.apk .artifacts/${{ env.android_build_name }}-release.apk
           rm android.keystore
       - name: Set up butler
         uses: jdno/setup-butler@v1
@@ -53,7 +56,7 @@ jobs:
           ls -l .artifacts
           butler push .artifacts/${{ env.build_name }}-${{ steps.get-release-version.outputs.version }}-pc.zip ${{ env.itch_project_name }}:win-linux --userversion ${{ steps.get-release-version.outputs.version }}
           sleep 30
-          butler push .artifacts/${{ env.build_name }}-${{ steps.get-release-version.outputs.version }}-mac.zip ${{ env.itch_project_name }}:mac-sfw --userversion ${{ steps.get-release-version.outputs.version }}
+          butler push .artifacts/${{ env.build_name }}-${{ steps.get-release-version.outputs.version }}-mac.zip ${{ env.itch_project_name }}:mac --userversion ${{ steps.get-release-version.outputs.version }}
           sleep 30
           butler push .artifacts/${{ env.android_build_name }}-release.apk ${{ env.itch_project_name }}:android --userversion ${{ steps.get-release-version.outputs.version }}
         env:

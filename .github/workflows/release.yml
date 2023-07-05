@@ -51,7 +51,9 @@ jobs:
       - name: Publish builds to itch.io
         run: |
           ls -l .artifacts
-          butler push .artifacts/${{ env.build_name }}-${{ steps.get-release-version.outputs.version }}-pc.zip ${{ env.itch_project_name }}:win-linux --userversion ${{ steps.get-release-version.outputs.version }}
+          butler push .artifacts/${{ env.build_name }}-${{ steps.get-release-version.outputs.version }}-win.zip ${{ env.itch_project_name }}:win --userversion ${{ steps.get-release-version.outputs.version }}
+          sleep 30
+          butler push .artifacts/${{ env.build_name }}-${{ steps.get-release-version.outputs.version }}-linux.tar.bz2 ${{ env.itch_project_name }}:linux --userversion ${{ steps.get-release-version.outputs.version }}
           sleep 30
           butler push .artifacts/${{ env.build_name }}-${{ steps.get-release-version.outputs.version }}-mac.zip ${{ env.itch_project_name }}:mac --userversion ${{ steps.get-release-version.outputs.version }}
           sleep 30

@@ -45,9 +45,6 @@ jobs:
           echo -n '${{ secrets.ANDROID_KEYSTORE }}' | base64 --decode > android.keystore
           echo "define config.version = \"${{ steps.get-release-version.outputs.version }}\"" >> game/options.rpy
           renconstruct build -i . -o .artifacts/ -c renconstruct.toml
-          mv .artifacts/${{ env.build_name }}-${{ steps.get-release-version.outputs.version }}-pc.zip .artifacts/${{ env.build_name }}-${{ steps.get-release-version.outputs.version }}-pc.zip
-          mv .artifacts/${{ env.build_name }}-${{ steps.get-release-version.outputs.version }}-mac.zip .artifacts/${{ env.build_name }}-${{ steps.get-release-version.outputs.version }}-mac.zip
-          mv .artifacts/${{ env.android_build_name }}-release.apk .artifacts/${{ env.android_build_name }}-release.apk
           rm android.keystore
       - name: Set up butler
         uses: jdno/setup-butler@v1

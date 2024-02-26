@@ -1,7 +1,7 @@
 name: Release Workflow
 
 env:
-  renpy_version: "8.1.1"
+  renpy_version: "8.2.0"
   itch_project_name: akibaokapi/after-passion-sfw
   build_name: AfterPassion
   android_build_name: games.akiba.afterpassion
@@ -25,7 +25,7 @@ jobs:
       - uses: actions/setup-java@v3
         with:
           distribution: 'adopt'
-          java-version: '8'
+          java-version: '21'
       - name: Cache renpy
         id: cache-renpy
         uses: actions/cache@v3
@@ -39,13 +39,13 @@ jobs:
       - name: Build
         run: |
           unset ANDROID_NDK_HOME
-          wget -qO- https://github.com/kobaltcore/renkit/releases/download/v3.2.0/renkit-linux-amd64.tar.gz | sudo tar xz -C /usr/local/bin
-          [ ! -d ~/.renutil ] && renutil install -v ${{ env.renpy_version }}
+          curl --proto '=https' --tlsv1.2 -LsSf https://github.com/kobaltcore/renkit/releases/download/v4.0.1/renkit-installer.sh | sh
+          export PATH=~/.cargo/bin:$PATH
+          [ ! -d ~/.renutil ] && renutil install ${{ env.renpy_version }}
           mkdir -p ~/.renutil/${{ env.renpy_version }}/rapt/project/app/
-          echo -n '${{ secrets.ANDROID_KEYSTORE }}' | base64 --decode > android.keystore
+          sed -i 's#{key_apk}#${{ secrets.ANDROID_KEYSTORE }}#' renconstruct.toml
           echo "define config.version = \"${{ steps.get-release-version.outputs.version }}\"" >> game/options.rpy
-          renconstruct build -i . -o .artifacts/ -c renconstruct.toml
-          rm android.keystore
+          renconstruct build -c renconstruct.toml . .artifacts/
       - name: Set up butler
         uses: jdno/setup-butler@v1
       - name: Publish builds to itch.io
@@ -57,6 +57,7 @@ jobs:
           sleep 30
           butler push .artifacts/${{ env.build_name }}-${{ steps.get-release-version.outputs.version }}-mac.zip ${{ env.itch_project_name }}:mac --userversion ${{ steps.get-release-version.outputs.version }}
           sleep 30
-          butler push .artifacts/${{ env.android_build_name }}-release.apk ${{ env.itch_project_name }}:android --userversion ${{ steps.get-release-version.outputs.version }}
+          apk_path=`find ./.artifacts -name "${{ env.android_build_name }}*.apk"`
+          butler push $apk_path ${{ env.itch_project_name }}:android --userversion ${{ steps.get-release-version.outputs.version }}
         env:
           BUTLER_API_KEY: ${{ secrets.ITCHIO_API_KEY }}

@@ -3,7 +3,7 @@ label ch4_passion:
     stop music
 
     scene black
-    centered "Chapter [chapter_list[4][title]]"
+    centered "Chapter [chapter_list[4]['title']]"
 
     scene bg apartment_bedroom_main
     show nate reverse pants_chill face_sleeping:

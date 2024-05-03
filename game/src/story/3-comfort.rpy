@@ -3,7 +3,7 @@ label ch3_comfort:
     stop music
 
     scene black
-    centered "Chapter [chapter_list[3][title]]"
+    centered "Chapter [chapter_list[3]['title']]"
 
     scene bg apartment_dining
     show nic preset_casual face_angry:

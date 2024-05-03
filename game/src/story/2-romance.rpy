@@ -3,7 +3,7 @@ label ch2_romance:
     stop music
 
     scene black
-    centered "Chapter [chapter_list[2][title]]"
+    centered "Chapter [chapter_list[2]['title']]"
 
     scene bg apartment_kitchen
     show wolfrick preset_casual face_stern at x0_4, y1

@@ -51,5 +51,5 @@
   clear_output_dir = false # whether to clear the output directory on startup
 
 [renutil]
-  version = "8.2.0" # the Ren'Py version to use (required)
+  version = "8.2.1" # the Ren'Py version to use (required)
   update_pickle = true # causes renutil to update the Pickle version from 2 to 5 for speed improvements at the cost of incompatiblity with Ren'Py 7.x files

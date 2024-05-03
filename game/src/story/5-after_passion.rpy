@@ -9,7 +9,7 @@ label ch5_after_passion:
     stop music
 
     scene black
-    centered "Chapter [chapter_list[5][title]]"
+    centered "Chapter [chapter_list[5]['title']]"
 
     
     scene bg apartment_coffee

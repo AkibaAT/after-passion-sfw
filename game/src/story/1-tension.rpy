@@ -3,7 +3,7 @@ label ch1_tension:
     stop music
 
     scene black
-    centered "Chapter [chapter_list[1][title]]"
+    centered "Chapter [chapter_list[1]['title']]"
 
     scene bg city_day_4
     play music "music/City_Center.opus" volume 0.5 fadein 1.0 fadeout 2.0

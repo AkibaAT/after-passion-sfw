@@ -6,7 +6,7 @@ label ch0_awakening:
     stop music
 
     scene black
-    centered "Chapter [chapter_list[0][title]]"
+    centered "Chapter [chapter_list[0]['title']]"
 
     alt "Description: There is no light, and no information as to where you are."
 
